@@ -1,0 +1,16 @@
+Construction _ 90.1 ASHRAE Climate 5A
+	Walls
+	_ 90.1 BASELINE 5A Steel Framed U-0.365
+
+
+	Roof
+	_ 90.1 BASELINE 5A U-0.273 Insulation Above Deck
+
+
+
+Windows _ 90.1 ASHRAE Climate 5A
+	Glazing
+	_ 90.1 BASELINE 5A U-2.56 g-0.4 Metal framing
+
+	Layout
+	_ 90.1 BASELINE 40%

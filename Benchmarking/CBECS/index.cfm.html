@@ -1,0 +1,513 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Energy Information Administration (EIA)- Commercial Buildings Energy Consumption Survey (CBECS)</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=8"> 
+
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="robots" content="all" />
+<meta name="agency" content="EIA - Energy Information Administration" />
+<meta name="subject" content="official energy statistics, data, analysis and forecasting" />
+<meta name="Description" content="Energy Information Administration - EIA - Official Energy Statistics from the U.S. Government" />
+  
+   
+
+   <link rel="stylesheet" href="/global/styles/screen.css" type="text/css" media="screen, projection">
+   
+
+   <link type="text/css" href="/global/scripts/JQuery/datepicker/jquery-ui-dp.custom.css" rel="stylesheet" />
+   <link rel="stylesheet" href="/global/styles/EIA_global.css" type="text/css" media="screen, projection">
+   <!--[if lt IE 8]><link rel="stylesheet" href="/global/styles/ie.css" type="text/css" media="screen, projection"><![endif]-->
+   <!--[if IE 7]><link rel="stylesheet" href="/global/styles/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	 <!--[if lte IE 8]><link rel="stylesheet" href="/global/styles/ie_fixes.css" type="text/css" media="screen, projection"><![endif]-->
+   <link rel="stylesheet" href="/global/styles/print.css" type="text/css" media="print">
+   <!--[if lte IE 8]><link rel="stylesheet" href="/global/styles/ie_print.css" type="text/css" media="print"><![endif]-->
+   <!--[if IE 7]><link rel="stylesheet" href="/global/styles/ie_print.css" type="text/css" media="print"><![endif]-->
+
+
+   <script type="text/javascript" src="/global/scripts/jquery/jquery-1.7.1.min.js"></script>
+   <script type="text/javascript" src="/global/scripts/jquery/ui/js/jquery-ui-1.8.7.custom.min.js"></script>
+   <script type="text/javascript" src="/global/scripts/jquery/eia_utils.js"></script>
+   <script type="text/javascript" src="/global/scripts/eia_global.js"></script>
+   
+   <script type="text/javascript" src="/global/scripts/jquery/highcharts/js/highcharts.2.2.0r.js"></script>
+   <script type="text/javascript" src="/global/scripts/jquery/highcharts/js/modules/exporting.js"></script>
+
+
+<script type="text/javascript" src="/global/scripts/JQuery/ga/ga-file-downloads.js" ></script>
+	
+     
+<script type="text/javascript">
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25837230-1']);
+  _gaq.push(['_setDomainName', 'eia.gov']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+   
+
+<link rel="shortcut icon" href="http://www.eia.gov/favicon.ico" />
+<link rel="icon" href="http://www.eia.gov/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.eia.gov/favicon.ico" />
+
+<div class="loader"></div>
+
+
+<title>Commercial Buildings Energy Consumption Survey (CBECS) - U.S. Energy Information Administration (EIA)</title>
+</head>
+<body>
+<div id="outerX">
+
+
+<div id="innerX">
+  <div class="content">
+
+
+    <div id="header">
+    <div class="print"><img src="/global/images/logos/eia_logo_print.png"/></div>
+
+      <a href="/"><h1>U.S. Energy Information Administration - EIA - Independent Statistics and Analysis</h1></a>
+      <ul class="global-width" id="g-margin3">
+        <li class="global-es"><a>Sources &amp; Uses</a></li>
+          <div class="global_es_menu">
+            <span class="global_menu_col1">
+              <a href="/petroleum/"><h3>Petroleum &amp; Other Liquids</h3><p>Crude oil, gasoline, heating oil, diesel, propane, and other liquids including biofuels and natural gas liquids.</p></a>
+              <a href="/naturalgas/"><h3>Natural Gas</h3><p>Exploration and reserves, storage, imports and exports, production, prices, sales.</p></a>
+              <a href="/electricity/"><h3>Electricity</h3><p>Sales, revenue and prices, power plants, fuel use, stocks, generation, trade, demand & emissions.</p></a>
+              <a href="/consumption/"><h3>Consumption & Efficiency</h3><p class="no-border no-btm">Energy use in homes, commercial buildings, manufacturing, and transportation.</p></a>
+            </span>
+            <span class="global_menu_col2">
+              <a href="/coal/"><h3>Coal</h3><p>Reserves, production, prices, employ- ment and productivity, distribution, stocks, imports and exports.</p></a>
+              <a href="/renewable/"><h3>Renewable &amp;<br>Alternative Fuels</h3><p class="sp-renewable">Includes hydropower, solar, wind, geothermal, biomass and ethanol.</p></a>
+              <a href="/nuclear/"><h3>Nuclear &amp; Uranium</h3><p class="no-border">Uranium fuel, nuclear reactors, generation, spent fuel.<br />&nbsp;</p></a>
+              <a href="/totalenergy/"><h3>Total Energy</h3><p>Comprehensive data summaries, comparisons, analysis, and projections integrated across all energy sources.</p></a>
+            </span>
+            <span class="global_menu_col3">
+              <h3>Highlights</h3>
+              <a href="/oog/info/twip/twip.asp">This Week in Petroleum&nbsp;&rsaquo;</a>
+              <a href="/oil_gas/petroleum/data_publications/weekly_petroleum_status_report/wpsr.html">Weekly Petroleum Status Report&nbsp;&rsaquo;</a>
+              <a href="http://ir.eia.gov/ngs/ngs.html">Weekly Natural Gas Storage Report&nbsp;&rsaquo;</a>
+              <a href="/naturalgas/weekly/">Natural Gas Weekly Update&nbsp;&rsaquo;</a>
+              <a href="/cneaf/electricity/epm/epm_sum.html">Electric Power Monthly&nbsp;&rsaquo;</a>
+              <a href="/cneaf/coal/quarterly/qcr_sum.html">Quarterly Coal Report&nbsp;&rsaquo;</a>
+              <a href="/totalenergy/data/monthly/">Monthly Energy Review&nbsp;&rsaquo;</a>
+              <a href="/consumption/residential/">Residential Energy Consumption Survey 2009&nbsp;&rsaquo;</a>
+            </span>
+            
+          </div>
+        <li class="global-topics" id="g-margin1"><a>Topics</a></li>
+          <div class="global_topics_menu">
+            <span class="global_menu_col1">
+              <a href="/analysis/"><h3>Analysis &amp; Projections</h3><p>Monthly and yearly energy forecasts, analysis of energy topics, financial analysis, Congressional reports.</p></a>
+              <a href="/finance/"><h3>Markets &amp; Finance</h3><p class="no-border no-btm">Financial market analysis and financial data for major energy companies.</p></a>
+            </span>
+            <span class="global_menu_col2">
+              <a href="/environment/"><h3>Environment</h3><p class="sp-environment">Greenhouse gas data, voluntary report- ing, electric power plant emissions.</p></a>
+              
+            </span>
+            <span class="global_menu_col3">
+              <h3>Highlights</h3>
+              <a href="/forecasts/steo/">Short-Term Energy Outlook&nbsp;&rsaquo;</a>
+              <a href="/forecasts/aeo/">Annual Energy Outlook&nbsp;&rsaquo;</a>
+              <a href="/environment/emissions/ghg_report/">Emissions of Greenhouse Gases in the U. S.&nbsp;&rsaquo;</a>
+              <a href="/forecasts/ieo/">International Energy Outlook&nbsp;&rsaquo;</a>
+            </span>
+          </div>
+        <li class="global-geo"><a>Geography</a></li>
+          <div class="global_geo_menu">
+            <span class="global_menu_col1">
+              <a href="/state/"><h3>U.S. States</h3><p>State energy information, detailed and overviews.</p></a>
+              <a href="/maps/"><h3>Maps</h3><p class="no-border no-btm">Maps by energy source and topic, includes forecast maps.</p></a>
+            </span>
+            <span class="global_menu_col2">
+              <a href="/countries/"><h3>Countries</h3><p>Country energy information, detailed and overviews.</p></a>
+              
+            </span>
+            <span class="global_menu_col3">
+              <h3>Highlights</h3>
+              <a href="/state/seds/">State Energy Data System (SEDS)&nbsp;&rsaquo;</a>
+              <a href="/cfapps/ipdbproject/IEDIndex3.cfm">International Energy Statistics&nbsp;&rsaquo;</a>
+              <a href="/countries/mena/">Middle East &amp; North Africa&nbsp;&rsaquo;</a>
+              
+            </span>
+          </div>
+      </ul>
+      <ul class="utils">
+        <li class="global-tools" id="g-margin2"><a>Tools</a></li>
+          <div class="global_tools_menu">
+            <span class="global_menu_col5">
+              <p class="no-border">
+              <a href="/tools/glossary/" class="ico_glossary_dblue header_icon_pad">Glossary&nbsp;&rsaquo;</a><br />
+              <a href="/reports/" class="ico_reports header_icon_pad">All Reports &amp; Publications&nbsp;&rsaquo;</a><br />
+              <a href="/tools/models/" class="ico_mining header_icon_pad">Data Tools &amp; Models&nbsp;&rsaquo;</a><br />
+              <a href="/survey/" class="ico_survey header_icon_pad">EIA Survey Forms&nbsp;&rsaquo;</a>              
+              </p>
+            </span>
+            <span class="global_menu_col6">
+              <p class="no-border"><a href="http://twitter.com/eiagov/" class="ico_twitter header_icon_pad">Twitter</a><br />
+              <a href="/tools/emailupdates/" class="ico_email header_icon_pad">Email Updates</a><br />
+              <a href="/tools/rssfeeds/" class="ico_rss header_icon_pad">RSS Feeds</a></p>
+            </span>
+          </div>
+        <li class="global-learn" id="g-margin2"><a>Learn About Energy</a></li>
+          <div class="global_learn_menu">
+            <span class="global_menu_col8a">
+              <h3><a href="/todayinenergy/">Today in Energy</a></h3>
+              <p>Short, timely articles with graphics on energy, facts, issues, and trends.</p>
+            </span>
+            <span class="global_menu_col6">
+              <p class="no-border"><a href="/tools/faqs/" class="ico_faqs header_icon_pad">FAQs</a><br />
+              <a href="/tools/glossary/" class="ico_glossary header_icon_pad">Glossary</a><br />
+              <a href="/kids/energy.cfm?page=6" class="ico_teachers header_icon_pad border_learn">For Teachers</a></p>
+            </span>
+            <span class="global_menu_col8">
+              <h3><a href="/energyexplained/">Energy Explained</a></h3>
+              <p class="width152"><a href="/energyexplained/index.cfm?page=about_home">What is Energy?&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=about_energy_units">Units &amp; Calculators&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=us_energy_use">Use of Energy&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=environment_home">Energy & Environment&nbsp;&rsaquo;</a></p>
+              <p class="width110"><a href="/energyexplained/index.cfm?page=oil_home">Petroleum&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=natural_gas_home">Natural Gas&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=coal_home">Coal&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=nuclear_home">Nuclear&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=electricity_home">Electricity&nbsp;&rsaquo;</a></p>
+              <p class="width181"><a href="/energyexplained/index.cfm?page=hydropower_home">Hydropower&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=biofuel_home">Biofuels: Ethanol &amp; Biodiesel&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=wind_home">Wind&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=geothermal_home">Geothermal&nbsp;&rsaquo;</a><br />
+              <a href="/energyexplained/index.cfm?page=solar_home">Solar&nbsp;&rsaquo;</a></p>
+            </span>
+            <span class="global_menu_col9">
+              <h3><a href="/energy_in_brief/">Energy in Brief</a></h3>
+				<p class="no-border global_menu_col10"><a href="/energy_in_brief/east_coast.cfm">What's changing in East Coast fuels markets?&nbsp;&rsaquo;</a><br />
+				<a href="/energy_in_brief/about_shale_gas.cfm">What is shale gas and why is it important?&nbsp;&rsaquo;</a></p>
+				<p class="no-border global_menu_col10"><a href="/energy_in_brief/foreign_oil_dependence.cfm">How dependent are we on foreign oil?&nbsp;&rsaquo;</a><br />
+				<a href="/energy_in_brief/role_coal_us.cfm">What is the role of coal in the United States?&nbsp;&rsaquo;</a></p>
+            </span>
+            <span class="global_menu_col6 mt_40">
+              <p class="no-border"><a href="/kids/" class="ant_banner">Energy Kids</a></p>
+            </span>
+          </div>
+        <li class="global-news"><a>News</a></li>
+          <div class="global_news_menu">
+            <span class="global_menu_col7">
+              <h3><a href="/about/new/">What's New?</a></h3>
+              
+              <div id="whatsnew3"></div>
+            </span>
+            <span class="global_menu_col3">
+              <h3><a href="/pressroom/" style="color:#fff !important;">Press Room</a></h3>
+              <a href="/pressroom/releases.cfm">Press Releases&nbsp;&rsaquo;</a>
+              <a href="/pressroom/presentations.cfm">Presentations&nbsp;&rsaquo;</a>
+              <a href="/pressroom/testimony.cfm">Congressional Testimony&nbsp;&rsaquo;</a>
+              
+            </span>
+          </div>
+      </ul>
+      <ul class="utils2">
+      <div class="global-search">
+        <form method="get" action="http://usasearch.gov/search">
+          <input type="hidden" name="affiliate" value="eia.doe.gov">
+          <input type="hidden" name="v:project" value="firstgov">
+          <label class="accessibility" for="query">Search EIA.gov</label><input id="search-input" class="usagov-search-autocomplete" name="query" type="text" maxlength="256" style="width:150px" value="Search eia.gov"/>
+          <input type="submit" name="search" alt="enter terms to search" class="arrow_go" align="absmiddle" border="0" title="Click to search EIA">
+        </form>
+      </div>
+      <li class="global-a-z"><a href="/tools/a-z/">A-Z Index</a></li>
+      <div class="global_a-z_menu">
+        <span class="global_menu_col11">
+        <h3><a href="/tools/a-z/">A-Z Index</a></h3>
+          <a href="/tools/a-z/index.cfm?id=a">A</a>
+          <a href="/tools/a-z/index.cfm?id=b">B</a>
+          <a href="/tools/a-z/index.cfm?id=c">C</a>
+          <a href="/tools/a-z/index.cfm?id=d">D</a>
+          <a href="/tools/a-z/index.cfm?id=e">E</a>
+          <a href="/tools/a-z/index.cfm?id=f">F</a>
+          <a href="/tools/a-z/index.cfm?id=g">G</a>
+          <a href="/tools/a-z/index.cfm?id=h">H</a>
+          <a href="/tools/a-z/index.cfm?id=i">I</a>
+          <a href="/tools/a-z/index.cfm?id=j">J</a>
+          <a href="/tools/a-z/index.cfm?id=k">K</a>
+          <a href="/tools/a-z/index.cfm?id=l">L</a>
+          <a href="/tools/a-z/index.cfm?id=m">M</a>
+          <a href="/tools/a-z/index.cfm?id=n">N</a>
+          <a href="/tools/a-z/index.cfm?id=o">O</a>
+          <a href="/tools/a-z/index.cfm?id=p">P</a>
+          <a href="/tools/a-z/index.cfm?id=q">Q</a>
+          <a href="/tools/a-z/index.cfm?id=r">R</a>
+          <a href="/tools/a-z/index.cfm?id=s">S</a>
+          <a href="/tools/a-z/index.cfm?id=t">T</a>
+          <a href="/tools/a-z/index.cfm?id=u">U</a>
+          <a href="/tools/a-z/index.cfm?id=v">V</a>
+          <a href="/tools/a-z/index.cfm?id=w">W</a>
+          <a href="/tools/a-z/index.cfm?id=xyz">XYZ</a>
+        </span>
+      </div>
+      </ul>
+    </div>
+
+
+<script>
+	$(function(){
+		$('.dropdown').dd();
+	});
+	
+$(document).ready(function(){
+    $("div.dat_block a").click(function(){
+		 $("table.contable").children("tbody").hide();
+		$("table.contable th").removeClass("active");
+		var sID = this.href.substring(this.href.indexOf("#") + 1);
+		$("[name$='" + sID + "']").click();
+  });
+});	
+</script>
+
+
+<div class="title bg_commercial"> 
+   
+  <a href="../">&#8249; Consumption &amp; Efficiency</a>
+  <h1 style="font-size:27px">
+    Commercial Buildings Energy Consumption Survey (CBECS)
+  </h1>
+</div>
+ 
+
+    
+    <div class="pagecontent mr_temp3"> 
+      
+      <div class="main_col"> 
+        
+
+<h1>CBECS Status</h1>
+<div class="white_box blue_top"><span class="date">April 20, 2012</span>
+  <h2>Last call for 2012 CBECS stakeholder input</h2>
+  <p>We are hard at work reviewing all the great feedback on the 2012 questionnaire that we've received to date. So far, we've heard from: the U.S. Green Building Council, ASHRAE, members of the Real Estate Roundtable (RER) such as Tishman Speyer, Simon Property Group, and Transwestern, the American Institute of Architects (AIA), EPA Energy Star, EPA Office of Water, National Renewable Energy Laboratory (NREL), Consortium for Energy Efficiency, Energy Performance Measurement Institute, San Diego State University, BuildingWise, Lutron Electronics, SRG Partnership, Performance Buildings Systems, Grundfos, National Trust for Historic Preservation, and Center for Environmental Innovation in Roofing. Thank you all for taking the time to review the questionnaire.</p>
+  <p>Please join us on May 15 for an update on the revisions that we've made to the questionnaire so far and a discussion of any last potential updates:</p>
+  <div align="center">
+    <div class="weeklies" align="center"> <span>
+      <h3><strong>Energy Information Administration (EIA) 2012 CBECS Stakeholder Meeting</strong> </h3>
+      <p>Tuesday, May 15th, 1pm-4:30pm<br />
+        U.S. Green Building Council<br />
+        2101 L Street, NW Suite 500 Washington, D.C. 20037<br />
+        Board Room</p>
+      <p><strong>Please RSVP* to <a href="mailto:Joelle.Michaels@eia.gov?subject=CBECS Stakeholder Meeting RSVP">Joelle Michaels</a> by Thursday May 10th</strong><br />
+        Agenda and slides will be distributed to all RSVPs by Friday, May 11th </p>
+      <p>*For those who are not able to participate in person we will provide webcast and call-in information</p>
+      </span> </div>
+  </div>
+</div>
+&nbsp;
+<div class="white_box blue_top" ><span class="date">March 30, 2012</span>
+  <h2>CBECS is back, and we want your input! </h2>
+  <p>We have created this CBECS section to provide updates on the survey progress.</p>
+  <p>After a budget delay in 2011, CBECS will now be conducted for reference year 2012. Data collection will begin in April 2013, with the first data releases expected in Spring 2014.Our main focus now is collaborating with our stakeholders to develop the CBECS questionnaire (referred to as the "Final survey instrument" in the graphic below). Each survey cycle we make changes to keep the survey relevant, and we welcome your input. You can submit feedback to EIA in these ways:</p>
+  &nbsp;
+  <ul>
+    <li>Responding to our <a href="http://www.gpo.gov/fdsys/pkg/FR-2012-03-28/pdf/2012-7424.pdf" class="ico_pdf_right" target="_new"s>Federal Register Notice</a></li>
+    <li>Contacting the CBECS Survey Manager, <a href="mailto:joelle.michaels@eia.gov">Joelle Michaels</a>.</li>
+  </ul>
+  <p>We will post updates on the progress of the 2012 CBECS according to the timeline below.</p>
+  &nbsp; <img src="images/cbecs-timeline0312.png" /> 
+   
+</div>
+&nbsp;
+<div class="white_box blue_top"><span class="date">January 11, 2012</span> <h2 class="toggle">CBECS funded for 2012 collection
+  </h2>
+  <div class="more">
+  <p>Following the suspension of the 2011 Commercial Buildings Energy Consumption Survey (CBECS) given insurmountable funding constraints in FY 2011, EIA has resumed preparations to conduct the next Commercial Buildings Energy Consumption Survey (CBECS). EIA plans to field the survey in April 2013, collecting data for reference year 2012. EIA expects to publish the first results of the survey in the first half of FY 2014. EIA is now working with stakeholders to develop the survey instrument. EIA will provide regular project status reports to the public throughout the course of the project.</p>
+  <p>EIA previously reported that the CBECS 2007 data do not meet EIA standards for quality, credible energy information. As a result, EIA will not publish complete data tables from CBECS 2007 or release a public use file. EIA's status reports for CBECS 2012 will report on risk mitigation strategies undertaken to assure the delivery of CBECS 2012 data.</p>
+  <p>For further information, please contact <a href="mailto:joelle.michaels@eia.gov">Joelle Michaels</a>, CBECS Survey Manager, or by phone at 202-586-8952; or <a href="mailto:thomas.leckey@eia.gov">Tom Leckey</a>.</p>
+  </div> 
+</div>
+
+      </div>
+       
+      
+      <div class="side_col right">
+        
+<span class="grey_side blue_top side_list_nocolumn">
+  <h4>Data Tables</h4>
+  <p>Building Characteristics<br />
+     <a href="/emeu/cbecs/cbecs2003/detailed_tables_2003/detailed_tables_2003.html">2003</a> |
+     <a href="/emeu/cbecs/detailed_tables_1999.html">1999</a> |
+     <a href="/emeu/cbecs/detailed_tables_1995.html">1995</a> |
+     <a href="/emeu/cbecs/detailed_tables_1992.html">1992</a></p>
+  <p>Consumption and Expenditures<br />
+     <a href="/emeu/cbecs/cbecs2003/detailed_tables_2003/detailed_tables_2003.html#consumexpen03">2003</a> |
+     <a href="/emeu/cbecs/detailed_tables_1999.html#ce">1999</a> |
+     <a href="/emeu/cbecs/detailed_tables_1995.html#ce">1995</a> |
+     <a href="/emeu/cbecs/detailed_tables_1992.html">1992</a></p>
+  <p>End-Use Consumption<br />
+     <a href="/emeu/cbecs/cbecs2003/detailed_tables_2003/detailed_tables_2003.html#enduse03">2003</a> |
+     <a href="/emeu/cbecs/cbec-eu1.html">1995</a> |
+     <a href="/emeu/cbecs/detailed_tables_1992.html">1992</a></p>
+  <p class="no-border">Public Use Microdata<br />
+     <a href="/emeu/cbecs/cbecs2003/public_use_2003/cbecs_pudata2003.html">2003</a> |
+     <a href="/emeu/cbecs/1999publicuse/99microdat.html">1999</a> |
+     <a href="/emeu/cbecs/microdat.html">1995</a> |
+     <a href="/emeu/cbecs/92microdat.html">1992</a><br />
+     <a href="/emeu/cbecs/pubuse89/cbecs_pudata1989.html">1989</a> |
+     <a href="/emeu/cbecs/pubuse86/cbecs_pudata1986.html">1986</a> |
+     <a href="/consumption/commercial/data/1983/cbecs_pudata1983.html">1983</a> |
+     <a href="/consumption/commercial/data/1979/cbecs_pudata1979.html">1979</a></p>
+</span> 
+<span class="blue_side">
+    <h4 class="q_side"><a href="/EMEU/cbecs/faq.html#q1">What do you mean by "commercial" building?</a></h4>
+    <p><a href="/EMEU/cbecs/faq.html">See all CBECS FAQs ></a></p>
+  </span> 
+<style>
+.ajdustment1 li {line-height:16px;padding-bottom:7px;}
+</style>
+<span class="grey_side blue_top side_list_nocolumn">
+  <h4>Methodology</h4>
+  <ul class="ajdustment1">
+    <li><a href="/consumption/NAS.cfm">Assessment of EIA's Building Consumption Data</a></li>
+    <li>Survey Methods<br />
+        <a href="/emeu/cbecs/2003sample.html">2003</a> |
+        <a href="/emeu/cbecs/1999sample.htm">1999</a> |
+        <a href="/emeu/cbecs/detailed_tables_1995.html#tech">1995</a></li>
+    <li><a href="/emeu/cbecs/building_types.html">Building Types Definitions</a></li>
+    <li><a href="/emeu/cbecs/forms.html">Data Collection Forms</a></li>
+    <li><a href="/emeu/cbecs/cbecs2003/background.html">Survey Background and Technical Information</a></li>
+    <li><a href="/emeu/cbecs/comparesampdesign.html">Comparison Between Years</a></li>
+    <li><a href="/emeu/cbecs/glossary_1.html">Glossary</a></li>
+    <li><a href="/emeu/cbecs/census_maps.html">Census Map</a></li>
+    <li><a href="/emeu/cbecs/climate_zones.html">U.S. Climate Zones</a></li>
+  </ul>
+</span>
+<span class="grey_side blue_top side_list_nocolumn">
+  <h4>Special Topics</h4>
+  <ul class="ajdustment1">
+    <li><a href="/emeu/cbecs/cbecs2003/officereport/office1.html">Office Buildings (2003)</a></li>
+    <li><a href="/emeu/cbecs/cbecs2003/lighting/lighting1.html">Lighting in Commercial Buildings (2003)</a></li>
+    <li><a href="/emeu/cbecs/cbecs2003/overview1.html">Overview of Commercial Buildings, 2003</a></li>
+    <li><a href="/emeu/cbecs/pba99/intro.html">A Look at Principal Building Activities</a></li>
+    <li><a href="/emeu/cbecs/char99/intro.html">1999 Building Characteristics Overview</a></li>
+    <li><a href="/emeu/consumptionbriefs/cbecs/cbecs_trends/main_menu.html">Trends in the Commercial Buildings Sector </a></li>
+    <li><a href="/emeu/cbecs/pc_copier/pccopier99.html">Computers and Photocopiers in Commercial Buildings</a></li>
+    <li><a href="/emeu/cbecs/cbecsreports.html">Additional reports</a></li>
+  </ul>
+</span>
+<span class="grey_side blue_top side_list_nocolumn">
+  <h4>Archived Publications</h4>
+  <ul class="ajdustment1">
+    <li><a href="/emeu/cbecs/archive/arch_hist_pubs/cbecs_pubs.html">Historical Publications</a></li>
+    <li><a href="/emeu/cbecs/report_1995.html">A Look at Commercial Buildings in 1995</a></li>
+    <li><a href="/emeu/cbecs/cbecs1a.html">1992 Buildings Characteristics </a></li>
+    <li><a href="/emeu/cbecs/cbecs1b.html">1992 Consumption and Expenditures </a></li>
+    <li><a href="/emeu/cbecs/cbecs1f.html">Buildings and Energy in the 1980's </a></li>
+    <li><a href="/emeu/cbecs/cbecs1e.html">Lighting in Commercial Buildings (1986)</a></li>
+  </ul>
+</span>
+
+        <span class="grey_side blue_top">
+            <h4>Other End Use Surveys</h4>
+            <p><a href="/consumption/residential/">Residential Buildings - RECS</a></p>
+            <p><a href="/emeu/mecs/contents.html">Manufacturing - MECS</a>
+      <p class="no-border"><a href="/emeu/rtecs/contents.html">Transportation</a></p>
+      </span>
+
+      </div>
+       
+    </div>
+    
+    
+    <div id="footer">
+    <a name="btm"></a>
+      <div class="clear">
+      
+        <div id="rs_home"></div>
+        
+      <div class="rs_comments">
+        <form>
+        <p><b>Thank You.</b> We welcome your comments or suggestions <i>(optional)</i>. <a id="closer" style="cursor:pointer;"></a><br />
+            <textarea name="comments" id="comments" style="height:100px;"></textarea><br />
+            <input type="submit" name="submit" alt="submit comments" class="submit_com" align="absmiddle" border="0" title="Submit comments">
+        </p>
+        </form>
+      </div>
+	  
+      </div>
+      <div id="addbar">
+      <a href="/"><h2 class="right">EIA - 1000 Independence Avenue, SW, Washington, DC 20585</h2></a>
+        <h3><a href="/about/">About EIA</a></h3>
+        <h3><a href="/pressroom/">Press Room</a></h3>
+        <h3><a href="/about/careers/">Careers</a></h3>
+        <h3><a href="/about/feedback/">Feedback</a></h3>
+        <h3><a href="/about/contact/">Contact Us</a></h3>
+      </div>
+      <div id="quicklinks">
+        
+        <p><b>Sources & Uses</b><br />
+           <a href="/petroleum/">Petroleum</a><br />
+           <a href="/coal/">Coal</a><br />
+           <a href="/naturalgas/">Natural Gas</a><br />
+           <a href="/renewable/">Renewable</a><br />
+           <a href="/nuclear/">Nuclear</a><br />
+           <a href="/electricity/">Electricity</a><br />
+           <a href="/consumption/">Consumption</a><br />
+           <a href="/totalenergy/">Total Energy</a></p>
+        <p><b>Topics</b><br />
+           <a href="/analysis/">Analysis & Projections</a><br />
+           <a href="/environment">Environment</a><br />
+           <a href="/finance/">Markets & Finance</a><br />
+           <a href="/todayinenergy/">Today in Energy</a></p>
+        <p><b>Geography</b><br />
+           <a href="/state/">States</a><br />
+           <a href="/countries/">Countries</a><br />
+           <a href="/maps/">Maps</a><br />
+        <p><b>Tools</b><br />
+           <a href="/tools/a-z/">A-Z Index</a><br />
+           <a href="/reports/">All Reports<br />& Publications</a><br />
+           <a href="/survey/">EIA Survey Forms</a></p>
+        <p><b>Policies</b><br />
+           <a href="/about/privacy_security_policy.cfm">Privacy/Security</a><br />
+           <a href="/about/copyrights_reuse.cfm">Copyright & Reuse</a><br />
+           <a href="/about/accessability.cfm">Accessibility</a></p>
+        <p><b>Related Sites</b><br />
+           <a href="http://www.energy.gov/">U.S. Department of Energy</a><br />
+           <a href="http://www.usa.gov/">USA.gov</a><br />
+           <a href="http://www.fedstats.gov/">FedStats</a></p>
+        <p><b>Stay Connected</b><br />
+           <a href="http://twitter.com/eiagov/" class="ico_twitter ft_icon_pad">Twitter</a><br />
+           <a href="/tools/emailupdates/" class="ico_email ft_icon_pad">Email Updates</a><br />
+           <a href="/tools/rssfeeds/" class="ico_rss ft_icon_pad">RSS Feeds</a></p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+<script>
+jQuery(document).ready(function(){
+	$('.toggle')
+				.css({'cursor':'pointer', 'color':'#189bd7',})
+        .attr('title','Click to expand/collapse')
+				.click(function () {
+					if ($(this).next('.more').is(':hidden')) {
+						$(this).next('.more').slideDown('fast');
+						//$(this).children('div').append('-');
+						} 
+					else {
+						$(this).next('.more').slideUp('fast');
+						//$(this).children('div').append('+');
+						}
+					});
+	$('.comments').css({'background-color':'#e8ecf2', 'padding':'10px'})
+				});
+</script>
+</html>
