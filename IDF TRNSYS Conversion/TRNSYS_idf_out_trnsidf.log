@@ -1,0 +1,34 @@
+************************************************************
+** TRNSIDF Version 1.50 
+** Working directory: D:\GIT\energyDB\IDF TRNSYS Conversion 
+************************************************************
+** Reading IDF file: D:\GIT\energyDB\IDF TRNSYS Conversion\TRNSYS_idf_out.idf
+** Closing IDF file: D:\GIT\energyDB\IDF TRNSYS Conversion\TRNSYS_idf_out.idf
+************************************************************
+** Reading presorted IDF file: D:\GIT\energyDB\IDF TRNSYS Conversion\TRNSYS_idf_out_b17.idf
+** Closing IDF file: D:\GIT\energyDB\IDF TRNSYS Conversion\TRNSYS_idf_out_b17.idf
+************************************************************
+** Calculation of geometry information start
+Surface : Normal vector : Orientation : Area
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+     0        done           done       done
+** Calculation of geometry information end
+************************************************************
+** Writing B17 file: D:\GIT\energyDB\IDF TRNSYS Conversion\TRNSYS_idf_out.b17
+** Reading BUI template: NewBuiTemplate.b17
+************************************************************
+** New orientations (set to internal radiation calculation): S_0_90
+************************************************************
+** Closing BUI template: NewBuiTemplate.b17
+** Closing B17 File: D:\GIT\energyDB\IDF TRNSYS Conversion\TRNSYS_idf_out.b17
