@@ -1,0 +1,59 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,
+    *,                       !- Key Value
+    Outdoor Dry Bulb,        !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Outdoor Air Drybulb Temperature,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Outdoor Air Dewpoint Temperature,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Wind Speed,         !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Wind Direction,     !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Direct Solar Radiation Rate per Area,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Diffuse Solar Radiation Rate per Area,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Solar Azimuth Angle,!- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Solar Altitude Angle,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Outdoor Air Barometric Pressure,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+

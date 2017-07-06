@@ -1,0 +1,77 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: COOLINGTOWER:TWOSPEED ===========
+
+CoolingTower:TwoSpeed,
+    Cooling Tower,           !- Name
+    Cooling Tower Inlet Node,!- Water Inlet Node Name
+    Cooling Tower Outlet Node,  !- Water Outlet Node Name
+    autosize,                !- Design Water Flow Rate {m3/s}
+    autosize,                !- Air Flow Rate at High Fan Speed {m3/s}
+    autosize,                !- Fan Power at High Fan Speed {W}
+    autosize,                !- U-Factor Times Area Value at High Fan Speed {W/K}
+    autosize,                !- Air Flow Rate at Low Fan Speed {m3/s}
+    autosize,                !- Fan Power at Low Fan Speed {W}
+    autosize,                !- U-Factor Times Area Value at Low Fan Speed {W/K}
+    autosize,                !- Air Flow Rate in Free Convection Regime {m3/s}
+    autosize,                !- U-Factor Times Area Value at Free Convection Air Flow Rate {W/K}
+    UFactorTimesAreaAndDesignWaterFlowRate,  !- Performance Input Method
+    100000,                  !- High Speed Nominal Capacity {W}
+    5000,                    !- Low Speed Nominal Capacity {W}
+    10000,                   !- Free Convection Capacity {W}
+    0,                       !- Basin Heater Capacity {W/K}
+    2,                       !- Basin Heater Setpoint Temperature {C}
+    ,                        !- Basin Heater Operating Schedule Name
+    ,                        !- Evaporation Loss Mode
+    0.2,                     !- Evaporation Loss Factor {percent/K}
+    0.008,                   !- Drift Loss Percent {percent}
+    ,                        !- Blowdown Calculation Mode
+    3,                       !- Blowdown Concentration Ratio
+    ,                        !- Blowdown Makeup Water Usage Schedule Name
+    ,                        !- Supply Water Storage Tank Name
+    ,                        !- Outdoor Air Inlet Node Name
+    1,                       !- Number of Cells
+    MinimalCell,             !- Cell Control
+    0.33,                    !- Cell Minimum  Water Flow Rate Fraction
+    2.5,                     !- Cell Maximum Water Flow Rate Fraction
+    1;                       !- Sizing Factor
+
+CoolingTower:TwoSpeed,
+    Cooling Tower/1,         !- Name
+    Cooling Tower/1 Inlet Node,  !- Water Inlet Node Name
+    Cooling Tower/1 Outlet Node,  !- Water Outlet Node Name
+    autosize,                !- Design Water Flow Rate {m3/s}
+    autosize,                !- Air Flow Rate at High Fan Speed {m3/s}
+    autosize,                !- Fan Power at High Fan Speed {W}
+    autosize,                !- U-Factor Times Area Value at High Fan Speed {W/K}
+    autosize,                !- Air Flow Rate at Low Fan Speed {m3/s}
+    autosize,                !- Fan Power at Low Fan Speed {W}
+    autosize,                !- U-Factor Times Area Value at Low Fan Speed {W/K}
+    autosize,                !- Air Flow Rate in Free Convection Regime {m3/s}
+    autosize,                !- U-Factor Times Area Value at Free Convection Air Flow Rate {W/K}
+    UFactorTimesAreaAndDesignWaterFlowRate,  !- Performance Input Method
+    100000,                  !- High Speed Nominal Capacity {W}
+    5000,                    !- Low Speed Nominal Capacity {W}
+    10000,                   !- Free Convection Capacity {W}
+    0,                       !- Basin Heater Capacity {W/K}
+    2,                       !- Basin Heater Setpoint Temperature {C}
+    ,                        !- Basin Heater Operating Schedule Name
+    ,                        !- Evaporation Loss Mode
+    0.2,                     !- Evaporation Loss Factor {percent/K}
+    0.008,                   !- Drift Loss Percent {percent}
+    ,                        !- Blowdown Calculation Mode
+    3,                       !- Blowdown Concentration Ratio
+    ,                        !- Blowdown Makeup Water Usage Schedule Name
+    ,                        !- Supply Water Storage Tank Name
+    ,                        !- Outdoor Air Inlet Node Name
+    1,                       !- Number of Cells
+    MinimalCell,             !- Cell Control
+    0.33,                    !- Cell Minimum  Water Flow Rate Fraction
+    2.5,                     !- Cell Maximum Water Flow Rate Fraction
+    1;                       !- Sizing Factor
+

@@ -1,0 +1,62 @@
+!-Generator IDFEditor 1.41
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    Hot water demand schedule MJ,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 6/30,           !- Field 1
+    For: Weekdays SummerDesignDay,  !- Field 2
+    Until: 08:00,            !- Field 3
+    0,                       !- Field 4
+    Until: 16:00,            !- Field 5
+    0.35,                    !- Field 6
+    Until: 21:00,            !- Field 7
+    0.95,                    !- Field 8
+    Until: 24:00,            !- Field 9
+    0,                       !- Field 10
+    For: AllOtherDays,       !- Field 11
+    Until: 24:00,            !- Field 12
+    0,                       !- Field 13
+    Through: 9/1,            !- Field 14
+    For: Weekdays SummerDesignDay,  !- Field 15
+    Until: 08:00,            !- Field 16
+    0,                       !- Field 17
+    Until: 16:00,            !- Field 18
+    0.35,                    !- Field 19
+    Until: 21:00,            !- Field 20
+    0.35,                    !- Field 21
+    Until: 24:00,            !- Field 22
+    0,                       !- Field 23
+    For: AllOtherDays,       !- Field 24
+    Until: 24:00,            !- Field 25
+    0,                       !- Field 26
+    Through: 12/31,          !- Field 27
+    For: Weekdays SummerDesignDay,  !- Field 28
+    Until: 08:00,            !- Field 29
+    0,                       !- Field 30
+    Until: 16:00,            !- Field 31
+    0.35,                    !- Field 32
+    Until: 21:00,            !- Field 33
+    0.95,                    !- Field 34
+    Until: 24:00,            !- Field 35
+    0,                       !- Field 36
+    For: AllOtherDays,       !- Field 37
+    Until: 24:00,            !- Field 38
+    0;                       !- Field 39
+
+
+!-   ===========  ALL OBJECTS IN CLASS: EXTERIOR:FUELEQUIPMENT ===========
+
+Exterior:FuelEquipment,
+    Hot water calorifiers,   !- Name
+    Electricity,             !- Fuel Use Type
+    Hot water demand schedule MJ,  !- Schedule Name
+    10000,                   !- Design Level {W}
+    General;                 !- End-Use Subcategory
+

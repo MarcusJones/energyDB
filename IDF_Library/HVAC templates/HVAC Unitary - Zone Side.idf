@@ -1,0 +1,26 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:ZONE:UNITARY ===========
+
+HVACTemplate:Zone:Unitary,
+    ZoneName,                !- Zone Name
+    ,                        !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+

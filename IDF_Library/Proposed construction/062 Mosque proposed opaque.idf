@@ -1,0 +1,122 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: MATERIAL ===========
+
+Material,
+    Wall Mass,               !- Name
+    MediumSmooth,            !- Roughness
+    0.3,                     !- Thickness {m}
+    0.5,                     !- Conductivity {W/m-K}
+    1920,                    !- Density {kg/m3}
+    790,                     !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material,
+    Floor Mass,              !- Name
+    MediumSmooth,            !- Roughness
+    0.3,                     !- Thickness {m}
+    0.53,                    !- Conductivity {W/m-K}
+    1920,                    !- Density {kg/m3}
+    790,                     !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material,
+    Roof Mass,               !- Name
+    MediumSmooth,            !- Roughness
+    0.3,                     !- Thickness {m}
+    0.53,                    !- Conductivity {W/m-K}
+    1920,                    !- Density {kg/m3}
+    790,                     !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+
+!-   ===========  ALL OBJECTS IN CLASS: MATERIAL:NOMASS ===========
+
+Material:NoMass,
+    Wall Insul,              !- Name
+    MediumSmooth,            !- Roughness
+    2.322,                   !- Thermal Resistance {m2-K/W}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material:NoMass,
+    Roof Insul,              !- Name
+    MediumSmooth,            !- Roughness
+    2.799,                   !- Thermal Resistance {m2-K/W}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material:NoMass,
+    Floor Insul,             !- Name
+    MediumSmooth,            !- Roughness
+    0.191,                   !- Thermal Resistance {m2-K/W}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+
+!-   ===========  ALL OBJECTS IN CLASS: MATERIAL:INFRAREDTRANSPARENT ===========
+
+Material:InfraredTransparent,
+    Air Wall Material;       !- Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CONSTRUCTION ===========
+
+Construction,
+    Interior Floor,      !- Name
+    Floor Mass;              !- Outside Layer
+
+Construction,
+    Exterior Floor,      !- Name
+    Floor Mass,              !- Outside Layer
+    Floor Insul;             !- Layer 2
+
+Construction,
+    Exterior Roof,       !- Name
+    Roof Mass,               !- Outside Layer
+    Roof Insul;             !- Layer 2
+
+Construction,
+    Interior Wall,       !- Name
+    Wall Mass;               !- Outside Layer
+
+Construction,
+    Exterior Door,       !- Name
+    Wall Mass,               !- Outside Layer
+    Wall Insul;              !- Layer 2
+
+Construction,
+    Air Wall,            !- Name
+    Air Wall Material;       !- Outside Layer
+
+Construction,
+    Interior Partition,  !- Name
+    Wall Mass;               !- Outside Layer
+
+Construction,
+    Interior Door,       !- Name
+    Wall Mass;               !- Outside Layer
+
+Construction,
+    Interior Ceiling,    !- Name
+    Floor Mass;              !- Outside Layer
+
+Construction,
+    Exterior Wall,       !- Name
+    Wall Mass,               !- Outside Layer
+    Wall Insul;              !- Layer 2
+

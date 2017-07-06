@@ -1,0 +1,259 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    Mosque General Schedule, !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 0:00,             !- Field 3
+    0.00,                    !- Field 4
+    Until: 02:00,            !- Field 5
+    0.00,                    !- Field 6
+    Until: 03:00 ,           !- Field 7
+    0.00,                    !- Field 8
+    Until: 04:00,            !- Field 9
+    0.00,                    !- Field 10
+    Until: 05:00,            !- Field 11
+    0.00,                    !- Field 12
+    Until: 06:00,            !- Field 13
+    0.00,                    !- Field 14
+    Until: 07:00,            !- Field 15
+    0.0,                     !- Field 16
+    Until: 08:00,            !- Field 17
+    0.30,                    !- Field 18
+    Until: 09:00,            !- Field 19
+    0.30,                    !- Field 20
+    Until: 10:00,            !- Field 21
+    0.30,                    !- Field 22
+    Until: 11:00,            !- Field 23
+    0.30,                    !- Field 24
+    Until: 12:00,            !- Field 25
+    0.30,                    !- Field 26
+    Until: 13:00,            !- Field 27
+    0.30,                    !- Field 28
+    Until: 14:00,            !- Field 29
+    0.30,                    !- Field 30
+    Until: 15:00,            !- Field 31
+    0.30,                    !- Field 32
+    Until: 16:00,            !- Field 33
+    0.0,                     !- Field 34
+    Until: 17:00,            !- Field 35
+    0.0,                     !- Field 36
+    Until: 18:00,            !- Field 37
+    0.0,                     !- Field 38
+    Until: 19:00,            !- Field 39
+    0.0,                     !- Field 40
+    Until: 20:00,            !- Field 41
+    0.0,                     !- Field 42
+    Until: 21:00,            !- Field 43
+    0.0,                     !- Field 44
+    Until: 22:00,            !- Field 45
+    0.00,                    !- Field 46
+    Until: 23:00,            !- Field 47
+    0.00,                    !- Field 48
+    Until: 24:00,            !- Field 49
+    0.00,                    !- Field 50
+    For: Weekends,           !- Field 51
+    Until: 0:00 ,            !- Field 52
+    0.00,                    !- Field 53
+    Until: 02:00 ,           !- Field 54
+    0.00,                    !- Field 55
+    Until: 03:00 ,           !- Field 56
+    0.00,                    !- Field 57
+    Until: 04:00,            !- Field 58
+    0.00,                    !- Field 59
+    Until: 05:00,            !- Field 60
+    0.00,                    !- Field 61
+    Until: 06:00,            !- Field 62
+    0.00,                    !- Field 63
+    Until: 07:00,            !- Field 64
+    0.30,                    !- Field 65
+    Until: 08:00,            !- Field 66
+    0.75,                    !- Field 67
+    Until: 09:00,            !- Field 68
+    0.75,                    !- Field 69
+    Until: 10:00,            !- Field 70
+    0.75,                    !- Field 71
+    Until: 11:00,            !- Field 72
+    0.75,                    !- Field 73
+    Until: 12:00,            !- Field 74
+    0.75,                    !- Field 75
+    Until: 13:00,            !- Field 76
+    0.75,                    !- Field 77
+    Until: 14:00,            !- Field 78
+    0.75,                    !- Field 79
+    Until: 15:00,            !- Field 80
+    0.75,                    !- Field 81
+    Until: 16:00,            !- Field 82
+    0.75,                    !- Field 83
+    Until: 17:00,            !- Field 84
+    0.75,                    !- Field 85
+    Until: 18:00,            !- Field 86
+    0.30,                    !- Field 87
+    Until: 19:00,            !- Field 88
+    0.30,                    !- Field 89
+    Until: 20:00,            !- Field 90
+    0.30,                    !- Field 91
+    Until: 21:00,            !- Field 92
+    0.30,                    !- Field 93
+    Until: 22:00,            !- Field 94
+    0.00,                    !- Field 95
+    Until: 23:00,            !- Field 96
+    0.00,                    !- Field 97
+    Until: 24:00,            !- Field 98
+    0.00,                    !- Field 99
+    For: Holiday,            !- Field 100
+    Until: 0:00 ,            !- Field 101
+    0.00,                    !- Field 102
+    Until: 02:00 ,           !- Field 103
+    0.00,                    !- Field 104
+    Until: 03:00 ,           !- Field 105
+    0.00,                    !- Field 106
+    Until: 04:00,            !- Field 107
+    0.00,                    !- Field 108
+    Until: 05:00,            !- Field 109
+    0.00,                    !- Field 110
+    Until: 06:00,            !- Field 111
+    0.00,                    !- Field 112
+    Until: 07:00,            !- Field 113
+    0.30,                    !- Field 114
+    Until: 08:00,            !- Field 115
+    0.75,                    !- Field 116
+    Until: 09:00,            !- Field 117
+    0.75,                    !- Field 118
+    Until: 10:00,            !- Field 119
+    0.75,                    !- Field 120
+    Until: 11:00,            !- Field 121
+    0.75,                    !- Field 122
+    Until: 12:00,            !- Field 123
+    0.75,                    !- Field 124
+    Until: 13:00,            !- Field 125
+    0.75,                    !- Field 126
+    Until: 14:00,            !- Field 127
+    0.75,                    !- Field 128
+    Until: 15:00,            !- Field 129
+    0.75,                    !- Field 130
+    Until: 16:00,            !- Field 131
+    0.75,                    !- Field 132
+    Until: 17:00,            !- Field 133
+    0.75,                    !- Field 134
+    Until: 18:00,            !- Field 135
+    0.30,                    !- Field 136
+    Until: 19:00,            !- Field 137
+    0.30,                    !- Field 138
+    Until: 20:00,            !- Field 139
+    0.30,                    !- Field 140
+    Until: 21:00,            !- Field 141
+    0.30,                    !- Field 142
+    Until: 22:00,            !- Field 143
+    0.00,                    !- Field 144
+    Until: 23:00,            !- Field 145
+    0.00,                    !- Field 146
+    Until: 24:00,            !- Field 147
+    0.00,                    !- Field 148
+    For: SummerDesignDay,    !- Field 149
+    Until: 0:00 ,            !- Field 150
+    0.00,                    !- A153
+    Until: 02:00 ,           !- A154
+    0.00,                    !- A155
+    Until: 03:00 ,           !- A156
+    0.00,                    !- A157
+    Until: 04:00,            !- A158
+    0.00,                    !- A159
+    Until: 05:00,            !- A160
+    0.00,                    !- A161
+    Until: 06:00,            !- A162
+    0.00,                    !- A163
+    Until: 07:00,            !- A164
+    0.30,                    !- A165
+    Until: 08:00,            !- A166
+    0.75,                    !- A167
+    Until: 09:00,            !- A168
+    0.75,                    !- A169
+    Until: 10:00,            !- A170
+    0.75,                    !- A171
+    Until: 11:00,            !- A172
+    0.75,                    !- A173
+    Until: 12:00,            !- A174
+    0.75,                    !- A175
+    Until: 13:00,            !- A176
+    0.75,                    !- A177
+    Until: 14:00,            !- A178
+    0.75,                    !- A179
+    Until: 15:00,            !- A180
+    0.75,                    !- A181
+    Until: 16:00,            !- A182
+    0.75,                    !- A183
+    Until: 17:00,            !- A184
+    0.75,                    !- A185
+    Until: 18:00,            !- A186
+    0.30,                    !- A187
+    Until: 19:00,            !- A188
+    0.30,                    !- A189
+    Until: 20:00,            !- A190
+    0.30,                    !- A191
+    Until: 21:00,            !- A192
+    0.30,                    !- A193
+    Until: 22:00,            !- A194
+    0.00,                    !- A195
+    Until: 23:00,            !- A196
+    0.00,                    !- A197
+    Until: 24:00,            !- A198
+    0.00,                    !- A199
+    For: WinterDesignDay,    !- A200
+    Until: 0:00 ,            !- A201
+    0.00,                    !- A202
+    Until: 02:00 ,           !- A203
+    0.00,                    !- A204
+    Until: 03:00 ,           !- A205
+    0.00,                    !- A206
+    Until: 04:00,            !- A207
+    0.00,                    !- A208
+    Until: 05:00,            !- A209
+    0.00,                    !- A210
+    Until: 06:00,            !- A211
+    0.00,                    !- A212
+    Until: 07:00,            !- A213
+    0.30,                    !- A214
+    Until: 08:00,            !- A215
+    0.75,                    !- A216
+    Until: 09:00,            !- A217
+    0.75,                    !- A218
+    Until: 10:00,            !- A219
+    0.75,                    !- A220
+    Until: 11:00,            !- A221
+    0.75,                    !- A222
+    Until: 12:00,            !- A223
+    0.75,                    !- A224
+    Until: 13:00,            !- A225
+    0.75,                    !- A226
+    Until: 14:00,            !- A227
+    0.75,                    !- A228
+    Until: 15:00,            !- A229
+    0.75,                    !- A230
+    Until: 16:00,            !- A231
+    0.75,                    !- A232
+    Until: 17:00,            !- A233
+    0.75,                    !- A234
+    Until: 18:00,            !- A235
+    0.30,                    !- A236
+    Until: 19:00,            !- A237
+    0.30,                    !- A238
+    Until: 20:00,            !- A239
+    0.30,                    !- A240
+    Until: 21:00,            !- A241
+    0.30,                    !- A242
+    Until: 22:00,            !- A243
+    0.00,                    !- A244
+    Until: 23:00,            !- A245
+    0.00,                    !- A246
+    Until: 24:00,            !- A247
+    0.00;                    !- A248
+

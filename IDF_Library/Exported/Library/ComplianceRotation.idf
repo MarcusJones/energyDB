@@ -1,0 +1,121 @@
+Parametric:FileNameSuffix,
+	Names,
+	G000,
+	G090,
+	G180,
+	G270;
+
+Parametric:SetValueForRun,
+	$appGAngle, !- Parameter Name
+	0.0, !- Value 1
+	90.0, !- Value 2
+	180.0, !- Value 3
+	270.0; !- Value 4
+
+Compliance:Building,
+	=$appGAngle; !- Building Rotation for Appendix G {deg}
+	
+Parametric:RunControl,
+    RunAll,                  !- Name
+    Yes,                     !- Perform run 1
+    Yes,                     !- Perform run 2
+    Yes,                     !- Perform run 3
+    Yes,                     !- Perform run 4
+    No,                     !- Perform run 5
+    No,                     !- Perform run 6
+    No,                     !- Perform run 7
+    No,                     !- Perform run 8
+    No,                     !- Perform run 9
+    No,                     !- Perform run 10
+    No,                     !- Perform run 11
+    No,                     !- Perform run 12
+    No,                     !- Perform run 13
+    No,                     !- Perform run 14
+    No,                     !- Perform run 15
+    No,                     !- Perform run 16
+    No,                     !- Perform run 17
+    No,                     !- Perform run 18
+    No,                     !- Perform run 19
+    No,                     !- Perform run 20
+    No,                     !- Perform run 21
+    No,                     !- Perform run 22
+    No,                     !- Perform run 23
+    No,                     !- Perform run 24
+    No,                     !- Perform run 25
+    No,                     !- Perform run 26
+    No,                     !- Perform run 27
+    No,                     !- Perform run 28
+    No,                     !- Perform run 29
+    No,                     !- Perform run 30
+    No,                     !- Perform run 31
+    No,                     !- Perform run 32
+    No,                     !- Perform run 33
+    No,                     !- Perform run 34
+    No,                     !- Perform run 35
+    No,                     !- Perform run 36
+    No,                     !- Perform run 37
+    No,                        !- Perform run 38
+    No,                     !- Perform run 39
+    No,                     !- Perform run 40
+    No,                     !- Perform run 41
+    No,                     !- Perform run 42
+    No,                     !- Perform run 43
+    No,                     !- Perform run 44
+    No,                     !- Perform run 45
+    No,                     !- Perform run 46
+    No,                     !- Perform run 47
+    No,                     !- Perform run 48
+    No,                     !- Perform run 49
+    No,                     !- Perform run 50
+    No,                     !- Perform run 51
+    No,                     !- Perform run 52
+    No,                     !- Perform run 53
+    No,                     !- Perform run 54
+    No,                     !- Perform run 55
+    No,                     !- Perform run 56
+    No,                     !- Perform run 57
+    No,                     !- Perform run 58
+    No,                     !- Perform run 59
+    No,                     !- Perform run 60
+    No,                     !- Perform run 61
+    No,                     !- Perform run 62
+    No,                     !- Perform run 63
+    No,                     !- Perform run 64
+    No,                     !- Perform run 65
+    No,                     !- Perform run 66
+    No,                     !- Perform run 67
+    No,                     !- Perform run 68
+    No,                     !- Perform run 69
+    No,                     !- Perform run 70
+    No,                     !- Perform run 71
+    No,                     !- Perform run 72
+    No,                     !- Perform run 73
+    No,                     !- Perform run 74
+    No,                     !- Perform run 75
+    No,                     !- Perform run 76
+    No,                     !- Perform run 77
+    No,                     !- Perform run 78
+    No,                     !- Perform run 79
+    No,                     !- Perform run 80
+    No,                     !- Perform run 81
+    No,                     !- Perform run 82
+    No,                     !- Perform run 83
+    No,                     !- Perform run 84
+    No,                     !- Perform run 85
+    No,                     !- Perform run 86
+    No,                     !- Perform run 87
+    No,                     !- Perform run 88
+    No,                     !- Perform run 89
+    No,                     !- Perform run 90
+    No,                     !- Perform run 91
+    No,                     !- Perform run 92
+    No,                     !- Perform run 93
+    No,                     !- Perform run 94
+    No,                     !- Perform run 95
+    No,                     !- Perform run 96
+    No,                     !- Perform run 97
+    No,                     !- Perform run 98
+    No,                     !- Perform run 99
+    No;                     !- Perform run 100
+
+	

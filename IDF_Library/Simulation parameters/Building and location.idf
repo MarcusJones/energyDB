@@ -1,0 +1,28 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: BUILDING ===========
+
+Building,
+    Untitled,                !- Name
+    22,                      !- North Axis {deg}
+    CITY,                    !- Terrain
+    0.040000000000000001,    !- Loads Convergence Tolerance Value
+    0.40000000000000002,     !- Temperature Convergence Tolerance Value {deltaC}
+    FULLINTERIORANDEXTERIOR, !- Solar Distribution
+    25;                      !- Maximum Number of Warmup Days
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:LOCATION ===========
+
+Site:Location,
+    ABU DHABI- -- ARE,       !- Name
+    24.43,                   !- Latitude {deg}
+    54.649999999999999,      !- Longitude {deg}
+    4,                       !- Time Zone {hr}
+    27;                      !- Elevation {m}
+

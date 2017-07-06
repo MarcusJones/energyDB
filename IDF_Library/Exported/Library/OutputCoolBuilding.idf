@@ -1,0 +1,610 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLEDICTIONARY ===========
+
+Output:VariableDictionary,
+    regular,                 !- Key Field
+    Name;                    !- Sort Option
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:CONSTRUCTIONS ===========
+
+Output:Constructions,
+    Constructions,           !- Details Type 1
+    Materials;               !- Details Type 2
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:TABLE:SUMMARYREPORTS ===========
+
+Output:Table:SummaryReports,
+    AnnualBuildingUtilityPerformanceSummary,  !- Report 1 Name
+    InputVerificationandResultsSummary,  !- Report 2 Name
+    DemandEndUseComponentsSummary,  !- Report 3 Name
+    ClimaticDataSummary,     !- Report 4 Name
+    EquipmentSummary,        !- Report 5 Name
+    EnvelopeSummary,         !- Report 6 Name
+    LightingSummary,         !- Report 7 Name
+    HVACSizingSummary,       !- Report 8 Name
+    OutdoorAirSummary,       !- Report 9 Name
+    ComponentSizingSummary;  !- Report 10 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:TABLE:MONTHLY ===========
+
+Output:Table:Monthly,
+    Cool Building Solar,     !- Name
+    2,                       !- Digits After Decimal
+    Zone Transmitted Solar Energy,  !- Variable or Meter 1 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+    Zone Beam Solar from Exterior Windows Energy,  !- Variable or Meter 2 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+    Zone Diff Solar from Exterior Windows Energy,  !- Variable or Meter 3 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 3
+
+Output:Table:Monthly,
+    Cool Building Infil,     !- Name
+    2,                       !- Digits After Decimal
+    Zone Infiltration Total Heat Gain,  !- Variable or Meter 1 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+    Zone Infiltration Sensible Heat Gain,  !- Variable or Meter 2 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+    Zone Infiltration Latent Heat Gain ,  !- Variable or Meter 3 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+    Zone Infiltration Air Change Rate,  !- Variable or Meter 4 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 4
+
+Output:Table:Monthly,
+    Cool Building Total,     !- Name
+    2,                       !- Digits After Decimal
+    Bldg Total Heat Gain,    !- Variable or Meter 1 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 1
+
+Output:Table:Monthly,
+    Cool Building Infil Total,  !- Name
+    2,                       !- Digits After Decimal
+    Bldg Infiltration Heat Gain,  !- Variable or Meter 1 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 1
+
+Output:Table:Monthly,
+    Cool Building Solar Total,  !- Name
+    2,                       !- Digits After Decimal
+    Bldg Solar Heat Gain,    !- Variable or Meter 1 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 1
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUTCONTROL:TABLE:STYLE ===========
+
+OutputControl:Table:Style,
+    CommaAndHTML,            !- Column Separator
+    JtoKWH;                  !- Unit Conversion
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Part Load Ratio, !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Mass Flow Rate ,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone/Sys Air Temperature ,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Pump Electric Power ,    !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Fan Electric Power ,     !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Air Loop Fan Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Air Loop Fan Heating Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Air Loop System Cycle On/Off Status [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Air Loop Total Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    AirLoopHVAC Actual Outdoor Air Fraction [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    AirLoopHVAC Heat Recovery Bypass Status [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    AirLoopHVAC Minimum Outdoor Air Fraction [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    AirLoopHVAC Mixed Air Mass Flow Rate [kg/s],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    AirLoopHVAC Outdoor Air Mass Flow Rate [kg/s],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Cond Fan Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Cond Fan Electric Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller COP [W/W],       !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Electric Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Evap Heat Trans [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Fan Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Fan Electric Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Plant Loop Cooling Demand [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Plant Loop Heating Demand [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Plant Loop InletNode Flowrate [kg/s],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Plant Loop InletNode Temperature [C],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Plant Loop OutletNode Temperature [C],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Plant Loop System Cycle On/Off Status [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Pump Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Pump Electric Power [W], !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Total Building Electric Demand [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Total Electric Demand [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Total HVAC Electric Demand [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Air Energy Storage Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Internal Convective Gains Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Interzone Air Transfer Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Outdoor Air Transfer Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Surface Convection Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance System Air Transfer Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Humidity Ratio [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mech Ventilation Cooling Load Increase: OverHeating [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mech Ventilation Heating Load Increase: OverCooling [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Air Change Rate [ach],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Cooling Load Decrease [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Cooling Load Increase [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Heating Load Decrease [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Heating Load Increase [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Mass [kg],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Mass Flow Rate [kg/s],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation No Load Heat Addition [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation No Load Heat Removal [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Volume Current Density [m3],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Volume Flow Rate Current Density [m3/s],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Volume Flow Rate Standard Density [m3/s],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Mechanical Ventilation Volume Standard Density [m3],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Operative Temperature [C],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Outdoor Dry Bulb [C],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Outdoor Wet Bulb [C],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Outdoor Wind Speed [m/s],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone/Sys Air Temperature [C],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone/Sys Sensible Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone/Sys Sensible Cooling Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone/Sys Sensible Heating Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone/Sys Sensible Heating Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Latent Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Latent Cooling Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Sensible Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Sensible Cooling Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Total Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Total Cooling Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Total Heating Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Coil Total Heating Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Cooling Coil Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Cooling Coil Electric Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Cooling Coil Runtime Fraction [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Heating Coil Crankcase Heater Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Heating Coil Crankcase Heater Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Heating Coil Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Heating Coil Electric Defrost Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Heating Coil Electric Defrost Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Heating Coil Electric Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    DX Heating Coil Runtime Fraction [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Compressor Part-Load Ratio [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Electric Consumption [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Electric Power [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Fan Part-Load Ratio [],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Latent Zone Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Latent Zone Cooling Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Latent Zone Heating Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Latent Zone Heating Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Sensible Zone Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Sensible Zone Cooling Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Sensible Zone Heating Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Sensible Zone Heating Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Total Zone Cooling Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Total Zone Cooling Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Total Zone Heating Energy [J],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Packaged Terminal Heat Pump Total Zone Heating Rate [W],  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Deep Ground Temperature ,!- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+!-   ===========  ALL OBJECTS IN CLASS: METER:CUSTOM ===========
+
+Meter:Custom,
+    Bldg Infiltration Heat Gain,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Infiltration Total Heat Gain;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Bldg Solar Heat Gain,    !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Transmitted Solar Energy;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Bldg Total Heat Gain,    !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Cooling:DistrictCooling ;!- Report Variable or Meter Name 1
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:SQLITE ===========
+
+Output:SQLite,
+    Simple;                  !- Option Type
+

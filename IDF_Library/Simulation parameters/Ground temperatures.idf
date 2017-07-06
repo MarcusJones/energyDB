@@ -1,0 +1,23 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:GROUNDTEMPERATURE:BUILDINGSURFACE ===========
+
+Site:GroundTemperature:BuildingSurface,
+    18,                      !- January Ground Temperature {C}
+    18,                      !- February Ground Temperature {C}
+    18,                      !- March Ground Temperature {C}
+    18,                      !- April Ground Temperature {C}
+    18,                      !- May Ground Temperature {C}
+    18,                      !- June Ground Temperature {C}
+    18,                      !- July Ground Temperature {C}
+    18,                      !- August Ground Temperature {C}
+    18,                      !- September Ground Temperature {C}
+    18,                      !- October Ground Temperature {C}
+    18,                      !- November Ground Temperature {C}
+    18;                      !- December Ground Temperature {C}
+

@@ -1,0 +1,564 @@
+!-Generator IDFEditor 1.41
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:WATERMAINSTEMPERATURE ===========
+
+Site:WaterMainsTemperature,
+    CORRELATION,             !- Calculation Method
+    ,                        !- Temperature Schedule Name
+    25,                      !- Annual Average Outdoor Air Temperature {C}
+    28.1;                    !- Maximum Difference In Monthly Average Outdoor Air Temperatures {deltaC}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    Hot Water Set Point Temp Schedule,  !- Name
+    Any Number,              !- Schedule Type Limits Name
+    THROUGH: 12/31,          !- Field 1
+    FOR: AllDays,            !- Field 2
+    UNTIL: 24:00,            !- Field 3
+    55;                      !- Field 4
+
+Schedule:Compact,
+    Sinks and Showers Temp Schedule,  !- Name
+    Any Number,              !- Schedule Type Limits Name
+    THROUGH: 12/31,          !- Field 1
+    FOR: AllDays,            !- Field 2
+    UNTIL: 24:00,            !- Field 3
+    45;                      !- Field 4
+
+Schedule:Compact,
+    Sinks Flow Schedule,     !- Name
+    Any Number,              !- Schedule Type Limits Name
+    THROUGH: 12/31,          !- Field 1
+    FOR: AllDays,            !- Field 2
+    UNTIL: 1:00,             !- Field 3
+    0.003,                   !- Field 4
+    UNTIL: 2:00,             !- Field 5
+    0.001,                   !- Field 6
+    UNTIL: 3:00,             !- Field 7
+    0,                       !- Field 8
+    UNTIL: 4:00,             !- Field 9
+    0,                       !- Field 10
+    UNTIL: 5:00,             !- Field 11
+    0.001,                   !- Field 12
+    UNTIL: 6:00,             !- Field 13
+    0.028,                   !- Field 14
+    UNTIL: 7:00,             !- Field 15
+    0.105,                   !- Field 16
+    UNTIL: 8:00,             !- Field 17
+    0.1,                     !- Field 18
+    UNTIL: 9:00,             !- Field 19
+    0.081,                   !- Field 20
+    UNTIL: 10:00,            !- Field 21
+    0.059,                   !- Field 22
+    UNTIL: 11:00,            !- Field 23
+    0.051,                   !- Field 24
+    UNTIL: 12:00,            !- Field 25
+    0.037,                   !- Field 26
+    UNTIL: 13:00,            !- Field 27
+    0.031,                   !- Field 28
+    UNTIL: 14:00,            !- Field 29
+    0.026,                   !- Field 30
+    UNTIL: 15:00,            !- Field 31
+    0.023,                   !- Field 32
+    UNTIL: 16:00,            !- Field 33
+    0.033,                   !- Field 34
+    UNTIL: 17:00,            !- Field 35
+    0.041,                   !- Field 36
+    UNTIL: 18:00,            !- Field 37
+    0.063,                   !- Field 38
+    UNTIL: 19:00,            !- Field 39
+    0.075,                   !- Field 40
+    UNTIL: 20:00,            !- Field 41
+    0.066,                   !- Field 42
+    UNTIL: 21:00,            !- Field 43
+    0.059,                   !- Field 44
+    UNTIL: 22:00,            !- Field 45
+    0.046,                   !- Field 46
+    UNTIL: 23:00,            !- Field 47
+    0.046,                   !- Field 48
+    UNTIL: 24:00,            !- Field 49
+    0.025;                   !- Field 50
+
+Schedule:Compact,
+    Showers Flow Schedule,   !- Name
+    Any Number,              !- Schedule Type Limits Name
+    THROUGH: 12/31,          !- Field 1
+    FOR: AllDays,            !- Field 2
+    UNTIL: 3:00,             !- Field 3
+    0,                       !- Field 4
+    UNTIL: 5:00,             !- Field 5
+    0.2,                     !- Field 6
+    UNTIL: 7:00,             !- Field 7
+    0,                       !- Field 8
+    UNTIL: 7:10,             !- Field 9
+    1.0,                     !- Field 10
+    UNTIL: 10:00,            !- Field 11
+    0,                       !- Field 12
+    UNTIL: 10:30,            !- Field 13
+    0.3,                     !- Field 14
+    UNTIL: 13:00,            !- Field 15
+    0,                       !- Field 16
+    UNTIL: 13:10,            !- Field 17
+    0.5,                     !- Field 18
+    UNTIL: 16:00,            !- Field 19
+    0,                       !- Field 20
+    UNTIL: 22:00,            !- Field 21
+    0.1,                     !- Field 22
+    UNTIL: 24:00,            !- Field 23
+    0;                       !- Field 24
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SIZING:PLANT ===========
+
+Sizing:Plant,
+    DHW Loop,                !- Plant or Condenser Loop Name
+    HEATING,                 !- Loop Type
+    82.,                     !- Design Loop Exit Temperature {C}
+    11;                      !- Loop Design Temperature Difference {deltaC}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: BRANCH ===========
+
+Branch,
+    Water Heater Use Inlet Branch,  !- Name
+    ,                        !- Maximum Flow Rate {m3/s}
+    ,                        !- Pressure Drop Curve Name
+    Pump:VariableSpeed,      !- Component 1 Object Type
+    DHW Pump,                !- Component 1 Name
+    Water Heater Use Loop Inlet Node,  !- Component 1 Inlet Node Name
+    DHW Pump Outlet Node,    !- Component 1 Outlet Node Name
+    ACTIVE;                  !- Component 1 Branch Control Type
+
+Branch,
+    Water Heater Use Branch, !- Name
+    ,                        !- Maximum Flow Rate {m3/s}
+    ,                        !- Pressure Drop Curve Name
+    WaterHeater:Stratified,  !- Component 1 Object Type
+    Water Heater,            !- Component 1 Name
+    Water Heater Use Inlet Node,  !- Component 1 Inlet Node Name
+    Water Heater Use Outlet Node,  !- Component 1 Outlet Node Name
+    PASSIVE;                 !- Component 1 Branch Control Type
+
+Branch,
+    Water Heater Use Outlet Branch,  !- Name
+    ,                        !- Maximum Flow Rate {m3/s}
+    ,                        !- Pressure Drop Curve Name
+    Pipe:Adiabatic,          !- Component 1 Object Type
+    Water Heater Use Outlet Pipe,  !- Component 1 Name
+    Water Heater Use Outlet Pipe Inlet Node,  !- Component 1 Inlet Node Name
+    Water Heater Use Loop Outlet Node,  !- Component 1 Outlet Node Name
+    PASSIVE;                 !- Component 1 Branch Control Type
+
+Branch,
+    Demand Inlet Branch,     !- Name
+    ,                        !- Maximum Flow Rate {m3/s}
+    ,                        !- Pressure Drop Curve Name
+    Pipe:Adiabatic,          !- Component 1 Object Type
+    Demand Inlet Pipe,       !- Component 1 Name
+    Demand Inlet Node,       !- Component 1 Inlet Node Name
+    Demand Pipe-DHW Node,    !- Component 1 Outlet Node Name
+    PASSIVE;                 !- Component 1 Branch Control Type
+
+Branch,
+    Domestic Hot Water Branch,  !- Name
+    ,                        !- Maximum Flow Rate {m3/s}
+    ,                        !- Pressure Drop Curve Name
+    WaterUse:Connections,    !- Component 1 Object Type
+    Domestic Hot Water,      !- Component 1 Name
+    Domestic Hot Water Inlet Node,  !- Component 1 Inlet Node Name
+    Domestic Hot Water Outlet Node,  !- Component 1 Outlet Node Name
+    ACTIVE;                  !- Component 1 Branch Control Type
+
+Branch,
+    Demand Outlet Branch,    !- Name
+    ,                        !- Maximum Flow Rate {m3/s}
+    ,                        !- Pressure Drop Curve Name
+    Pipe:Adiabatic,          !- Component 1 Object Type
+    Demand Outlet Pipe,      !- Component 1 Name
+    Demand DHW-Pipe Node,    !- Component 1 Inlet Node Name
+    Demand Outlet Node,      !- Component 1 Outlet Node Name
+    PASSIVE;                 !- Component 1 Branch Control Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: BRANCHLIST ===========
+
+BranchList,
+    Water Heater Use Branches,  !- Name
+    Water Heater Use Inlet Branch,  !- Branch 1 Name
+    Water Heater Use Branch, !- Branch 2 Name
+    Water Heater Use Outlet Branch;  !- Branch 3 Name
+
+BranchList,
+    Demand Branches,         !- Name
+    Demand Inlet Branch,     !- Branch 1 Name
+    Domestic Hot Water Branch,  !- Branch 2 Name
+    Demand Outlet Branch;    !- Branch 3 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CONNECTOR:SPLITTER ===========
+
+Connector:Splitter,
+    Water Heater Use Splitter,  !- Name
+    Water Heater Use Inlet Branch,  !- Inlet Branch Name
+    Water Heater Use Branch; !- Outlet Branch 1 Name
+
+Connector:Splitter,
+    Demand Splitter,         !- Name
+    Demand Inlet Branch,     !- Inlet Branch Name
+    Domestic Hot Water Branch;  !- Outlet Branch 1 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CONNECTOR:MIXER ===========
+
+Connector:Mixer,
+    Water Heater Use Mixer,  !- Name
+    Water Heater Use Outlet Branch,  !- Outlet Branch Name
+    Water Heater Use Branch; !- Inlet Branch 1 Name
+
+Connector:Mixer,
+    Demand Mixer,            !- Name
+    Demand Outlet Branch,    !- Outlet Branch Name
+    Domestic Hot Water Branch;  !- Inlet Branch 1 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CONNECTORLIST ===========
+
+ConnectorList,
+    Water Heater Use Connectors,  !- Name
+    Connector:Splitter,      !- Connector 1 Object Type
+    Water Heater Use Splitter,  !- Connector 1 Name
+    Connector:Mixer,         !- Connector 2 Object Type
+    Water Heater Use Mixer;  !- Connector 2 Name
+
+ConnectorList,
+    Demand Connectors,       !- Name
+    Connector:Splitter,      !- Connector 1 Object Type
+    Demand Splitter,         !- Connector 1 Name
+    Connector:Mixer,         !- Connector 2 Object Type
+    Demand Mixer;            !- Connector 2 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTDOORAIR:NODE ===========
+
+OutdoorAir:Node,
+    Hot Water Tank Outdoor Air Node,  !- Name
+    -1;                      !- Height Above Ground {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PIPE:ADIABATIC ===========
+
+Pipe:Adiabatic,
+    Water Heater Use Outlet Pipe,  !- Name
+    Water Heater Use Outlet Pipe Inlet Node,  !- Inlet Node Name
+    Water Heater Use Loop Outlet Node;  !- Outlet Node Name
+
+Pipe:Adiabatic,
+    Demand Inlet Pipe,       !- Name
+    Demand Inlet Node,       !- Inlet Node Name
+    Demand Pipe-DHW Node;    !- Outlet Node Name
+
+Pipe:Adiabatic,
+    Demand Outlet Pipe,      !- Name
+    Demand DHW-Pipe Node,    !- Inlet Node Name
+    Demand Outlet Node;      !- Outlet Node Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PUMP:VARIABLESPEED ===========
+
+Pump:VariableSpeed,
+    DHW Pump,                !- Name
+    Water Heater Use Loop Inlet Node,  !- Inlet Node Name
+    DHW Pump Outlet Node,    !- Outlet Node Name
+    autosize,                !- Rated Flow Rate {m3/s}
+    25000,                   !- Rated Pump Head {Pa}
+    4000,                    !- Rated Power Consumption {W}
+    0.8,                     !- Motor Efficiency
+    0.0,                     !- Fraction of Motor Inefficiencies to Fluid Stream
+    0,                       !- Coefficient 1 of the Part Load Performance Curve
+    1,                       !- Coefficient 2 of the Part Load Performance Curve
+    0,                       !- Coefficient 3 of the Part Load Performance Curve
+    0,                       !- Coefficient 4 of the Part Load Performance Curve
+    0,                       !- Minimum Flow Rate {m3/s}
+    INTERMITTENT;            !- Pump Control Type
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WATERHEATER:STRATIFIED ===========
+
+WaterHeater:Stratified,
+    Water Heater,            !- Name
+    Water Heater,            !- End-Use Subcategory
+    0.52,                    !- Tank Volume {m3}
+    1.4,                     !- Tank Height {m}
+    VerticalCylinder,        !- Tank Shape
+    ,                        !- Tank Perimeter {m}
+    82.2222,                 !- Maximum Temperature Limit {C}
+    MasterSlave,             !- Heater Priority Control
+    Hot Water Set Point Temp Schedule,  !- Heater 1 Setpoint Temperature Schedule Name
+    2.0,                     !- Heater 1 Deadband Temperature Difference {deltaC}
+    10000,                   !- Heater 1 Capacity {W}
+    1.0,                     !- Heater 1 Height {m}
+    Hot Water Set Point Temp Schedule,  !- Heater 2 Setpoint Temperature Schedule Name
+    5.0,                     !- Heater 2 Deadband Temperature Difference {deltaC}
+    10000,                   !- Heater 2 Capacity {W}
+    0.0,                     !- Heater 2 Height {m}
+    ELECTRICITY,             !- Heater Fuel Type
+    0.95,                    !- Heater Thermal Efficiency
+    10,                      !- Off Cycle Parasitic Fuel Consumption Rate {W}
+    ELECTRICITY,             !- Off Cycle Parasitic Fuel Type
+    0,                       !- Off Cycle Parasitic Heat Fraction to Tank
+    ,                        !- Off Cycle Parasitic Height {m}
+    10,                      !- On Cycle Parasitic Fuel Consumption Rate {W}
+    ELECTRICITY,             !- On Cycle Parasitic Fuel Type
+    0,                       !- On Cycle Parasitic Heat Fraction to Tank
+    ,                        !- On Cycle Parasitic Height {m}
+    Outdoors,                !- Ambient Temperature Indicator
+    ,                        !- Ambient Temperature Schedule Name
+    ,                        !- Ambient Temperature Zone Name
+    Hot Water Tank Outdoor Air Node,  !- Ambient Temperature Outdoor Air Node Name
+    1.5,                     !- Uniform Skin Loss Coefficient per Unit Area to Ambient Temperature {W/m2-K}
+    ,                        !- Skin Loss Fraction to Zone
+    ,                        !- Off Cycle Flue Loss Coefficient to Ambient Temperature {W/K}
+    ,                        !- Off Cycle Flue Loss Fraction to Zone
+    ,                        !- Peak Use Flow Rate {m3/s}
+    ,                        !- Use Flow Rate Fraction Schedule Name
+    ,                        !- Cold Water Supply Temperature Schedule Name
+    Water Heater Use Inlet Node,  !- Use Side Inlet Node Name
+    Water Heater Use Outlet Node,  !- Use Side Outlet Node Name
+    1.0,                     !- Use Side Effectiveness
+    ,                        !- Use Side Inlet Height {m}
+    ,                        !- Use Side Outlet Height {m}
+    ,                        !- Source Side Inlet Node Name
+    ,                        !- Source Side Outlet Node Name
+    ,                        !- Source Side Effectiveness
+    ,                        !- Source Side Inlet Height {m}
+    ,                        !- Source Side Outlet Height {m}
+    FIXED,                   !- Inlet Mode
+    autosize,                !- Use Side Design Flow Rate {m3/s}
+    ,                        !- Source Side Design Flow Rate {m3/s}
+    ,                        !- Indirect Water Heating Recovery Time {hr}
+    6,                       !- Number of Nodes
+    0.1,                     !- Additional Destratification Conductivity {W/m-K}
+    0.15,                    !- Node 1 Additional Loss Coefficient {W/m2-K}
+    ,                        !- Node 2 Additional Loss Coefficient {W/m2-K}
+    ,                        !- Node 3 Additional Loss Coefficient {W/m2-K}
+    ,                        !- Node 4 Additional Loss Coefficient {W/m2-K}
+    ,                        !- Node 5 Additional Loss Coefficient {W/m2-K}
+    0.1;                     !- Node 6 Additional Loss Coefficient {W/m2-K}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PLANTLOOP ===========
+
+PlantLoop,
+    DHW Loop,                !- Name
+    WATER,                   !- Fluid Type
+    DHW Loop Operation,      !- User Defined Fluid Type
+    Water Heater Use Loop Outlet Node,  !- Plant Equipment Operation Scheme Name
+    100,                     !- Loop Temperature Setpoint Node Name
+    3,                       !- Maximum Loop Temperature {C}
+    10,                      !- Minimum Loop Temperature {C}
+    0,                       !- Maximum Loop Flow Rate {m3/s}
+    90,                      !- Minimum Loop Flow Rate {m3/s}
+    Water Heater Use Loop Inlet Node,  !- Plant Loop Volume {m3}
+    Water Heater Use Loop Outlet Node,  !- Plant Side Inlet Node Name
+    Water Heater Use Branches,  !- Plant Side Outlet Node Name
+    Water Heater Use Connectors,  !- Plant Side Branch List Name
+    Demand Inlet Node,       !- Plant Side Connector List Name
+    Demand Outlet Node,      !- Demand Side Inlet Node Name
+    Demand Branches,         !- Demand Side Outlet Node Name
+    Demand Connectors,       !- Demand Side Branch List Name
+    OPTIMAL;                 !- Demand Side Connector List Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PLANTEQUIPMENTLIST ===========
+
+PlantEquipmentList,
+    DHW Plant Equipment,     !- Name
+    WaterHeater:Stratified,  !- Equipment 1 Object Type
+    Water Heater;            !- Equipment 1 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PLANTEQUIPMENTOPERATION:HEATINGLOAD ===========
+
+PlantEquipmentOperation:HeatingLoad,
+    DHW Control Scheme,      !- Name
+    0,                       !- Load Range 1 Lower Limit {W}
+    10000000,                !- Load Range 1 Upper Limit {W}
+    DHW Plant Equipment;     !- Range 1 Equipment List Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PLANTEQUIPMENTOPERATIONSCHEMES ===========
+
+PlantEquipmentOperationSchemes,
+    DHW Loop Operation,      !- Name
+    PlantEquipmentOperation:HeatingLoad,  !- Control Scheme 1 Object Type
+    DHW Control Scheme,      !- Control Scheme 1 Name
+    Always On;               !- Control Scheme 1 Schedule Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SETPOINTMANAGER:SCHEDULED ===========
+
+SetpointManager:Scheduled,
+    DHW Loop Set Point Manager,  !- Name
+    Temperature,             !- Control Variable
+    Hot Water Set Point Temp Schedule,  !- Schedule Name
+    Water Heater Use Loop Outlet Node;  !- Setpoint Node or NodeList Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WATERUSE:EQUIPMENT ===========
+
+WaterUse:Equipment,
+    Sinks,                   !- Name
+    Sinks,                   !- End-Use Subcategory
+    0.000194,                !- Peak Flow Rate {m3/s}
+    Sinks Flow Schedule,     !- Flow Rate Fraction Schedule Name
+    Sinks and Showers Temp Schedule;  !- Target Temperature Schedule Name
+
+WaterUse:Equipment,
+    Showers,                 !- Name
+    Showers,                 !- End-Use Subcategory
+    0.000056,                !- Peak Flow Rate {m3/s}
+    Showers Flow Schedule,   !- Flow Rate Fraction Schedule Name
+    Sinks and Showers Temp Schedule;  !- Target Temperature Schedule Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WATERUSE:CONNECTIONS ===========
+
+WaterUse:Connections,
+    Domestic Hot Water,      !- Name
+    Domestic Hot Water Inlet Node,  !- Inlet Node Name
+    Domestic Hot Water Outlet Node,  !- Outlet Node Name
+    ,                        !- Supply Water Storage Tank Name
+    ,                        !- Reclamation Water Storage Tank Name
+    ,                        !- Hot Water Supply Temperature Schedule Name
+    ,                        !- Cold Water Supply Temperature Schedule Name
+    NONE,                    !- Drain Water Heat Exchanger Type
+    ,                        !- Drain Water Heat Exchanger Destination
+    ,                        !- Drain Water Heat Exchanger U-Factor Times Area {W/K}
+    Sinks,                   !- Water Use Equipment 1 Name
+    Showers;                 !- Water Use Equipment 2 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Mains Temperature, !- Variable Name
+    Timestep;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Use Equipment Mixed Water Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Use Connections Hot Water Consumption Rate,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Use Connections Total Consumption Rate,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Tank Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Node 1 Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Node 2 Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Node 3 Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Node 4 Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Node 5 Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Node 6 Temperature,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Use Rate,   !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Loss Rate,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Heating Rate,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Cycle On Count,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Cycle On Count 1,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Cycle On Count 2,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Runtime Fraction,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Runtime Fraction 1,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Runtime Fraction 2,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Electric Consumption Rate,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Off-Cycle Parasitic Electric Consumption Rate,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater On-Cycle Parasitic Electric Consumption Rate,  !- Variable Name
+    TIMESTEP;                !- Reporting Frequency
+

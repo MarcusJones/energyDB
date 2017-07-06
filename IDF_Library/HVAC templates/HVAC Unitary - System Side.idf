@@ -1,0 +1,65 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:SYSTEM:UNITARYHEATPUMP:AIRTOAIR ===========
+
+HVACTemplate:System:UnitaryHeatPump:AirToAir,
+    Named Unitary Heat Pump System,  !- Name
+    ,                        !- System Availability Schedule Name
+    Named Control Zone,      !- Control Zone or Thermostat Location Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    autosize,                !- No Load Supply Air Flow Rate {m3/s}
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP
+    SingleSpeedDXHeatPump,   !- Heat Pump Heating Coil Type
+    ,                        !- Heat Pump Heating Coil Availability Schedule Name
+    autosize,                !- Heat Pump Heating Coil Rated Capacity {W}
+    2.75,                    !- Heat Pump Heating Coil Rated COP
+    -8,                      !- Heat Pump Heating Minimum Outdoor Dry-Bulb Temperature {C}
+    5,                       !- Heat Pump Defrost Maximum Outdoor Dry-Bulb Temperature {C}
+    ReverseCycle,            !- Heat Pump Defrost Strategy
+    Timed,                   !- Heat Pump Defrost Control
+    0.058333,                !- Heat Pump Defrost Time Period Fraction
+    Electric,                !- Supplemental Heating Coil Type
+    ,                        !- Supplemental Heating Coil Availability Schedule Name
+    autosize,                !- Supplemental Heating Coil Capacity {W}
+    21,                      !- Supplemental Heating Coil Maximum Outdoor Dry-Bulb Temperature {C}
+    0.8,                     !- Supplemental Gas Heating Coil Efficiency
+    ,                        !- Supplemental Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    ,                        !- Minimum Outdoor Air Schedule Name
+    NoEconomizer,            !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    ,                        !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    ,                        !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.7,                     !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690,                    !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30;                      !- Humidifier Setpoint {percent}
+

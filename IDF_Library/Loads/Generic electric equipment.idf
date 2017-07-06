@@ -1,0 +1,53 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    Electric equipment schd,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 06:00,            !- Field 3
+    0.22,                    !- Field 4
+    Until: 07:00,            !- Field 5
+    0.36,                    !- Field 6
+    Until: 08:00,            !- Field 7
+    0.76,                    !- Field 8
+    Until: 09:00,            !- Field 9
+    0.34,                    !- Field 10
+    Until: 11:00,            !- Field 11
+    0.36,                    !- Field 12
+    Until: 13:00,            !- Field 13
+    0.64,                    !- Field 14
+    Until: 17:00,            !- Field 15
+    0.36,                    !- Field 16
+    Until: 18:00,            !- Field 17
+    0.87,                    !- Field 18
+    Until: 19:00,            !- Field 19
+    0.97,                    !- Field 20
+    Until: 22:00,            !- Field 21
+    0.43,                    !- Field 22
+    Until: 24:00,            !- Field 23
+    0.31;                    !- Field 24
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ELECTRICEQUIPMENT ===========
+
+ElectricEquipment,
+    Electric equipment ,  !- Name
+    ZoneName,                !- Zone or ZoneList Name
+    Electric equipment schd,  !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Design Level {W}
+    2.6899999999999999,      !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    ,                        !- Fraction Latent
+    ,                        !- Fraction Radiant
+    ,                        !- Fraction Lost
+    ElectricEquipment;       !- End-Use Subcategory
+

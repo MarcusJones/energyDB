@@ -1,0 +1,121 @@
+
+
+Construction,
+  IEAD_R-20 ci_Roof,        !- Name
+  Roof Membrane,            !- Layer 1
+  Roof Insulation [18],     !- Layer 2
+  Metal Decking;            !- Layer 3
+
+! Type: Roof:Insulation Entirely Above Deck
+! Description: R-20 ci
+! Effective R-Value (SI): 3.515
+! Layer 1: Roof Membrane
+! Layer 2: Roof Insulation [18]
+! Layer 3: Metal Decking
+Material,
+  Roof Membrane,            !- Name
+  VeryRough,                !- Roughness
+  0.0095,                   !- Thickness
+  0.16,                     !- Conductivity
+  1121.29,                  !- Density
+  1460,                     !- Specific Heat
+  0.9,                      !- Abs Thermal
+  0.7,                      !- Abs Solar
+  0.7;                      !- Abs Visible
+
+Material,
+  Roof Insulation [18],     !- Name
+  MediumRough,              !- Roughness
+  0.169324,                 !- Thickness
+  0.049,                    !- Conductivity
+  265,                      !- Density
+  836.8,                    !- Specific Heat
+  0.9,                      !- Abs Thermal
+  0.7,                      !- Abs Solar
+  0.7;                      !- Abs Visible
+
+Material,
+  Metal Decking,            !- Name
+  MediumSmooth,             !- Roughness
+  0.001524,                 !- Thickness
+  45.006,                   !- Conductivity
+  7680,                     !- Density
+  418.4,                    !- Specific Heat
+  0.9,                      !- Abs Thermal
+  0.7,                      !- Abs Solar
+  0.3;                      !- Abs Visible
+
+OS:ComponentCost:LineItem,
+  IEAD_R-20 ci_Roof,        ! Name
+  ,                         ! Type
+  Construction,             ! Line Item Type
+  IEAD_R-20 ci_Roof,        ! Item Name
+  ,
+  ,
+  53.082000000000001,
+  ,
+  ,
+  ,
+  ,
+  ,
+  ,
+  37.097999999999999,
+  15.984999999999999,
+  0,
+  0,
+  0,
+  0;
+
+OS:ComponentData:Tags,
+  OS:ComponentData 1,       ! ComponentData Name
+  EnergyPlus,
+  Construction,
+  Roof;
+
+OS:ComponentData,
+  OS:ComponentData 1,       ! Name
+  {2c32a461-de36-42ff-90a7-6d8691f92779},  ! UUID
+  {b28d67e6-0ae6-4fb0-8ce3-13fe4918cfc0},  ! Version UUID
+  Constructions based on building codes and standards. R-20 ci,  ! Description
+  3,                        ! Fidelity Level
+  Construction,
+  IEAD_R-20 ci_Roof,
+  Material,
+  Roof Membrane,
+  Material,
+  Roof Insulation [18],
+  Material,
+  Metal Decking,
+  OS_ComponentCost_LineItem,
+  IEAD_R-20 ci_Roof;
+
+OS:ComponentData:Attributes,
+  OS:ComponentData 1,       ! ComponentData Name
+  Standard,
+  ASHRAE Std189,
+  ,
+  Standard Type,
+  Nonresidential,
+  ,
+  Climate Zone,
+  ASHRAE 2004:1A,
+  ,
+  Climate Zone,
+  ASHRAE 2004:1B,
+  ,
+  Construction,
+  roof,
+  ,
+  Construction Type,
+  Insulation Entirely Above Deck,
+  ,
+  Effective R-Value,
+  3.515,
+  ft^2 F h/Btu,
+  Insulation Minimum R-Value,
+  R-20 ci,
+  ft^2 F h/Btu,
+  Film Coefficients,
+  false,
+  ;
+

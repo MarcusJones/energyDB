@@ -1,0 +1,113 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CHILLER:ELECTRIC:EIR ===========
+
+Chiller:Electric:EIR,
+    Chiller,                 !- Name
+    autosize,                !- Reference Capacity {W}
+    5.50,                    !- Reference COP {W/W}
+    6.67,                    !- Reference Leaving Chilled Water Temperature {C}
+    29.00,                   !- Reference Entering Condenser Fluid Temperature {C}
+    autosize,                !- Reference Chilled Water Flow Rate {m3/s}
+    autosize,                !- Reference Condenser Fluid Flow Rate {m3/s}
+    Main Chiller ScrewCapFT, !- Cooling Capacity Function of Temperature Curve Name
+    Main Chiller ScrewCapFT, !- Electric Input to Cooling Output Ratio Function of Temperature Curve Name
+    Main Chiller ScrewEIRFPLR,  !- Electric Input to Cooling Output Ratio Function of Part Load Ratio Curve Name
+    0.10,                    !- Minimum Part Load Ratio
+    1.00,                    !- Maximum Part Load Ratio
+    1.00,                    !- Optimum Part Load Ratio
+    0.20,                    !- Minimum Unloading Ratio
+    Chiller CHW Inlet Node,  !- Chilled Water Inlet Node Name
+    Chiller CHW Outlet Node, !- Chilled Water Outlet Node Name
+    Chiller Condenser Inlet Node,  !- Condenser Inlet Node Name
+    Chiller Condenser Outlet Node,  !- Condenser Outlet Node Name
+    WaterCooled,             !- Condenser Type
+    0.00,                    !- Condenser Fan Power Ratio {W/W}
+    1.00,                    !- Fraction of Compressor Electric Consumption Rejected by Condenser
+    2.00,                    !- Leaving Chilled Water Lower Temperature Limit {C}
+    LeavingSetpointModulated,!- Chiller Flow Mode
+    0.000000,                !- Design Heat Recovery Water Flow Rate {m3/s}
+    ,                        !- Heat Recovery Inlet Node Name
+    ,                        !- Heat Recovery Outlet Node Name
+    0.50,                    !- Sizing Factor
+    0.00,                    !- Basin Heater Capacity {W/K}
+    2.00,                    !- Basin Heater Setpoint Temperature {C}
+    2;                       !- Basin Heater Operating Schedule Name
+
+Chiller:Electric:EIR,
+    Chiller/1,               !- Name
+    autosize,                !- Reference Capacity {W}
+    5.50,                    !- Reference COP {W/W}
+    6.67,                    !- Reference Leaving Chilled Water Temperature {C}
+    29.00,                   !- Reference Entering Condenser Fluid Temperature {C}
+    autosize,                !- Reference Chilled Water Flow Rate {m3/s}
+    autosize,                !- Reference Condenser Fluid Flow Rate {m3/s}
+    Main Chiller ScrewCapFT, !- Cooling Capacity Function of Temperature Curve Name
+    Main Chiller ScrewCapFT, !- Electric Input to Cooling Output Ratio Function of Temperature Curve Name
+    Main Chiller ScrewEIRFPLR,  !- Electric Input to Cooling Output Ratio Function of Part Load Ratio Curve Name
+    0.10,                    !- Minimum Part Load Ratio
+    1.00,                    !- Maximum Part Load Ratio
+    1.00,                    !- Optimum Part Load Ratio
+    0.20,                    !- Minimum Unloading Ratio
+    Chiller/1 CHW Inlet Node,!- Chilled Water Inlet Node Name
+    Chiller/1 CHW Outlet Node,  !- Chilled Water Outlet Node Name
+    Chiller/1 Condenser Inlet Node,  !- Condenser Inlet Node Name
+    Chiller/1 Condenser Outlet Node,  !- Condenser Outlet Node Name
+    WaterCooled,             !- Condenser Type
+    0.00,                    !- Condenser Fan Power Ratio {W/W}
+    1.00,                    !- Fraction of Compressor Electric Consumption Rejected by Condenser
+    2.00,                    !- Leaving Chilled Water Lower Temperature Limit {C}
+    LeavingSetpointModulated,!- Chiller Flow Mode
+    0.000000,                !- Design Heat Recovery Water Flow Rate {m3/s}
+    ,                        !- Heat Recovery Inlet Node Name
+    ,                        !- Heat Recovery Outlet Node Name
+    0.50,                    !- Sizing Factor
+    0.00,                    !- Basin Heater Capacity {W/K}
+    2.00,                    !- Basin Heater Setpoint Temperature {C}
+    2;                       !- Basin Heater Operating Schedule Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:QUADRATIC ===========
+
+Curve:Quadratic,
+    Main Chiller ScrewEIRFPLR,  !- Name
+    0.33018833,              !- Coefficient1 Constant
+    0.23554291,              !- Coefficient2 x
+    0.46070828,              !- Coefficient3 x**2
+    0,                       !- Minimum Value of x
+    1;                       !- Maximum Value of x
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:BIQUADRATIC ===========
+
+Curve:Biquadratic,
+    Main Chiller ScrewCapFT, !- Name
+    0.81302462,              !- Coefficient1 Constant
+    -0.01425319,             !- Coefficient2 x
+    -0.00161799,             !- Coefficient3 x**2
+    0.02638438,              !- Coefficient4 y
+    -0.00091543,             !- Coefficient5 y**2
+    0.00169601,              !- Coefficient6 x*y
+    5,                       !- Minimum Value of x
+    10,                      !- Maximum Value of x
+    24,                      !- Minimum Value of y
+    35;                      !- Maximum Value of y
+
+Curve:Biquadratic,
+    Main Chiller ScrewEIRFT, !- Name
+    0.63812315,              !- Coefficient1 Constant
+    0.00630389,              !- Coefficient2 x
+    0.00092334,              !- Coefficient3 x**2
+    -0.00455294,             !- Coefficient4 y
+    0.00082568,              !- Coefficient5 y**2
+    -0.00156152,             !- Coefficient6 x*y
+    5,                       !- Minimum Value of x
+    10,                      !- Maximum Value of x
+    24,                      !- Minimum Value of y
+    35;                      !- Maximum Value of y
+

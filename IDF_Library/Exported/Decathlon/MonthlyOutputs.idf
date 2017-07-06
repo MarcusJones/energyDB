@@ -1,0 +1,44 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:TABLE:MONTHLY ===========
+
+Output:Table:Monthly,
+    All,                     !- Name
+    2,                       !- Digits After Decimal
+    Ideal Loads Air Heating Energy,  !- Variable or Meter 1 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+    Ideal Loads Air Sensible Cooling Energy,  !- Variable or Meter 2 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+    Ideal Loads Air Total Cooling Energy,  !- Variable or Meter 3 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+    Window Heat Gain Energy, !- Variable or Meter 4 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+    Window Heat Loss Energy, !- Variable or Meter 5 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+    Zone Mean Air Temperature,  !- Variable or Meter 6 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 6
+    Zone Infiltration Air Change Rate,  !- Variable or Meter 7 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 7
+    DistrictCooling:Facility,!- Variable or Meter 8 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 8
+    DistrictHeating:Facility,!- Variable or Meter 9 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 9
+    Zone Ventilation Air Change Rate,  !- Variable or Meter 10 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 10
+    Zone Electric Equipment Total Heat Gain,  !- Variable or Meter 11 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 11
+    Zone Beam Solar from Exterior Windows Energy,  !- Variable or Meter 12 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 12
+    Zone Lights Total Heat Gain,  !- Variable or Meter 13 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 13
+    Zone People Total Heat Gain,  !- Variable or Meter 14 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 14
+    Zone Total Internal Total Heat Gain,  !- Variable or Meter 15 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 15
+    Zone Air Balance Air Energy Storage Rate;  !- Variable or Meter 16 Name
+

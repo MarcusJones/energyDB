@@ -1,0 +1,57 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:THERMOSTAT ===========
+
+HVACTemplate:Thermostat,
+    PTHPThermostat,          !- Name
+    ,                        !- Heating Setpoint Schedule Name
+    21.1,                    !- Constant Heating Setpoint {C}
+    ,                        !- Cooling Setpoint Schedule Name
+    23.8;                    !- Constant Cooling Setpoint {C}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:ZONE:PTHP ===========
+
+HVACTemplate:Zone:PTHP,
+    ZoneName,                !- Zone Name
+    PTHPThermostat,          !- Template Thermostat Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    autosize,                !- No Load Supply Air Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    1.35,                        !- Zone Cooling Sizing Factor
+    Flow/Person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- System Availability Schedule Name
+    Continuous,                 !- Supply Fan Operating Mode Schedule Name
+    DrawThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    75,                      !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Rated Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    2.94,                     !- Cooling Coil Rated COP
+    SingleSpeedDXHeatPump,   !- Heat Pump Heating Coil Type
+    ,                        !- Heat Pump Heating Coil Availability Schedule Name
+    autosize,                !- Heat Pump Heating Coil Rated Capacity {W}
+    2.17,                    !- Heat Pump Heating Coil Rated COP
+    -8,                      !- Heat Pump Heating Minimum Outdoor Dry-Bulb Temperature {C}
+    5,                       !- Heat Pump Defrost Maximum Outdoor Dry-Bulb Temperature {C}
+    ReverseCycle,            !- Heat Pump Defrost Strategy
+    Timed,                   !- Heat Pump Defrost Control
+    0.058333,                !- Heat Pump Defrost Time Period Fraction
+    Electric,                !- Supplemental Heating Coil Type
+    ,                        !- Supplemental Heating Coil Availability Schedule Name
+    autosize,                !- Supplemental Heating Coil Capacity {W}
+    21,                      !- Supplemental Heating Coil Maximum Outdoor Dry-Bulb Temperature {C}
+    0.8,                     !- Supplemental Gas Heating Coil Efficiency
+    ;                        !- Supplemental Gas Heating Coil Parasitic Electric Load {W}

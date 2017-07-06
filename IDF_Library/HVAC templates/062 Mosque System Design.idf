@@ -1,0 +1,574 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:THERMOSTAT ===========
+
+HVACTemplate:Thermostat,
+    UnitaryThermostat,       !- Name
+    ,                        !- Heating Setpoint Schedule Name
+    21.1,                    !- Constant Heating Setpoint {C}
+    ,                        !- Cooling Setpoint Schedule Name
+    23.8;                    !- Constant Cooling Setpoint {C}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:ZONE:UNITARY ===========
+
+HVACTemplate:Zone:Unitary,
+    Storage,                 !- Zone Name
+    Sys 1 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Ent Lobby 2,             !- Zone Name
+    Sys 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Ent Lobby 1,             !- Zone Name
+    Sys 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Merhab,                  !- Zone Name
+    Sys 3 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Toilet Small,            !- Zone Name
+    Sys 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Main Hall,               !- Zone Name
+    Sys 3 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Electric Room,           !- Zone Name
+    Sys 1 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Living area 2,           !- Zone Name
+    Split 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Library,                 !- Zone Name
+    Sys 1 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Ladies Hall,             !- Zone Name
+    Sys 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Pump Room,               !- Zone Name
+    Sys 1 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Ablution Big,            !- Zone Name
+    Sys 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Living area 1,           !- Zone Name
+    Split 1 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Ablution Small,          !- Zone Name
+    Sys 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Toilet Big,              !- Zone Name
+    Sys 2 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+HVACTemplate:Zone:Unitary,
+    Main Lobby,              !- Zone Name
+    Sys 1 Unitary Heat Pump System,  !- Template Unitary System Name
+    UnitaryThermostat,       !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Flow/Zone,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:SYSTEM:UNITARYHEATPUMP:AIRTOAIR ===========
+
+HVACTemplate:System:UnitaryHeatPump:AirToAir,
+    Split 1 Unitary Heat Pump System,  !- Name
+    ,                        !- System Availability Schedule Name
+    Living area 1,           !- Control Zone or Thermostat Location Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    autosize,                !- No Load Supply Air Flow Rate {m3/s}
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3.7,                     !- Cooling Coil Rated COP
+    SingleSpeedDXHeatPump,   !- Heat Pump Heating Coil Type
+    ,                        !- Heat Pump Heating Coil Availability Schedule Name
+    autosize,                !- Heat Pump Heating Coil Rated Capacity {W}
+    2.75,                    !- Heat Pump Heating Coil Rated COP
+    -8,                      !- Heat Pump Heating Minimum Outdoor Dry-Bulb Temperature {C}
+    5,                       !- Heat Pump Defrost Maximum Outdoor Dry-Bulb Temperature {C}
+    ReverseCycle,            !- Heat Pump Defrost Strategy
+    Timed,                   !- Heat Pump Defrost Control
+    0.058333,                !- Heat Pump Defrost Time Period Fraction
+    Electric,                !- Supplemental Heating Coil Type
+    ,                        !- Supplemental Heating Coil Availability Schedule Name
+    autosize,                !- Supplemental Heating Coil Capacity {W}
+    21,                      !- Supplemental Heating Coil Maximum Outdoor Dry-Bulb Temperature {C}
+    0.8,                     !- Supplemental Gas Heating Coil Efficiency
+    ,                        !- Supplemental Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    ,                        !- Minimum Outdoor Air Schedule Name
+    NoEconomizer,            !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    ,                        !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    ,                        !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.7,                     !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690,                    !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30;                      !- Humidifier Setpoint {percent}
+
+HVACTemplate:System:UnitaryHeatPump:AirToAir,
+    Split 2 Unitary Heat Pump System,  !- Name
+    ,                        !- System Availability Schedule Name
+    Living area 2,           !- Control Zone or Thermostat Location Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    autosize,                !- No Load Supply Air Flow Rate {m3/s}
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3.7,                     !- Cooling Coil Rated COP
+    SingleSpeedDXHeatPump,   !- Heat Pump Heating Coil Type
+    ,                        !- Heat Pump Heating Coil Availability Schedule Name
+    autosize,                !- Heat Pump Heating Coil Rated Capacity {W}
+    2.75,                    !- Heat Pump Heating Coil Rated COP
+    -8,                      !- Heat Pump Heating Minimum Outdoor Dry-Bulb Temperature {C}
+    5,                       !- Heat Pump Defrost Maximum Outdoor Dry-Bulb Temperature {C}
+    ReverseCycle,            !- Heat Pump Defrost Strategy
+    Timed,                   !- Heat Pump Defrost Control
+    0.058333,                !- Heat Pump Defrost Time Period Fraction
+    Electric,                !- Supplemental Heating Coil Type
+    ,                        !- Supplemental Heating Coil Availability Schedule Name
+    autosize,                !- Supplemental Heating Coil Capacity {W}
+    21,                      !- Supplemental Heating Coil Maximum Outdoor Dry-Bulb Temperature {C}
+    0.8,                     !- Supplemental Gas Heating Coil Efficiency
+    ,                        !- Supplemental Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    ,                        !- Minimum Outdoor Air Schedule Name
+    NoEconomizer,            !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    ,                        !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    ,                        !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.7,                     !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690,                    !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30;                      !- Humidifier Setpoint {percent}
+
+HVACTemplate:System:UnitaryHeatPump:AirToAir,
+    Sys 1 Unitary Heat Pump System,  !- Name
+    ,                        !- System Availability Schedule Name
+    Main Lobby,              !- Control Zone or Thermostat Location Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    autosize,                !- No Load Supply Air Flow Rate {m3/s}
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3.7,                     !- Cooling Coil Rated COP
+    SingleSpeedDXHeatPump,   !- Heat Pump Heating Coil Type
+    ,                        !- Heat Pump Heating Coil Availability Schedule Name
+    autosize,                !- Heat Pump Heating Coil Rated Capacity {W}
+    2.75,                    !- Heat Pump Heating Coil Rated COP
+    -8,                      !- Heat Pump Heating Minimum Outdoor Dry-Bulb Temperature {C}
+    5,                       !- Heat Pump Defrost Maximum Outdoor Dry-Bulb Temperature {C}
+    ReverseCycle,            !- Heat Pump Defrost Strategy
+    Timed,                   !- Heat Pump Defrost Control
+    0.058333,                !- Heat Pump Defrost Time Period Fraction
+    Electric,                !- Supplemental Heating Coil Type
+    ,                        !- Supplemental Heating Coil Availability Schedule Name
+    autosize,                !- Supplemental Heating Coil Capacity {W}
+    21,                      !- Supplemental Heating Coil Maximum Outdoor Dry-Bulb Temperature {C}
+    0.8,                     !- Supplemental Gas Heating Coil Efficiency
+    ,                        !- Supplemental Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    ,                        !- Minimum Outdoor Air Schedule Name
+    NoEconomizer,            !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    ,                        !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    ,                        !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.7,                     !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690,                    !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30;                      !- Humidifier Setpoint {percent}
+
+HVACTemplate:System:UnitaryHeatPump:AirToAir,
+    Sys 2 Unitary Heat Pump System,  !- Name
+    ,                        !- System Availability Schedule Name
+    Ladies Hall,             !- Control Zone or Thermostat Location Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    autosize,                !- No Load Supply Air Flow Rate {m3/s}
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3.542,                   !- Cooling Coil Rated COP
+    SingleSpeedDXHeatPump,   !- Heat Pump Heating Coil Type
+    ,                        !- Heat Pump Heating Coil Availability Schedule Name
+    autosize,                !- Heat Pump Heating Coil Rated Capacity {W}
+    2.75,                    !- Heat Pump Heating Coil Rated COP
+    -8,                      !- Heat Pump Heating Minimum Outdoor Dry-Bulb Temperature {C}
+    5,                       !- Heat Pump Defrost Maximum Outdoor Dry-Bulb Temperature {C}
+    ReverseCycle,            !- Heat Pump Defrost Strategy
+    Timed,                   !- Heat Pump Defrost Control
+    0.058333,                !- Heat Pump Defrost Time Period Fraction
+    Electric,                !- Supplemental Heating Coil Type
+    ,                        !- Supplemental Heating Coil Availability Schedule Name
+    autosize,                !- Supplemental Heating Coil Capacity {W}
+    21,                      !- Supplemental Heating Coil Maximum Outdoor Dry-Bulb Temperature {C}
+    0.8,                     !- Supplemental Gas Heating Coil Efficiency
+    ,                        !- Supplemental Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    ,                        !- Minimum Outdoor Air Schedule Name
+    NoEconomizer,            !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    ,                        !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    ,                        !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.7,                     !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690,                    !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30;                      !- Humidifier Setpoint {percent}
+
+HVACTemplate:System:UnitaryHeatPump:AirToAir,
+    Sys 3 Unitary Heat Pump System,  !- Name
+    ,                        !- System Availability Schedule Name
+    Main Hall,               !- Control Zone or Thermostat Location Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    autosize,                !- No Load Supply Air Flow Rate {m3/s}
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3.41,                    !- Cooling Coil Rated COP
+    SingleSpeedDXHeatPump,   !- Heat Pump Heating Coil Type
+    ,                        !- Heat Pump Heating Coil Availability Schedule Name
+    autosize,                !- Heat Pump Heating Coil Rated Capacity {W}
+    2.75,                    !- Heat Pump Heating Coil Rated COP
+    -8,                      !- Heat Pump Heating Minimum Outdoor Dry-Bulb Temperature {C}
+    5,                       !- Heat Pump Defrost Maximum Outdoor Dry-Bulb Temperature {C}
+    ReverseCycle,            !- Heat Pump Defrost Strategy
+    Timed,                   !- Heat Pump Defrost Control
+    0.058333,                !- Heat Pump Defrost Time Period Fraction
+    Electric,                !- Supplemental Heating Coil Type
+    ,                        !- Supplemental Heating Coil Availability Schedule Name
+    autosize,                !- Supplemental Heating Coil Capacity {W}
+    21,                      !- Supplemental Heating Coil Maximum Outdoor Dry-Bulb Temperature {C}
+    0.8,                     !- Supplemental Gas Heating Coil Efficiency
+    ,                        !- Supplemental Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    ,                        !- Minimum Outdoor Air Schedule Name
+    NoEconomizer,            !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    ,                        !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    ,                        !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.7,                     !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690,                    !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30;                      !- Humidifier Setpoint {percent}
+

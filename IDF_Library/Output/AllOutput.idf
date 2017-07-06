@@ -1,0 +1,369 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,
+    ,                        !- Key Value
+    Site Outdoor Air Drybulb Temperature,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Mean Air Temperature,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Mean Radiant Temperature,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Air Relative Humidity,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Mechanical Ventilation Air Changes per Hour,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Infiltration Air Change Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heating Coil Gas Energy, !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heating Coil Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heating Coil Defrost Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heating Coil Crankcase Heater Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Cooling Coil Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Cooling Coil Total Cooling Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Cooling Coil Sensible Cooling Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heating Coil Air Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Pump Electric Power,     !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heating Coil Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Cooling Coil Total Cooling Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Cooling Coil Sensible Cooling Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler Electric Power,   !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler Gas Rate,         !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler Propane Rate,     !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler FuelOil#1 Rate,   !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler FuelOil#2 Rate,   !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler Coal Rate,        !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler Diesel Rate,      !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Boiler Gasoline Rate,    !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Evaporative Cooler Electric Power,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Electric Power,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Chiller Condenser Fan Electric Power,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Cooling Tower Fan Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heat Exchanger Sensible Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heat Exchanger Total Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heat Exchanger Sensible Cooling Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Heat Exchanger Total Cooling Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Humidifier Electric Power,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Air System Evaporative Cooler Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Air System Desiccant Dehumidifier Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Fan Electric Power,      !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Use Equipment Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Electric Power,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Gas Rate,   !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Propane Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater FuelOil#1 Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater FuelOil#2 Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Coal Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Diesel Rate,!- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Water Heater Gasoline Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Radiant HVAC Cooling Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Radiant HVAC Heating Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Baseboard Electric Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Air System Sensible Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Baseboard Total Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone People Sensible Heating Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Windows Total Transmitted Solar Radiation Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Interior Windows Total Transmitted Diffuse Solar Radiation Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Interior Windows Total Transmitted Beam Solar Radiation Rate,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Infiltration Sensible Heat Loss Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Infiltration Sensible Heat Gain Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Ventilation Sensible Heat Loss Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Ventilation Sensible Heat Gain Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Mixing Sensible Heat Loss Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Mixing Sensible Heat Gain Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    ,                        !- Key Value
+    Zone Other Equipment Total Heating Energy,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Outdoor Air Drybulb Temperature,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Outdoor Air Dewpoint Temperature,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Wind Speed,         !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Wind Direction,     !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Direct Solar Radiation Rate per Area,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Diffuse Solar Radiation Rate per Area,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Solar Azimuth Angle,!- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Solar Altitude Angle,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Outdoor Air Barometric Pressure,  !- Variable Name
+    hourly;                  !- Reporting Frequency
+

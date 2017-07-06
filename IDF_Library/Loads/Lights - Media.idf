@@ -1,0 +1,69 @@
+!-Generator IDFEditor 1.41
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    Media Centre Lights,     !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: WeekDays SummerDesignDay CustomDay1 CustomDay2,  !- Field 2
+    Until: 8:00,             !- Field 3
+    .1,                      !- Field 4
+    Until: 11:00,            !- Field 5
+    .8,                      !- Field 6
+    Until: 12:00,            !- Field 7
+    .5,                      !- Field 8
+    Until: 13:00,            !- Field 9
+    .5,                      !- Field 10
+    Until: 14:00,            !- Field 11
+    .5,                      !- Field 12
+    Until: 18:00,            !- Field 13
+    .6,                      !- Field 14
+    Until: 19:00,            !- Field 15
+    .7,                      !- Field 16
+    Until: 21:00,            !- Field 17
+    1,                       !- Field 18
+    Until: 24:00,            !- Field 19
+    1,                       !- Field 20
+    For: Weekends WinterDesignDay Holiday,  !- Field 21
+    Until: 8:00,             !- Field 22
+    .1,                      !- Field 23
+    Until: 11:00,            !- Field 24
+    .8,                      !- Field 25
+    Until: 12:00,            !- Field 26
+    .5,                      !- Field 27
+    Until: 13:00,            !- Field 28
+    .5,                      !- Field 29
+    Until: 14:00,            !- Field 30
+    .5,                      !- Field 31
+    Until: 18:00,            !- Field 32
+    .6,                      !- Field 33
+    Until: 19:00,            !- Field 34
+    .7,                      !- Field 35
+    Until: 21:00,            !- Field 36
+    1,                       !- Field 37
+    Until: 24:00,            !- Field 38
+    1;                       !- Field 39
+
+
+!-   ===========  ALL OBJECTS IN CLASS: LIGHTS ===========
+
+Lights,
+    ZoneName generic lights, !- Name
+    ZoneName,                !- Zone or ZoneList Name
+    Media Centre Lights,     !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    5,                       !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    ,                        !- Return Air Fraction
+    ,                        !- Fraction Radiant
+    ,                        !- Fraction Visible
+    ,                        !- Fraction Replaceable
+    Lights;                  !- End-Use Subcategory
+

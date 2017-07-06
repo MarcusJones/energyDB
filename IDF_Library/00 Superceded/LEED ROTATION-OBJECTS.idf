@@ -1,0 +1,56 @@
+!-Generator IDFEditor 1.42
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: COMPLIANCE:BUILDING ===========
+
+Compliance:Building,
+    =$appGAngle;             !- Building Rotation for Appendix G {deg}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PARAMETRIC:SETVALUEFORRUN ===========
+
+Parametric:SetValueForRun,
+    $appGAngle,              !- Name
+    0.0,                     !- Value for run 1
+    90.0,                    !- Value for run 2
+    180.0,                   !- Value for run 3
+    270.0;                   !- Value for run 4
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PARAMETRIC:FILENAMESUFFIX ===========
+
+Parametric:FileNameSuffix,
+    Names,                   !- name
+    G000,                    !- Suffix for file name in run 1
+    G090,                    !- Suffix for file name in run 2
+    G180,                    !- Suffix for file name in run 3
+    G270;                    !- Suffix for file name in run 4
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:TABLE:SUMMARYREPORTS ===========
+
+Output:Table:SummaryReports,
+    AllSummary;              !- Report 1 Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUTCONTROL:TABLE:STYLE ===========
+
+OutputControl:Table:Style,
+    HTML,                    !- Column Separator
+    JtoKWH;                  !- Unit Conversion
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:METER ===========
+
+Output:Meter,
+    Heating:DistrictHeating, !- Name
+    Annual;                  !- Reporting Frequency
+
+Output:Meter,
+    Cooling:DistrictCooling, !- Name
+    Annual;                  !- Reporting Frequency
+

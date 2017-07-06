@@ -1,0 +1,20 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:TABLE:SUMMARYREPORTS ===========
+
+Output:Table:SummaryReports,
+    AnnualBuildingUtilityPerformanceSummary,  !- Report 1 Name
+    InputVerificationandResultsSummary,  !- Report 2 Name
+    ClimaticDataSummary,     !- Report 3 Name
+    EnvelopeSummary,         !- Report 4 Name
+    LightingSummary,         !- Report 5 Name
+    EquipmentSummary,        !- Report 6 Name
+    SystemSummary,           !- Report 7 Name
+    OutdoorAirSummary,       !- Report 8 Name
+    LEEDSummary;             !- Report 9 Name
+

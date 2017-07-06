@@ -1,0 +1,84 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Heat Balance System Air Transfer Rate,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Heat Balance System Convective Heat Gain Rate,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Heat Balance System Air Transfer Rate,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Heat Balance System Convective Heat Gain Rate,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Radiant HVAC Heating Energy,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Radiant HVAC Cooling Energy,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Ventilated Slab Radiant Cooling Energy,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone People Sensible Heating Energy,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Lights Total Heating Energy,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Electric Equipment Convective Heating Energy,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Windows Total Heat Gain Energy,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Heat Balance Interzone Air Transfer Rate,          !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Heat Balance Outdoor Air Transfer Rate,          !- Variable Name
+    Hourly;                  !- Reporting Frequency

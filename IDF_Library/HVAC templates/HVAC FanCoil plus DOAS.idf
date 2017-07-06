@@ -1,0 +1,259 @@
+!-Generator IDFEditor 1.41
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:THERMOSTAT ===========
+
+HVACTemplate:Thermostat,
+    FanCoil Thermostat,      !- Name
+    ,                        !- Heating Setpoint Schedule Name
+    21.1,                    !- Constant Heating Setpoint {C}
+    ,                        !- Cooling Setpoint Schedule Name
+    23.8;                    !- Constant Cooling Setpoint {C}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:ZONE:FANCOIL ===========
+
+HVACTemplate:Zone:FanCoil,
+    ZoneName,                !- Zone Name
+    FanCoil Thermostat,      !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    ,                        !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- System Availability Schedule Name
+    0.7,                     !- Supply Fan Total Efficiency
+    75,                      !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    ChilledWater,            !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    14,                      !- Cooling Coil Design Setpoint {C}
+    HotWater,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    50,                      !- Heating Coil Design Setpoint {C}
+    ;                        !- Dedicated Outdoor Air System Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:ZONE:VAV ===========
+
+HVACTemplate:Zone:VAV,
+    ZoneName,                !- Zone Name
+    VAVSystem,               !- Template VAV System Name
+    FanCoil Thermostat,      !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Constant,                !- Zone Minimum Air Flow Input Method
+    0,                       !- Constant Minimum Air Flow Fraction
+    ,                        !- Fixed Minimum Air Flow Rate {m3/s}
+    ,                        !- Minimum Air Flow Fraction Schedule Name
+    Flow/Person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    Electric,                !- Reheat Coil Type
+    ,                        !- Reheat Coil Availability Schedule Name
+    Reverse,                 !- Damper Heating Action
+    ,                        !- Maximum Flow per Zone Floor Area During Reheat {m3/s-m2}
+    ,                        !- Maximum Flow Fraction During Reheat
+    ,                        !- Maximum Reheat Air Temperature {C}
+    ,                        !- Design Specification Outdoor Air Object Name
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    Electric,                !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize;                !- Baseboard Heating Capacity {W}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:SYSTEM:VAV ===========
+
+HVACTemplate:System:VAV,
+    VAVSystem,               !- Name
+    ,                        !- System Availability Schedule Name
+    autosize,                !- Supply Fan Maximum Flow Rate {m3/s}
+    autosize,                !- Supply Fan Minimum Flow Rate {m3/s}
+    0.9,                     !- Supply Fan Total Efficiency
+    1000,                    !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    ChilledWater,            !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    ,                        !- Cooling Coil Setpoint Schedule Name
+    12.8,                    !- Cooling Coil Design Setpoint {C}
+    HotWater,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    ,                        !- Heating Coil Setpoint Schedule Name
+    10,                      !- Heating Coil Design Setpoint {C}
+    0.8,                     !- Gas Heating Coil Efficiency
+    ,                        !- Gas Heating Coil Parasitic Electric Load {W}
+    None,                    !- Preheat Coil Type
+    ,                        !- Preheat Coil Availability Schedule Name
+    ,                        !- Preheat Coil Setpoint Schedule Name
+    7.2,                     !- Preheat Coil Design Setpoint {C}
+    0.8,                     !- Gas Preheat Coil Efficiency
+    ,                        !- Gas Preheat Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    0.1,                     !- Minimum Outdoor Air Flow Rate {m3/s}
+    ProportionalMinimum,     !- Minimum Outdoor Air Control Type
+    ,                        !- Minimum Outdoor Air Schedule Name
+    NoEconomizer,            !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    ,                        !- Economizer Upper Temperature Limit {C}
+    ,                        !- Economizer Lower Temperature Limit {C}
+    ,                        !- Economizer Upper Enthalpy Limit {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Supply Plenum Name
+    DrawThrough,             !- Return Plenum Name
+    InletVaneDampers,        !- Supply Fan Placement
+    StayOff,                 !- Supply Fan Part-Load Power Coefficients
+    ,                        !- Night Cycle Control
+    Sensible,                !- Night Cycle Control Zone Name
+    0.7,                     !- Heat Recovery Type
+    0.65,                    !- Sensible Heat Recovery Effectiveness
+    None,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Cooling Coil Setpoint Reset Type
+    None,                    !- Heating Coil Setpoint Reset Type
+    ,                        !- Dehumidification Control Type
+    60,                      !- Dehumidification Control Zone Name
+    None,                    !- Dehumidification Setpoint {percent}
+    ,                        !- Humidifier Type
+    0.000001,                !- Humidifier Availability Schedule Name
+    2690,                    !- Humidifier Rated Capacity {m3/s}
+    ,                        !- Humidifier Rated Electric Power {W}
+    30,                      !- Humidifier Control Zone Name
+    ;                        !- Humidifier Setpoint {percent}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:SYSTEM:DEDICATEDOUTDOORAIR ===========
+
+HVACTemplate:System:DedicatedOutdoorAir,
+    DOAS,                    !- Name
+    ,                        !- System Availability Schedule Name
+    DirectIntoZone,          !- Air Outlet Type
+    autosize,                !- Supply Fan Flow Rate {m3/s}
+    0.7,                     !- Supply Fan Total Efficiency
+    1000,                    !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    DrawThrough,             !- Supply Fan Placement
+    ChilledWater,            !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    FixedSetpoint,           !- Cooling Coil Setpoint Control Type
+    12.8,                    !- Cooling Coil Design Setpoint {C}
+    ,                        !- Cooling Coil Setpoint Schedule Name
+    15.6,                    !- Cooling Coil Setpoint at Outdoor Dry-Bulb Low {C}
+    15.6,                    !- Cooling Coil Reset Outdoor Dry-Bulb Low {C}
+    12.8,                    !- Cooling Coil Setpoint at Outdoor Dry-Bulb High {C}
+    23.3,                    !- Cooling Coil Reset Outdoor Dry-Bulb High {C}
+    autosize,                !- DX Cooling Coil Capacity {W}
+    autosize,                !- DX Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- DX Cooling Coil Rated COP {W/W}
+    Electric,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    FixedSetpoint,           !- Heating Coil Setpoint Control Type
+    12.2,                    !- Heating Coil Design Setpoint {C}
+    ,                        !- Heating Coil Setpoint Schedule Name
+    15,                      !- Heating Coil Setpoint at Outdoor Dry-Bulb Low {C}
+    7.8,                     !- Heating Coil Reset Outdoor Dry-Bulb Low {C}
+    12.2,                    !- Heating Coil Setpoint at Outdoor Dry-Bulb High {C}
+    12.2,                    !- Heating Coil Reset Outdoor Dry-Bulb High {C}
+    0.8,                     !- Gas Heating Coil Efficiency
+    ,                        !- Gas Heating Coil Parasitic Electric Load {W}
+    None,                    !- Heat Recovery Type
+    0.7,                     !- Heat Recovery Sensible Effectiveness
+    0.65,                    !- Heat Recovery Latent Effectiveness
+    Plate,                   !- Heat Recovery Heat Exchanger Type
+    None,                    !- Heat Recovery Frost Control Type
+    None,                    !- Dehumidification Control Type
+    0.00924,                 !- Dehumidification Setpoint {kg-H2O/kg-air}
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690,                    !- Humidifier Rated Electric Power {W}
+    0.003;                   !- Humidifier Setpoint {kg-H2O/kg-air}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:PLANT:CHILLEDWATERLOOP ===========
+
+HVACTemplate:Plant:ChilledWaterLoop,
+    FanCoil ChilledWaterLoop,!- Name
+    ,                        !- Pump Schedule Name
+    Intermittent,            !- Pump Control Type
+    Default,                 !- Chiller Plant Operation Scheme Type
+    ,                        !- Chiller Plant Equipment Operation Schemes Name
+    ,                        !- Chilled Water Setpoint Schedule Name
+    7.22,                    !- Chilled Water Design Setpoint {C}
+    ConstantPrimaryNoSecondary,  !- Chilled Water Pump Configuration
+    179352,                  !- Primary Chilled Water Pump Rated Head {Pa}
+    179352,                  !- Secondary Chilled Water Pump Rated Head {Pa}
+    Default,                 !- Condenser Plant Operation Scheme Type
+    ,                        !- Condenser Equipment Operation Schemes Name
+    ,                        !- Condenser Water Temperature Control Type
+    ,                        !- Condenser Water Setpoint Schedule Name
+    29.4,                    !- Condenser Water Design Setpoint {C}
+    179352,                  !- Condenser Water Pump Rated Head {Pa}
+    None,                    !- Chilled Water Setpoint Reset Type
+    12.2,                    !- Chilled Water Setpoint at Outdoor Dry-Bulb Low {C}
+    15.6,                    !- Chilled Water Reset Outdoor Dry-Bulb Low {C}
+    6.7,                     !- Chilled Water Setpoint at Outdoor Dry-Bulb High {C}
+    26.7;                    !- Chilled Water Reset Outdoor Dry-Bulb High {C}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:PLANT:CHILLER ===========
+
+HVACTemplate:Plant:Chiller,
+    FanCoil Chiller 1,       !- Name
+    DistrictChilledWater,    !- Chiller Type
+    autosize,                !- Capacity {W}
+    ,                        !- Nominal COP {W/W}
+    AirCooled,               !- Condenser Type
+    ,                        !- Priority
+    1;                       !- Sizing Factor
+
+HVACTemplate:Plant:Chiller,
+    FanCoil Chiller 2,       !- Name
+    DistrictChilledWater,    !- Chiller Type
+    autosize,                !- Capacity {W}
+    ,                        !- Nominal COP {W/W}
+    AirCooled,               !- Condenser Type
+    ,                        !- Priority
+    1;                       !- Sizing Factor
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:PLANT:HOTWATERLOOP ===========
+
+HVACTemplate:Plant:HotWaterLoop,
+    FanCoil HotWaterLoop,    !- Name
+    ,                        !- Pump Schedule Name
+    Intermittent,            !- Pump Control Type
+    Default,                 !- Hot Water Plant Operation Scheme Type
+    ,                        !- Hot Water Plant Equipment Operation Schemes Name
+    ,                        !- Hot Water Setpoint Schedule Name
+    82,                      !- Hot Water Design Setpoint {C}
+    ConstantFlow,            !- Hot Water Pump Configuration
+    179352,                  !- Hot Water Pump Rated Head {Pa}
+    None,                    !- Hot Water Setpoint Reset Type
+    82.2,                    !- Hot Water Setpoint at Outdoor Dry-Bulb Low {C}
+    -6.7,                    !- Hot Water Reset Outdoor Dry-Bulb Low {C}
+    65.6,                    !- Hot Water Setpoint at Outdoor Dry-Bulb High {C}
+    10;                      !- Hot Water Reset Outdoor Dry-Bulb High {C}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:PLANT:BOILER ===========
+
+HVACTemplate:Plant:Boiler,
+    FanCoil Boiler,          !- Name
+    HotWaterBoiler,          !- Boiler Type
+    autosize,                !- Capacity {W}
+    0.8,                     !- Efficiency
+    Electricity,             !- Fuel Type
+    ,                        !- Priority
+    1;                       !- Sizing Factor
+

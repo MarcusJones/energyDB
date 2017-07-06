@@ -1,0 +1,32 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: COMPLIANCE:BUILDING ===========
+
+Compliance:Building,
+    =$appGAngle;             !- Building Rotation for Appendix G {deg}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PARAMETRIC:SETVALUEFORRUN ===========
+
+Parametric:SetValueForRun,
+    $appGAngle,              !- Name
+    0.0,                     !- Value for Run 1
+    90.0,                    !- Value for Run 2
+    180.0,                   !- Value for Run 3
+    270.0;                   !- Value for Run 4
+
+
+!-   ===========  ALL OBJECTS IN CLASS: PARAMETRIC:FILENAMESUFFIX ===========
+
+Parametric:FileNameSuffix,
+    Names,                   !- Name
+    G000,                    !- Suffix for File Name in Run 1
+    G090,                    !- Suffix for File Name in Run 2
+    G180,                    !- Suffix for File Name in Run 3
+    G270;                    !- Suffix for File Name in Run 4
+

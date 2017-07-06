@@ -1,0 +1,27 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLEDICTIONARY ===========
+
+Output:VariableDictionary,
+    regular,                 !- Key Field
+    Name;                    !- Sort Option
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:CONSTRUCTIONS ===========
+
+Output:Constructions,
+    Constructions,           !- Details Type 1
+    Materials;               !- Details Type 2
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUTCONTROL:TABLE:STYLE ===========
+
+OutputControl:Table:Style,
+    CommaAndHTML,            !- Column Separator
+    JtoKWH;                  !- Unit Conversion
+

@@ -1,0 +1,50 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WATERHEATER:MIXED ===========
+
+WaterHeater:Mixed,
+    Water Heater,            !- Name
+    autosize,                !- Tank Volume {m3}
+    60,                      !- Setpoint Temperature Schedule Name
+    5.00,                    !- Deadband Temperature Difference {deltaC}
+    80.00,                   !- Maximum Temperature Limit {C}
+    Cycle,                   !- Heater Control Type
+    autosize,                !- Heater Maximum Capacity {W}
+    0,                       !- Heater Minimum Capacity {W}
+    0.000000,                !- Heater Ignition Minimum Flow Rate {m3/s}
+    0.0,                     !- Heater Ignition Delay {s}
+    DistrictHeating,         !- Heater Fuel Type
+    0.90,                    !- Heater Thermal Efficiency
+    New style low temperature boiler,  !- Part Load Factor Curve Name
+    0.000,                   !- Off Cycle Parasitic Fuel Consumption Rate {W}
+    Electricity,             !- Off Cycle Parasitic Fuel Type
+    0.00,                    !- Off Cycle Parasitic Heat Fraction to Tank
+    0.000,                   !- On Cycle Parasitic Fuel Consumption Rate {W}
+    Electricity,             !- On Cycle Parasitic Fuel Type
+    0.00,                    !- On Cycle Parasitic Heat Fraction to Tank
+    Schedule,                !- Ambient Temperature Indicator
+    61,                      !- Ambient Temperature Schedule Name
+    ,                        !- Ambient Temperature Zone Name
+    Water Heater Outdoor Air Node,  !- Ambient Temperature Outdoor Air Node Name
+    0.0000,                  !- Off Cycle Loss Coefficient to Ambient Temperature {W/K}
+    1.00,                    !- Off Cycle Loss Fraction to Zone
+    0.0000,                  !- On Cycle Loss Coefficient to Ambient Temperature {W/K}
+    1.00,                    !- On Cycle Loss Fraction to Zone
+    0.000000,                !- Peak Use Flow Rate {m3/s}
+    ,                        !- Use Flow Rate Fraction Schedule Name
+    ,                        !- Cold Water Supply Temperature Schedule Name
+    Water Heater DHW Inlet Node,  !- Use Side Inlet Node Name
+    Water Heater DHW Outlet Node,  !- Use Side Outlet Node Name
+    1.00,                    !- Use Side Effectiveness
+    ,                        !- Source Side Inlet Node Name
+    ,                        !- Source Side Outlet Node Name
+    1.00,                    !- Source Side Effectiveness
+    autosize,                !- Use Side Design Flow Rate {m3/s}
+    autosize,                !- Source Side Design Flow Rate {m3/s}
+    1.50;                    !- Indirect Water Heating Recovery Time {hr}
+

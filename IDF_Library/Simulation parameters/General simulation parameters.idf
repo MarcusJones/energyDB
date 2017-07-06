@@ -1,0 +1,22 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: VERSION ===========
+
+!
+!
+Version,
+    6.0;                     !- Version Identifier
+
+
+!-   ===========  ALL OBJECTS IN CLASS: TIMESTEP ===========
+
+!
+!
+Timestep,
+    4;                       !- Number of Timesteps per Hour
+

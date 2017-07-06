@@ -1,0 +1,30 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WINDOWMATERIAL:SIMPLEGLAZINGSYSTEM ===========
+
+WindowMaterial:SimpleGlazingSystem,
+    Exterior Window,         !- Name
+    6.81,                    !- U-Factor {W/m2-K}
+    0.25;                    !- Solar Heat Gain Coefficient
+
+WindowMaterial:SimpleGlazingSystem,
+    Interior Window,         !- Name
+    6.81,                    !- U-Factor {W/m2-K}
+    0.25;                    !- Solar Heat Gain Coefficient
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CONSTRUCTION ===========
+
+Construction,
+    000_Interior Window,     !- Name
+    Interior Window;         !- Outside Layer
+
+Construction,
+    000_Exterior Window,     !- Name
+    Exterior Window;         !- Outside Layer
+

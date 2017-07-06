@@ -1,0 +1,19 @@
+Hi all, I just wanted to revisit the topic of "Ventilation" in E+ since I was also confused. From the E+ engineering ref.: 
+
+"""
+Ventilation (Ref Object: ZoneVentilation:DesignFlowRate) is the purposeful flow of air from the outdoor environment directly into a thermal zone in order to provide some amount of non-mechanical cooling.
+"""
+
+This definition does not strictly adhere to the ASRHAE definition of ventilation in i.e., ASHRAE 62.1-2007:
+
+"""
+ventilation: the process of supplying air to or removing air
+from a space for the purpose of controlling air contaminant
+levels, humidity, or temperature within the space.
+"""
+
+Th
+
+Always specify outdoor air rate in the Template:Zone object, never use ZoneVentilation:DesignFlowRate object!
+
+The zone template will always expand to create a Zone:Sizing object which properly accounts for the outdoor air requirements! 

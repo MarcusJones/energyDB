@@ -1,0 +1,118 @@
+
+
+Construction,
+  Steel-Framed_R-13_Ext-wall,  !- Name
+  MAT-SHEATH,               !- Layer 1
+  Wall Insulation [1],      !- Layer 2
+  1/2IN Gypsum;             !- Layer 3
+
+! Type: ExtWall:Steel-Framed
+! Description: R-13
+! Effective R-Value (SI): 1.271
+! Layer 1: MAT-SHEATH
+! Layer 2: Wall Insulation [1]
+! Layer 3: 1/2IN Gypsum
+Material:NoMass,
+  MAT-SHEATH,               !- Name
+  Rough,                    !- Roughness
+  0.36256,                  !- Thermal Resistance
+  0.9,                      !- Abs Thermal
+  0.7,                      !- Abs Solar
+  0.7;                      !- Abs Visible
+
+Material,
+  Wall Insulation [1],      !- Name
+  MediumRough,              !- Roughness
+  0.0373223,                !- Thickness
+  0.045,                    !- Conductivity
+  265,                      !- Density
+  836.8,                    !- Specific Heat
+  0.9,                      !- Abs Thermal
+  0.7,                      !- Abs Solar
+  0.7;                      !- Abs Visible
+
+Material,
+  1/2IN Gypsum,             !- Name
+  Smooth,                   !- Roughness
+  0.01271,                  !- Thickness
+  0.16,                     !- Conductivity
+  784.9,                    !- Density
+  830,                      !- Specific Heat
+  0.9,                      !- Abs Thermal
+  0.92,                     !- Abs Solar
+  0.92;                     !- Abs Visible
+
+OS:ComponentCost:LineItem,
+  Steel-Framed_R-13_Ext-wall,  ! Name
+  ,                         ! Type
+  Construction,             ! Line Item Type
+  Steel-Framed_R-13_Ext-wall,  ! Item Name
+  ,
+  ,
+  87.079999999999998,
+  ,
+  ,
+  ,
+  ,
+  ,
+  ,
+  38.210999999999999,
+  48.869,
+  0,
+  0,
+  0,
+  0;
+
+OS:ComponentData:Attributes,
+  OS:ComponentData 1,       ! ComponentData Name
+  Standard,
+  ASHRAE 90.1-2007,
+  ,
+  Standard Type,
+  Nonresidential,
+  ,
+  Climate Zone,
+  ASHRAE 2004:1A,
+  ,
+  Climate Zone,
+  ASHRAE 2004:1B,
+  ,
+  Construction,
+  exterior wall,
+  ,
+  Construction Type,
+  Steel-Framed,
+  ,
+  Effective R-Value,
+  1.271,
+  ft^2 F h/Btu,
+  Insulation Minimum R-Value,
+  R-13,
+  ft^2 F h/Btu,
+  Film Coefficients,
+  false,
+  ;
+
+OS:ComponentData,
+  OS:ComponentData 1,       ! Name
+  {0ea6ac6a-7e76-4e4f-80ba-b5ba4b84d02f},  ! UUID
+  {ddcb63f6-cb04-419a-9f09-6d9768d4c9d8},  ! Version UUID
+  Constructions based on building codes and standards. R-13,  ! Description
+  3,                        ! Fidelity Level
+  Construction,
+  Steel-Framed_R-13_Ext-wall,
+  Material_NoMass,
+  MAT-SHEATH,
+  Material,
+  Wall Insulation [1],
+  Material,
+  1/2IN Gypsum,
+  OS_ComponentCost_LineItem,
+  Steel-Framed_R-13_Ext-wall;
+
+OS:ComponentData:Tags,
+  OS:ComponentData 1,       ! ComponentData Name
+  EnergyPlus,
+  Construction,
+  Exterior Wall;
+

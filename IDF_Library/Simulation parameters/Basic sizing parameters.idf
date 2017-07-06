@@ -1,0 +1,30 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SIZINGPERIOD:WEATHERFILECONDITIONTYPE ===========
+
+SizingPeriod:WeatherFileConditionType,
+    Summer,                  !- Name
+    SummerTypical,           !- Period Selection
+    Monday,                  !- Day of Week for Start Day
+    Yes,                     !- Use Weather File Daylight Saving Period
+    Yes;                     !- Use Weather File Rain and Snow Indicators
+
+SizingPeriod:WeatherFileConditionType,
+    Winter,                  !- Name
+    WinterTypical,           !- Period Selection
+    Monday,                  !- Day of Week for Start Day
+    Yes,                     !- Use Weather File Daylight Saving Period
+    Yes;                     !- Use Weather File Rain and Snow Indicators
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SIZING:PARAMETERS ===========
+
+Sizing:Parameters,
+    1.00,                    !- Heating Sizing Factor
+    1.00;                    !- Cooling Sizing Factor
+

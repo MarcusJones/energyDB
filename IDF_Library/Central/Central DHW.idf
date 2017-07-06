@@ -1,0 +1,37 @@
+!-Generator IDFEditor 1.44
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WATERUSE:EQUIPMENT ===========
+
+WaterUse:Equipment,
+    General Office DHW,      !- Name
+    ,                        !- End-Use Subcategory
+    0.00175,                 !- Peak Flow Rate {m3/s}
+    2864,                    !- Flow Rate Fraction Schedule Name
+    60,                      !- Target Temperature Schedule Name
+    ,                        !- Hot Water Supply Temperature Schedule Name
+    ,                        !- Cold Water Supply Temperature Schedule Name
+    ,                        !- Zone Name
+    7,                       !- Sensible Fraction Schedule Name
+    7;                       !- Latent Fraction Schedule Name
+
+
+!-   ===========  ALL OBJECTS IN CLASS: WATERUSE:CONNECTIONS ===========
+
+WaterUse:Connections,
+    Water Outlet Group,      !- Name
+    Water Outlet Group Inlet Node,  !- Inlet Node Name
+    Water Outlet Group Outlet Node,  !- Outlet Node Name
+    ,                        !- Supply Water Storage Tank Name
+    ,                        !- Reclamation Water Storage Tank Name
+    ,                        !- Hot Water Supply Temperature Schedule Name
+    ,                        !- Cold Water Supply Temperature Schedule Name
+    None,                    !- Drain Water Heat Exchanger Type
+    Plant,                   !- Drain Water Heat Exchanger Destination
+    1500.000,                !- Drain Water Heat Exchanger U-Factor Times Area {W/K}
+    General Office DHW;      !- Water Use Equipment 1 Name
+

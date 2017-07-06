@@ -1,0 +1,203 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:TABLE:MONTHLY ===========
+
+Output:Table:Monthly,
+    Passive breakdown,       !- Name
+    2,                       !- Digits After Decimal
+    Mtr Zone Infiltration Total Heat Gain,  !- Variable or Meter 1 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+    Mtr one Infiltration Total Heat Loss,  !- Variable or Meter 2 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+    Mtr Zone Window Heat Gain Energy,  !- Variable or Meter 3 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+    Mtr Zone Window Heat Loss Energy,  !- Variable or Meter 4 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+    Mtr Zone People Total Heat Gain,  !- Variable or Meter 5 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+    Mtr Zone Lights Total Heat Gain,  !- Variable or Meter 6 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 6
+    Mtr Zone Electric Equipment Total Heat Gain,  !- Variable or Meter 7 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 7
+    Mtr Zone/Sys Sensible Cooling Energy,  !- Variable or Meter 8 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 8
+
+Output:Table:Monthly,
+    Zone Air Balance,        !- Name
+    2,                       !- Digits After Decimal
+    Mtr Zone Air Balance Internal Convective Gains Rate,  !- Variable or Meter 1 Name
+    Maximum,                 !- Aggregation Type for Variable or Meter 1
+    Mtr Zone Air Balance Surface Convection Rate,  !- Variable or Meter 2 Name
+    Maximum,                 !- Aggregation Type for Variable or Meter 2
+    Mtr Zone Air Balance Interzone Air Transfer Rate,  !- Variable or Meter 3 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+    Mtr Zone Air Balance Outdoor Air Transfer Rate,  !- Variable or Meter 4 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+    Mtr Zone Air Balance System Air Transfer Rate,  !- Variable or Meter 5 Name
+    SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+    Mtr Zone Air Balance Deviation Rate,  !- Variable or Meter 6 Name
+    SumOrAverage;            !- Aggregation Type for Variable or Meter 6
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Deviation Rate,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Air Energy Storage Rate,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Electric Equipment Total Heat Gain,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Outdoor Air Transfer Rate,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Interzone Air Transfer Rate,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Surface Convection Rate,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone Air Balance Internal Convective Gains Rate,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+Output:Variable,
+    *,                       !- Key Value
+    Zone/Sys Sensible Cooling Energy,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+
+
+!-   ===========  ALL OBJECTS IN CLASS: METER:CUSTOM ===========
+
+Meter:Custom,
+    Mtr Zone Infiltration Total Heat Gain,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Infiltration Total Heat Gain;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Transmitted Solar Energy,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Transmitted Solar Energy;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Cooling:DistrictCooling ,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Cooling:DistrictCooling ;!- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Infiltration Total Heat Loss,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Infiltration Total Heat Loss;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Window Heat Gain Energy,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Window Heat Gain Energy;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Window Heat Loss Energy,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Window Heat Loss Energy;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone People Total Heat Gain,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone People Total Heat Gain;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Lights Total Heat Gain,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Lights Total Heat Gain;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Grand Total Gains,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone People Total Heat Gain,  !- Report Variable or Meter Name 1
+    ,                        !- Key Name 2
+    Zone Lights Total Heat Gain,  !- Report Variable or Meter Name 2
+    ,                        !- Key Name 3
+    Zone Electric Equipment Total Heat Gain;  !- Report Variable or Meter Name 3
+
+Meter:Custom,
+    Mtr Zone Electric Equipment Total Heat Gain,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Electric Equipment Total Heat Gain;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone/Sys Sensible Cooling Energy,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone/Sys Sensible Cooling Energy;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Air Balance Internal Convective Gains Rate,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Air Balance Internal Convective Gains Rate;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Air Balance Surface Convection Rate,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Air Balance Surface Convection Rate;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Air Balance Interzone Air Transfer Rate,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Air Balance Interzone Air Transfer Rate;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Air Balance Outdoor Air Transfer Rate,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Air Balance Outdoor Air Transfer Rate;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Air Balance System Air Transfer Rate,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Air Balance System Air Transfer Rate;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Air Balance Air Energy Storage Rate,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Air Balance Air Energy Storage Rate;  !- Report Variable or Meter Name 1
+
+Meter:Custom,
+    Mtr Zone Air Balance Deviation Rate,  !- Name
+    Generic,                 !- Fuel Type
+    *,                       !- Key Name 1
+    Zone Air Balance Deviation Rate;  !- Report Variable or Meter Name 1
+
