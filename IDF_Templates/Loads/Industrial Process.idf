@@ -8,7 +8,7 @@
 !-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
 
 Schedule:Compact,
-    BLDG_ELEVATORS,          !- Name
+    BLDG_INDUSTRIAL,         !- Name
     Fraction,                !- Schedule Type Limits Name
     Through: 12/31,          !- Field 1
     For: Weekdays SummerDesignDay,  !- Field 2
@@ -79,9 +79,9 @@ Schedule:Compact,
 !-   ===========  ALL OBJECTS IN CLASS: EXTERIOR:FUELEQUIPMENT ===========
 
 Exterior:FuelEquipment,
-    Elevators,               !- Name
+    Industrial Process,      !- Name
     Electricity,             !- Fuel Use Type
-    BLDG_ELEVATORS,          !- Schedule Name
+    BLDG_INDUSTRIAL,         !- Schedule Name
     203699.0000,             !- Design Level {W}
-    Elevators and Escalators;!- End-Use Subcategory
+    Industrial Process;      !- End-Use Subcategory
 
