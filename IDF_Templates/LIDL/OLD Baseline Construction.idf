@@ -8,6 +8,28 @@
 !-   ===========  ALL OBJECTS IN CLASS: MATERIAL ===========
 
 Material,
+    XPS Extruded Polystyrene  - CO2 Blowing_003,  !- Name
+    Rough,                   !- Roughness
+    0.03,                    !- Thickness {m}
+    0.034,                   !- Conductivity {W/m-K}
+    35,                      !- Density {kg/m3}
+    1400,                    !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.6,                     !- Solar Absorptance
+    0.6;                     !- Visible Absorptance
+
+Material,
+    Cast Concrete_015,       !- Name
+    Rough,                   !- Roughness
+    0.15,                    !- Thickness {m}
+    1.13,                    !- Conductivity {W/m-K}
+    2000,                    !- Density {kg/m3}
+    1000,                    !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.6,                     !- Solar Absorptance
+    0.6;                     !- Visible Absorptance
+
+Material,
     0.375 in. Roofing built up_00095,  !- Name
     Rough,                   !- Roughness
     0.0095,                  !- Thickness {m}
@@ -47,6 +69,28 @@ Material,
     45.28,                   !- Conductivity {W/m-K}
     7824,                    !- Density {kg/m3}
     500,                     !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+
+Material,
+    Gypsum Plastering_0013,  !- Name
+    Rough,                   !- Roughness
+    0.013,                   !- Thickness {m}
+    0.4,                     !- Conductivity {W/m-K}
+    1000,                    !- Density {kg/m3}
+    1000,                    !- Specific Heat {J/kg-K}
+    0.9,                     !- Thermal Absorptance
+    0.5,                     !- Solar Absorptance
+    0.5;                     !- Visible Absorptance
+
+Material,
+    Brickwork Inner Leaf_0115,  !- Name
+    Rough,                   !- Roughness
+    0.115,                   !- Thickness {m}
+    0.62,                    !- Conductivity {W/m-K}
+    1700,                    !- Density {kg/m3}
+    800,                     !- Specific Heat {J/kg-K}
     0.9,                     !- Thermal Absorptance
     0.7,                     !- Solar Absorptance
     0.7;                     !- Visible Absorptance
@@ -107,171 +151,6 @@ Material,
     0.78;                    !- Visible Absorptance
 
 Material,
-    R-30 batt Insulation Glas fiber for roof and floor insulation installed between metal framing_01793,  !- Name
-    Rough,                   !- Roughness
-    0.1793,                  !- Thickness {m}
-    0.043,                   !- Conductivity {W/m-K}
-    12,                      !- Density {kg/m3}
-    840,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.7,                     !- Solar Absorptance
-    0.7;                     !- Visible Absorptance
-
-Material,
-    4 in. Concrete at R-0.0625/in (NW 145 lb/ft3 solid concrete)_01016,  !- Name
-    Rough,                   !- Roughness
-    0.1016,                  !- Thickness {m}
-    2.3,                     !- Conductivity {W/m-K}
-    2321.4,                  !- Density {kg/m3}
-    837.36,                  !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.7,                     !- Solar Absorptance
-    0.7;                     !- Visible Absorptance
-
-Material,
-    Gravel rubble_04,        !- Name
-    Rough,                   !- Roughness
-    0.4,                     !- Thickness {m}
-    1.4,                     !- Conductivity {W/m-K}
-    1750,                    !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.7,                     !- Solar Absorptance
-    0.7;                     !- Visible Absorptance
-
-Material,
-    _LIDL_concrete_01,       !- Name
-    Rough,                   !- Roughness
-    0.1,                     !- Thickness {m}
-    2.04,                    !- Conductivity {W/m-K}
-    2400,                    !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.7,                     !- Solar Absorptance
-    0.7;                     !- Visible Absorptance
-
-Material,
-    _LIDL_Bitumen_0005,      !- Name
-    Rough,                   !- Roughness
-    0.005,                   !- Thickness {m}
-    0.19,                    !- Conductivity {W/m-K}
-    1200,                    !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.9,                     !- Solar Absorptance
-    0.9;                     !- Visible Absorptance
-
-Material,
-    _LIDL_Polyethylene / Polythene_00002,  !- Name
-    Rough,                   !- Roughness
-    0.0002,                  !- Thickness {m}
-    0.19,                    !- Conductivity {W/m-K}
-    1000,                    !- Density {kg/m3}
-    2200,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.7,                     !- Solar Absorptance
-    0.7;                     !- Visible Absorptance
-
-Material,
-    LIDL_Cement/plaster/mortar - cement screed_005,  !- Name
-    Rough,                   !- Roughness
-    0.05,                    !- Thickness {m}
-    1.4,                     !- Conductivity {W/m-K}
-    2200,                    !- Density {kg/m3}
-    650,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
-
-Material,
-    Steel sheet_00001,       !- Name
-    Rough,                   !- Roughness
-    0.0001,                  !- Thickness {m}
-    58.5,                    !- Conductivity {W/m-K}
-    7800,                    !- Density {kg/m3}
-    450,                     !- Specific Heat {J/kg-K}
-    0.3,                     !- Thermal Absorptance
-    0.3,                     !- Solar Absorptance
-    0.3;                     !- Visible Absorptance
-
-Material,
-    _LIDL Mineral fibre/wool - wool_02,  !- Name
-    Rough,                   !- Roughness
-    0.2,                     !- Thickness {m}
-    0.04,                    !- Conductivity {W/m-K}
-    100,                     !- Density {kg/m3}
-    840,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
-
-Material,
-    Gypsum Plastering_0013,  !- Name
-    Rough,                   !- Roughness
-    0.013,                   !- Thickness {m}
-    0.4,                     !- Conductivity {W/m-K}
-    1000,                    !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.5,                     !- Solar Absorptance
-    0.5;                     !- Visible Absorptance
-
-Material,
-    Brickwork Inner Leaf_0115,  !- Name
-    Rough,                   !- Roughness
-    0.115,                   !- Thickness {m}
-    0.62,                    !- Conductivity {W/m-K}
-    1700,                    !- Density {kg/m3}
-    800,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.7,                     !- Solar Absorptance
-    0.7;                     !- Visible Absorptance
-
-Material,
-    Plywood 30 mm_003,       !- Name
-    Rough,                   !- Roughness
-    0.03,                    !- Thickness {m}
-    0.13,                    !- Conductivity {W/m-K}
-    500,                     !- Density {kg/m3}
-    1500,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.78,                    !- Solar Absorptance
-    0.78;                    !- Visible Absorptance
-
-Material,
-    Standard insulation_0005,!- Name
-    Rough,                   !- Roughness
-    0.005,                   !- Thickness {m}
-    0.04,                    !- Conductivity {W/m-K}
-    12,                      !- Density {kg/m3}
-    840,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.7,                     !- Solar Absorptance
-    0.7;                     !- Visible Absorptance
-
-Material,
-    XPS Extruded Polystyrene  - CO2 Blowing_003,  !- Name
-    Rough,                   !- Roughness
-    0.03,                    !- Thickness {m}
-    0.034,                   !- Conductivity {W/m-K}
-    35,                      !- Density {kg/m3}
-    1400,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
-
-Material,
-    Cast Concrete_015,       !- Name
-    Rough,                   !- Roughness
-    0.15,                    !- Thickness {m}
-    1.13,                    !- Conductivity {W/m-K}
-    2000,                    !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
-
-Material,
     Asphalt 1_0019,          !- Name
     Rough,                   !- Roughness
     0.019,                   !- Thickness {m}
@@ -305,28 +184,6 @@ Material,
     0.6;                     !- Visible Absorptance
 
 Material,
-    Gypsum Plasterboard_00125,  !- Name
-    Rough,                   !- Roughness
-    0.0125,                  !- Thickness {m}
-    0.25,                    !- Conductivity {W/m-K}
-    900,                     !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.5,                     !- Solar Absorptance
-    0.5;                     !- Visible Absorptance
-
-Material,
-    Mineral fibre/wool - wool_0125,  !- Name
-    Rough,                   !- Roughness
-    0.125,                   !- Thickness {m}
-    0.038,                   !- Conductivity {W/m-K}
-    140,                     !- Density {kg/m3}
-    840,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
-
-Material,
     Cast Concrete (Dense)_01,!- Name
     Rough,                   !- Roughness
     0.1,                     !- Thickness {m}
@@ -338,59 +195,26 @@ Material,
     0.6;                     !- Visible Absorptance
 
 Material,
-    _LIDL Mineral fibre/wool - wool_015,  !- Name
+    R-30 batt Insulation Glas fiber for roof and floor insulation installed between metal framing_01793,  !- Name
     Rough,                   !- Roughness
-    0.15,                    !- Thickness {m}
-    0.04,                    !- Conductivity {W/m-K}
-    100,                     !- Density {kg/m3}
+    0.1793,                  !- Thickness {m}
+    0.043,                   !- Conductivity {W/m-K}
+    12,                      !- Density {kg/m3}
     840,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
-
-Material,
-    Gypsum Plasterboard_0025,!- Name
-    Rough,                   !- Roughness
-    0.025,                   !- Thickness {m}
-    0.25,                    !- Conductivity {W/m-K}
-    900,                     !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.5,                     !- Solar Absorptance
-    0.5;                     !- Visible Absorptance
-
-Material,
-    Mineral fibre/wool - wool_0075,  !- Name
-    Rough,                   !- Roughness
-    0.075,                   !- Thickness {m}
-    0.038,                   !- Conductivity {W/m-K}
-    140,                     !- Density {kg/m3}
-    840,                     !- Specific Heat {J/kg-K}
-    0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
-
-Material,
-    External Rendering_02,   !- Name
-    Rough,                   !- Roughness
-    0.2,                     !- Thickness {m}
-    0.5,                     !- Conductivity {W/m-K}
-    1300,                    !- Density {kg/m3}
-    1000,                    !- Specific Heat {J/kg-K}
     0.9,                     !- Thermal Absorptance
     0.7,                     !- Solar Absorptance
     0.7;                     !- Visible Absorptance
 
 Material,
-    Miscellaneous materials - polyurethane expanded_01,  !- Name
+    4 in. Concrete at R-0.0625/in (NW 145 lb/ft3 solid concrete)_01016,  !- Name
     Rough,                   !- Roughness
-    0.1,                     !- Thickness {m}
-    0.023,                   !- Conductivity {W/m-K}
-    24,                      !- Density {kg/m3}
-    1590,                    !- Specific Heat {J/kg-K}
+    0.1016,                  !- Thickness {m}
+    2.3,                     !- Conductivity {W/m-K}
+    2321.4,                  !- Density {kg/m3}
+    837.36,                  !- Specific Heat {J/kg-K}
     0.9,                     !- Thermal Absorptance
-    0.6,                     !- Solar Absorptance
-    0.6;                     !- Visible Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
 
 
 !-   ===========  ALL OBJECTS IN CLASS: MATERIAL:NOMASS ===========
@@ -462,21 +286,15 @@ Material:InfraredTransparent,
 
 WindowMaterial:SimpleGlazingSystem,
     Simple 1001,             !- Name
-    2.3,                     !- U-Factor {W/m2-K}
-    0.58,                    !- Solar Heat Gain Coefficient
-    0.8;                     !- Visible Transmittance
+    6.640,                   !- U-Factor {W/m2-K}
+    0.39,                    !- Solar Heat Gain Coefficient
+    0.56;                    !- Visible Transmittance
 
 WindowMaterial:SimpleGlazingSystem,
     Simple 1002,             !- Name
-    1.8,                     !- U-Factor {W/m2-K}
-    0.63,                    !- Solar Heat Gain Coefficient
-    0.8;                     !- Visible Transmittance
-
-WindowMaterial:SimpleGlazingSystem,
-    Simple 1003,             !- Name
-    0.7,                     !- U-Factor {W/m2-K}
-    0.32,                    !- Solar Heat Gain Coefficient
-    0.8;                     !- Visible Transmittance
+    2.840,                   !- U-Factor {W/m2-K}
+    0.4,                     !- Solar Heat Gain Coefficient
+    0.56;                    !- Visible Transmittance
 
 
 !-   ===========  ALL OBJECTS IN CLASS: WINDOWMATERIAL:GLAZING ===========
@@ -520,6 +338,22 @@ Construction,
     XPS Extruded Polystyrene  - CO2 Blowing_003;  !- Layer 2
 
 Construction,
+    Roof,                    !- Name
+    0.375 in. Roofing built up_00095,  !- Outside Layer
+    0.75 in. Plywood/wood panels_00191,  !- Layer 2
+    R-8 board Insulation (Glass fiber board)_01174,  !- Layer 3
+    3_RVAL_4,                !- Layer 4
+    Metal deck_001;          !- Layer 5
+
+Construction,
+    Roof_Rev,                !- Name
+    Metal deck_001,          !- Outside Layer
+    4_RVAL_2,                !- Layer 2
+    R-8 board Insulation (Glass fiber board)_01174,  !- Layer 3
+    0.75 in. Plywood/wood panels_00191,  !- Layer 4
+    0.375 in. Roofing built up_00095;  !- Layer 5
+
+Construction,
     115mm single leaf brick (plastered both sides),  !- Name
     Gypsum Plastering_0013,  !- Outside Layer
     Brickwork Inner Leaf_0115,  !- Layer 2
@@ -530,6 +364,22 @@ Construction,
     Gypsum Plastering_0013,  !- Outside Layer
     Brickwork Inner Leaf_0115,  !- Layer 2
     Gypsum Plastering_0013;  !- Layer 3
+
+Construction,
+    Exterior Walls Warehouse,!- Name
+    0.75 in. Stucco_0019,    !- Outside Layer
+    0.625 in. gypsum board_00159,  !- Layer 2
+    Board insulation (Glass fiber board)_00423,  !- Layer 3
+    Board insulation (Glass fiber board)_00421,  !- Layer 4
+    0.625 in. gypsum board_00159;  !- Layer 5
+
+Construction,
+    Exterior Walls Warehouse_Rev,  !- Name
+    0.625 in. gypsum board_00159,  !- Outside Layer
+    Board insulation (Glass fiber board)_00421,  !- Layer 2
+    Board insulation (Glass fiber board)_00423,  !- Layer 3
+    0.625 in. gypsum board_00159,  !- Layer 4
+    0.75 in. Stucco_0019;    !- Layer 5
 
 Construction,
     Wooden flush panel hollow core door (normally hung),  !- Name
@@ -568,12 +418,28 @@ Construction,
     Gypsum Plastering_0013;  !- Layer 3
 
 Construction,
-    100mm concrete slab_Reversed,  !- Name
+    _PROJECT SLAB,           !- Name
     Cast Concrete (Dense)_01;!- Outside Layer
 
 Construction,
-    100mm concrete slab_Reversed_Rev,  !- Name
+    _PROJECT SLAB_Rev,       !- Name
     Cast Concrete (Dense)_01;!- Outside Layer
+
+Construction,
+    Exterior Walls Offices,  !- Name
+    0.75 in. Stucco_0019,    !- Outside Layer
+    0.625 in. gypsum board_00159,  !- Layer 2
+    Board insulation (Glass fiber board)_00423,  !- Layer 3
+    Board insulation (Glass fiber board)_00421,  !- Layer 4
+    0.625 in. gypsum board_00159;  !- Layer 5
+
+Construction,
+    Exterior Walls Offices_Rev,  !- Name
+    0.625 in. gypsum board_00159,  !- Outside Layer
+    Board insulation (Glass fiber board)_00421,  !- Layer 2
+    Board insulation (Glass fiber board)_00423,  !- Layer 3
+    0.625 in. gypsum board_00159,  !- Layer 4
+    0.75 in. Stucco_0019;    !- Layer 5
 
 Construction,
     Floor Steel-Joist R-30 (5.3) U-0.038 (0.214),  !- Name
@@ -600,42 +466,6 @@ Construction,
 Construction,
     1003,                    !- Name
     100;                     !- Outside Layer
-
-Construction,
-    Roof,                    !- Name
-    Steel sheet_00001,       !- Outside Layer
-    _LIDL Mineral fibre/wool - wool_02,  !- Layer 2
-    Steel sheet_00001;       !- Layer 3
-
-Construction,
-    Roof_Rev,                !- Name
-    Steel sheet_00001,       !- Outside Layer
-    _LIDL Mineral fibre/wool - wool_02,  !- Layer 2
-    Steel sheet_00001;       !- Layer 3
-
-Construction,
-    Exterior Walls Warehouse,!- Name
-    Steel sheet_00001,       !- Outside Layer
-    _LIDL Mineral fibre/wool - wool_02,  !- Layer 2
-    Steel sheet_00001;       !- Layer 3
-
-Construction,
-    Exterior Walls Warehouse_Rev,  !- Name
-    Steel sheet_00001,       !- Outside Layer
-    _LIDL Mineral fibre/wool - wool_02,  !- Layer 2
-    Steel sheet_00001;       !- Layer 3
-
-Construction,
-    Exterior Walls Offices,  !- Name
-    Steel sheet_00001,       !- Outside Layer
-    _LIDL Mineral fibre/wool - wool_015,  !- Layer 2
-    Steel sheet_00001;       !- Layer 3
-
-Construction,
-    Exterior Walls Offices_Rev,  !- Name
-    Steel sheet_00001,       !- Outside Layer
-    _LIDL Mineral fibre/wool - wool_015,  !- Layer 2
-    Steel sheet_00001;       !- Layer 3
 
 
 !-   ===========  ALL OBJECTS IN CLASS: WINDOWPROPERTY:FRAMEANDDIVIDER ===========

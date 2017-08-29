@@ -1,0 +1,178 @@
+!-Generator IDFEditor 1.48
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:QUADRATIC ===========
+
+Curve:Quadratic,
+    DXHtgCoilEnergyInputRatioFuncFlowFraction,  !- Name
+    1.3824,                  !- Coefficient1 Constant
+    -0.4336,                 !- Coefficient2 x
+    0.0512,                  !- Coefficient3 x**2
+    0.0,                     !- Minimum Value of x
+    1.0;                     !- Maximum Value of x
+
+Curve:Quadratic,
+    DXClgCoilTotalClgCapFuncFlowFraction,  !- Name
+    0.8,                     !- Coefficient1 Constant
+    0.2,                     !- Coefficient2 x
+    0.0,                     !- Coefficient3 x**2
+    0.5,                     !- Minimum Value of x
+    1.5;                     !- Maximum Value of x
+
+Curve:Quadratic,
+    DXClgCoilEnergyInputRatioFuncFlowFraction,  !- Name
+    1.1552,                  !- Coefficient1 Constant
+    -0.1808,                 !- Coefficient2 x
+    0.0256,                  !- Coefficient3 x**2
+    0.5,                     !- Minimum Value of x
+    1.5;                     !- Maximum Value of x
+
+Curve:Quadratic,
+    DXCoilPartLoadFractionCorrelation,  !- Name
+    0.85,                    !- Coefficient1 Constant
+    0.15,                    !- Coefficient2 x
+    0.0,                     !- Coefficient3 x**2
+    0.0,                     !- Minimum Value of x
+    1.0;                     !- Maximum Value of x
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:CUBIC ===========
+
+Curve:Cubic,
+    DefaultFanEffRatioCurve, !- Name
+    0.33856828,              !- Coefficient1 Constant
+    1.72644131,              !- Coefficient2 x
+    -1.49280132,             !- Coefficient3 x**2
+    0.42776208,              !- Coefficient4 x**3
+    0.5,                     !- Minimum Value of x
+    1.5,                     !- Maximum Value of x
+    0.3,                     !- Minimum Curve Output
+    1.0;                     !- Maximum Curve Output
+
+Curve:Cubic,
+    ElectronicEnthalpyCurve, !- Name
+    0.01342704,              !- Coefficient1 Constant
+    -0.00047892,             !- Coefficient2 x
+    0.000053352,             !- Coefficient3 x**2
+    -0.0000018103,           !- Coefficient4 x**3
+    16.6,                    !- Minimum Value of x
+    29.13;                   !- Maximum Value of x
+
+Curve:Cubic,
+    DXHtgCoilTotalHtgCapFuncTemperature,  !- Name
+    0.758746,                !- Coefficient1 Constant
+    0.027626,                !- Coefficient2 x
+    0.000148716,             !- Coefficient3 x**2
+    0.0000034992,            !- Coefficient4 x**3
+    -20.0,                   !- Minimum Value of x
+    20.0,                    !- Maximum Value of x
+    ,                        !- Minimum Curve Output
+    ,                        !- Maximum Curve Output
+    Temperature,             !- Input Unit Type for X
+    Dimensionless;           !- Output Unit Type
+
+Curve:Cubic,
+    DXHtgCoilTotalHtgCapFuncFlowFraction,  !- Name
+    0.84,                    !- Coefficient1 Constant
+    0.16,                    !- Coefficient2 x
+    0.0,                     !- Coefficient3 x**2
+    0.0,                     !- Coefficient4 x**3
+    0.5,                     !- Minimum Value of x
+    1.5;                     !- Maximum Value of x
+
+Curve:Cubic,
+    DXHtgCoilEnergyInputRatioFuncTemperature,  !- Name
+    1.19248,                 !- Coefficient1 Constant
+    -0.0300438,              !- Coefficient2 x
+    0.00103745,              !- Coefficient3 x**2
+    -0.000023328,            !- Coefficient4 x**3
+    -20.0,                   !- Minimum Value of x
+    20.0,                    !- Maximum Value of x
+    ,                        !- Minimum Curve Output
+    ,                        !- Maximum Curve Output
+    Temperature,             !- Input Unit Type for X
+    Dimensionless;           !- Output Unit Type
+
+Curve:Cubic,
+    PartLoadCurveForGasHeatingCoil,  !- Name
+    0.8,                     !- Coefficient1 Constant
+    0.2,                     !- Coefficient2 x
+    0.0,                     !- Coefficient3 x**2
+    0.0,                     !- Coefficient4 x**3
+    0,                       !- Minimum Value of x
+    1;                       !- Maximum Value of x
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:EXPONENT ===========
+
+Curve:Exponent,
+    DefaultFanPowerRatioCurve,  !- Name
+    0,                       !- Coefficient1 Constant
+    1,                       !- Coefficient2 Constant
+    3,                       !- Coefficient3 Constant
+    0,                       !- Minimum Value of x
+    1.5,                     !- Maximum Value of x
+    0.01,                    !- Minimum Curve Output
+    1.5;                     !- Maximum Curve Output
+
+
+!-   ===========  ALL OBJECTS IN CLASS: CURVE:BIQUADRATIC ===========
+
+Curve:Biquadratic,
+    DXClgCoilTotalClgCapFuncTemperature,  !- Name
+    0.942587793,             !- Coefficient1 Constant
+    0.009543347,             !- Coefficient2 x
+    0.000683770,             !- Coefficient3 x**2
+    -0.011042676,            !- Coefficient4 y
+    0.000005249,             !- Coefficient5 y**2
+    -0.000009720,            !- Coefficient6 x*y
+    12.77778,                !- Minimum Value of x
+    23.88889,                !- Maximum Value of x
+    18.0,                    !- Minimum Value of y
+    46.11111,                !- Maximum Value of y
+    ,                        !- Minimum Curve Output
+    ,                        !- Maximum Curve Output
+    Temperature,             !- Input Unit Type for X
+    Temperature,             !- Input Unit Type for Y
+    Dimensionless;           !- Output Unit Type
+
+Curve:Biquadratic,
+    DXClgCoilEnergyInputRatioFuncTemperature,  !- Name
+    0.342414409,             !- Coefficient1 Constant
+    0.034885008,             !- Coefficient2 x
+    -0.000623700,            !- Coefficient3 x**2
+    0.004977216,             !- Coefficient4 y
+    0.000437951,             !- Coefficient5 y**2
+    -0.000728028,            !- Coefficient6 x*y
+    12.77778,                !- Minimum Value of x
+    23.88889,                !- Maximum Value of x
+    18.0,                    !- Minimum Value of y
+    46.11111,                !- Maximum Value of y
+    ,                        !- Minimum Curve Output
+    ,                        !- Maximum Curve Output
+    Temperature,             !- Input Unit Type for X
+    Temperature,             !- Input Unit Type for Y
+    Dimensionless;           !- Output Unit Type
+
+Curve:Biquadratic,
+    DXHtgCoilDefrostEIRFT,   !- Name
+    1.0,                     !- Coefficient1 Constant
+    0.0,                     !- Coefficient2 x
+    0.0,                     !- Coefficient3 x**2
+    0.0,                     !- Coefficient4 y
+    0,                       !- Coefficient5 y**2
+    0,                       !- Coefficient6 x*y
+    0.0,                     !- Minimum Value of x
+    50.0,                    !- Maximum Value of x
+    0.0,                     !- Minimum Value of y
+    50.0,                    !- Maximum Value of y
+    ,                        !- Minimum Curve Output
+    ,                        !- Maximum Curve Output
+    Temperature,             !- Input Unit Type for X
+    Temperature,             !- Input Unit Type for Y
+    Dimensionless;           !- Output Unit Type
+

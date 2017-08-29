@@ -1,0 +1,22 @@
+!-Generator IDFEditor 1.38a
+!-Option SortedOrder
+
+!!!{
+!!!	   "multiply": "HVACTemplate:Zone:IdealLoadsAirSystem",
+!!!    "zoneName": "//ATTR[1]"
+!!!}
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:ZONE:IDEALLOADSAIRSYSTEM ===========
+
+HVACTemplate:Zone:IdealLoadsAirSystem,
+    ZoneName,                !- Zone Name
+    IdealLoadsThermostat;    !- Template Thermostat Name
+
+!-   ===========  ALL OBJECTS IN CLASS: HVACTEMPLATE:THERMOSTAT ===========
+
+HVACTemplate:Thermostat,
+    IdealLoadsThermostat,    !- Name
+    ,                        !- Heating Setpoint Schedule Name
+    21.1,                    !- Constant Heating Setpoint {C}
+    ,                        !- Cooling Setpoint Schedule Name
+    23.8;                    !- Constant Cooling Setpoint {C}
