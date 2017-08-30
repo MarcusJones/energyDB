@@ -1,0 +1,31 @@
+!-Generator IDFEditor 1.48
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    PROCESS_FORKLIFT_CHARGE,     !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Alldays,            !- Field 2
+    Until: 07:00,            !- Field 3
+    0.0,                     !- Field 4
+    Until: 9:00,            !- Field 5
+    1,                       !- Field 6
+    Until: 24:00,            !- Field 7
+     0;                      !- Field 8
+
+
+!-   ===========  ALL OBJECTS IN CLASS: EXTERIOR:FUELEQUIPMENT ===========
+
+Exterior:FuelEquipment,
+    Forklift_Chargers,       !- Name
+    Electricity,             !- Fuel Use Type
+    PROCESS_FORKLIFT_CHARGE,         !- Schedule Name
+    555000.0000,             !- Design Level {W}
+    Forklift Charging;       !- End-Use Subcategory
+

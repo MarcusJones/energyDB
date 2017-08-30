@@ -28,12 +28,12 @@ Schedule:Compact,
     1;                       !- Field 8
 
 
-!-   ===========  ALL OBJECTS IN CLASS: EXTERIOR:FUELEQUIPMENT ===========
+!-   ===========  ALL OBJECTS IN CLASS: EXTERIOR:LIGHTS ===========
 
-Exterior:FuelEquipment,
+Exterior:Lights,
     Exterior Lighting,       !- Name
-    Electricity,             !- Fuel Use Type
     Ext_NIGHT,               !- Schedule Name
-    0,                       !- Design Level {W}
-    General;                 !- End-Use Subcategory
+    13500,                   !- Design Level {W}
+    AstronomicalClock,       !- Control Option
+    Exterior Lighting;       !- End-Use Subcategory
 

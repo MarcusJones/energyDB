@@ -1,0 +1,833 @@
+!-Generator IDFEditor 1.48
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+    Test Conference/Meeting/Multipurpose Equip,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 31 Dec,         !- Field 1
+    For: Monday,             !- Field 2
+    Until: 08:00,            !- Field 3
+    0,                       !- Field 4
+    Until: 09:00,            !- Field 5
+    1,                       !- Field 6
+    Until: 24:00,            !- Field 7
+    0,                       !- Field 8
+    For: Tuesday,            !- Field 9
+    Until: 24:00,            !- Field 10
+    0,                       !- Field 11
+    For: Wednesday,          !- Field 12
+    Until: 15:00,            !- Field 13
+    0,                       !- Field 14
+    Until: 16:00,            !- Field 15
+    0.2,                     !- Field 16
+    Until: 24:00,            !- Field 17
+    0,                       !- Field 18
+    For: Thursday,           !- Field 19
+    Until: 09:00,            !- Field 20
+    0,                       !- Field 21
+    Until: 11:00,            !- Field 22
+    1,                       !- Field 23
+    Until: 24:00,            !- Field 24
+    0,                       !- Field 25
+    For: Friday,             !- Field 26
+    Until: 09:00,            !- Field 27
+    0,                       !- Field 28
+    Until: 10:00,            !- Field 29
+    0.2,                     !- Field 30
+    Until: 15:00,            !- Field 31
+    0,                       !- Field 32
+    Until: 17:00,            !- Field 33
+    1,                       !- Field 34
+    Until: 24:00,            !- Field 35
+    0,                       !- Field 36
+    For: SummerDesignDay,    !- Field 37
+    Until: 09:00,            !- Field 38
+    0,                       !- Field 39
+    Until: 18:00,            !- Field 40
+    1,                       !- Field 41
+    Until: 24:00,            !- Field 42
+    0,                       !- Field 43
+    For: Weekends WinterDesignDay,  !- Field 44
+    Until: 24:00,            !- Field 45
+    0,                       !- Field 46
+    For: AllOtherDays,       !- Field 47
+    Until: 24:00,            !- Field 48
+    0;                       !- Field 49
+
+Schedule:Compact,
+    Equip - Warehouse,       !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 31 Dec,         !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 07:00,            !- Field 3
+    0,                       !- Field 4
+    Until: 08:00,            !- Field 5
+    0.15,                    !- Field 6
+    Until: 09:00,            !- Field 7
+    0.70,                    !- Field 8
+    Until: 12:00,            !- Field 9
+    0.90,                    !- Field 10
+    Until: 13:00,            !- Field 11
+    0.50,                    !- Field 12
+    Until: 15:00,            !- Field 13
+    0.80,                    !- Field 14
+    Until: 16:00,            !- Field 15
+    0.85,                    !- Field 16
+    Until: 17:00,            !- Field 17
+    0.20,                    !- Field 18
+    Until: 24:00,            !- Field 19
+    0.00,                    !- Field 20
+    For: Saturday,           !- Field 21
+    Until: 08:00,            !- Field 22
+    0.00,                    !- Field 23
+    Until: 12:00,            !- Field 24
+    0.20,                    !- Field 25
+    Until: 16:00,            !- Field 26
+    0.10,                    !- Field 27
+    Until: 24:00,            !- Field 28
+    0.00,                    !- Field 29
+    For: Sunday,             !- Field 30
+    Until: 24:00,            !- Field 31
+    0,                       !- Field 32
+    For: SummerDesignDay,    !- Field 33
+    Until: 08:00,            !- Field 34
+    0,                       !- Field 35
+    Until: 23:00,            !- Field 36
+    1,                       !- Field 37
+    Until: 24:00,            !- Field 38
+    0,                       !- Field 39
+    For: AllOtherDays,       !- Field 40
+    Until: 24:00,            !- Field 41
+    0;                       !- Field 42
+
+Schedule:Compact,
+    Office_WkshpSS_Equip,    !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 31 Dec,         !- Field 1
+    For: Weekdays SummerDesignDay,  !- Field 2
+    Until: 05:00,            !- Field 3
+    0.04566,                 !- Field 4
+    Until: 07:00,            !- Field 5
+    0.05,                    !- Field 6
+    Until: 20:00,            !- Field 7
+    1,                       !- Field 8
+    Until: 21:00,            !- Field 9
+    0.05,                    !- Field 10
+    Until: 24:00,            !- Field 11
+    0.04566,                 !- Field 12
+    For: Weekends Holidays,  !- Field 13
+    Until: 05:00,            !- Field 14
+    0.04566,                 !- Field 15
+    Until: 21:00,            !- Field 16
+    0.05,                    !- Field 17
+    Until: 24:00,            !- Field 18
+    0.04566,                 !- Field 19
+    For: WinterDesignDay AllOtherDays,  !- Field 20
+    Until: 24:00,            !- Field 21
+    0;                       !- Field 22
+
+Schedule:Compact,
+    Equip - Office,          !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 31 Dec,         !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 06:00,            !- Field 3
+    0,                       !- Field 4
+    Until: 07:00,            !- Field 5
+    0.10,                    !- Field 6
+    Until: 08:00,            !- Field 7
+    0.20,                    !- Field 8
+    Until: 17:00,            !- Field 9
+    0.95,                    !- Field 10
+    Until: 18:00,            !- Field 11
+    0.30,                    !- Field 12
+    Until: 22:00,            !- Field 13
+    0.10,                    !- Field 14
+    Until: 24:00,            !- Field 15
+    0.05,                    !- Field 16
+    For: Saturday,           !- Field 17
+    Until: 06:00,            !- Field 18
+    0,                       !- Field 19
+    Until: 08:00,            !- Field 20
+    0.10,                    !- Field 21
+    Until: 12:00,            !- Field 22
+    0.30,                    !- Field 23
+    Until: 17:00,            !- Field 24
+    0.10,                    !- Field 25
+    Until: 19:00,            !- Field 26
+    0.05,                    !- Field 27
+    Until: 24:00,            !- Field 28
+    0,                       !- Field 29
+    For: Sunday,             !- Field 30
+    Until: 06:00,            !- Field 31
+    0,                       !- Field 32
+    Until: 18:00,            !- Field 33
+    0.05,                    !- Field 34
+    Until: 24:00,            !- Field 35
+    0,                       !- Field 36
+    For: SummerDesignDay,    !- Field 37
+    Until: 08:00,            !- Field 38
+    0,                       !- Field 39
+    Until: 23:00,            !- Field 40
+    1,                       !- Field 41
+    Until: 24:00,            !- Field 42
+    0,                       !- Field 43
+    For: AllOtherDays,       !- Field 44
+    Until: 24:00,            !- Field 45
+    0;                       !- Field 46
+
+Schedule:Compact,
+    Office_EatDrink_Equip2,  !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 31 Dec,         !- Field 1
+    For: Weekdays SummerDesignDay,  !- Field 2
+    Until: 06:00,            !- Field 3
+    0.06792,                 !- Field 4
+    Until: 07:00,            !- Field 5
+    0.30094,                 !- Field 6
+    Until: 08:00,            !- Field 7
+    0.76698,                 !- Field 8
+    Until: 14:00,            !- Field 9
+    1,                       !- Field 10
+    Until: 15:00,            !- Field 11
+    0.76698,                 !- Field 12
+    Until: 17:00,            !- Field 13
+    0.30094,                 !- Field 14
+    Until: 18:00,            !- Field 15
+    0.76698,                 !- Field 16
+    Until: 22:00,            !- Field 17
+    1,                       !- Field 18
+    Until: 23:00,            !- Field 19
+    0.76698,                 !- Field 20
+    Until: 24:00,            !- Field 21
+    0.30094,                 !- Field 22
+    For: Weekends,           !- Field 23
+    Until: 24:00,            !- Field 24
+    0.06792,                 !- Field 25
+    For: Holidays,           !- Field 26
+    Until: 24:00,            !- Field 27
+    0.06792,                 !- Field 28
+    For: WinterDesignDay AllOtherDays,  !- Field 29
+    Until: 24:00,            !- Field 30
+    0;                       !- Field 31
+
+
+!-   ===========  ALL OBJECTS IN CLASS: ELECTRICEQUIPMENT ===========
+
+ElectricEquipment,
+    Sa:Sto.0.s8.hazardous Miscellaneous gain 1,  !- Name
+    Sa:Sto.0.s8.hazardous,   !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    557.2958,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sa:Sto.0.s5.hochregal Miscellaneous gain 1,  !- Name
+    Sa:Sto.0.s5.hochregal,   !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    4634.3997,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sa:Sto.0.s5.nonfood Miscellaneous gain 1,  !- Name
+    Sa:Sto.0.s5.nonfood,     !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    2082.241,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sa:Sto.0.s5.block Miscellaneous gain 1,  !- Name
+    Sa:Sto.0.s5.block,       !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    2071.8571,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sa:Sto.0.s5.WEWAschoko Miscellaneous gain 1,  !- Name
+    Sa:Sto.0.s5.WEWAschoko,  !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    892.3918,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sa:Sto.0.s5.WEWA Miscellaneous gain 1,  !- Name
+    Sa:Sto.0.s5.WEWA,        !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    3031.4582,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sa:Sto.0.s5.KTschoko18C Miscellaneous gain 1,  !- Name
+    Sa:Sto.0.s5.KTschoko18C, !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    2029.8364,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sf:Sto.0.s5.kuhlung1C Miscellaneous gain 1,  !- Name
+    Sf:Sto.0.s5.kuhlung1C,   !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sf:St.0.s5.tkmns24C Miscellaneous gain 1,  !- Name
+    Sf:St.0.s5.tkmns24C,     !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sb:Sto.0.s4.obst14C Miscellaneous gain 1,  !- Name
+    Sb:Sto.0.s4.obst14C,     !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    2569.9336,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sb:Sto.0.s4.WEWA1C Miscellaneous gain 1,  !- Name
+    Sb:Sto.0.s4.WEWA1C,      !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sb:Sto.0.s4.obst4C Miscellaneous gain 1,  !- Name
+    Sb:Sto.0.s4.obst4C,      !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    P0:Plen.obst Equipment 1,!- Name
+    P0:Plen.obst,            !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Pr:Plen.refrigeration Equipment 1,  !- Name
+    Pr:Plen.refrigeration,   !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sc:Sto.0.s5.block Miscellaneous gain 1,  !- Name
+    Sc:Sto.0.s5.block,       !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    8615.345,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Se:Sto.0.s5.kettenf2C Miscellaneous gain 1,  !- Name
+    Se:Sto.0.s5.kettenf2C,   !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Pk:Plen.kettenforderer Equipment 1,  !- Name
+    Pk:Plen.kettenforderer,  !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Sd:Sto.0.s5.kalthalle Miscellaneous gain 1,  !- Name
+    Sd:Sto.0.s5.kalthalle,   !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    3815.1298,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    W0:Lad.0.s8.3.ladezone Equipment 1,  !- Name
+    W0:Lad.0.s8.3.ladezone,  !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    W0:Wor.0.s6.werkstatt Equipment 1,  !- Name
+    W0:Wor.0.s6.werkstatt,   !- Zone or ZoneList Name
+    Office_WkshpSS_Equip,    !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    1562.7375,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Staircase:Staircase Equipment 1,  !- Name
+    Staircase:Staircase,     !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O0:San.0.s3.WCFahrer Equipment 1,  !- Name
+    O0:San.0.s3.WCFahrer,    !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O0:Rc.0.s3.fnhltfhrr Miscellaneous gain 1,  !- Name
+    O0:Rc.0.s3.fnhltfhrr,    !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Office,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    259.9823,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O0:San.0.s3.WC Equipment 1,  !- Name
+    O0:San.0.s3.WC,          !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O0:Off.0.s3.manager Miscellaneous gain 1,  !- Name
+    O0:Off.0.s3.manager,     !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Office,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    297.8888,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O0:Off.0.s3.theke Miscellaneous gain 1,  !- Name
+    O0:Off.0.s3.theke,       !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Office,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    700.068,                 !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Om:Soc.m.s3.teekuche Miscellaneous gain 1,  !- Name
+    Om:Soc.m.s3.teekuche,    !- Zone or ZoneList Name
+    Office_EatDrink_Equip2,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    1163.5563,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Cooking;                 !- End-Use Subcategory
+
+ElectricEquipment,
+    Om:Off.m.s3.buro Miscellaneous gain 1,  !- Name
+    Om:Off.m.s3.buro,        !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Office,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    1123.7363,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Om:Cn.m.s3.bschprchng Miscellaneous gain 1,  !- Name
+    Om:Cn.m.s3.bschprchng,   !- Zone or ZoneList Name
+    Test Conference/Meeting/Multipurpose Occ,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    383.3597,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Om:San.m.s3.WC Equipment 1,  !- Name
+    Om:San.m.s3.WC,          !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    S1b:St.1.s4.nnfdrtr Miscellaneous gain 1,  !- Name
+    S1b:St.1.s4.nnfdrtr,     !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    5421.9632,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Tec.1:Tec.1.s8.45technical Equipment 1,  !- Name
+    Tec.1:Tec.1.s8.45technical,  !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    Tec.1:St.nct.1.s3.rchv Equipment 1,  !- Name
+    Tec.1:St.nct.1.s3.rchv,  !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    S1a:St.1.s4.tgmtrl Miscellaneous gain 1,  !- Name
+    S1a:St.1.s4.tgmtrl,      !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Warehouse,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    5834.872,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Tec.1.s1.general Equipment 1,  !- Name
+    O1:Tec.1.s1.general,     !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Off.1.s1.immo2 Miscellaneous gain 1,  !- Name
+    O1:Off.1.s1.immo2,       !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Office,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    2190.4088,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Soc.1.s2.sozialraum Miscellaneous gain 1,  !- Name
+    O1:Soc.1.s2.sozialraum,  !- Zone or ZoneList Name
+    Office_EatDrink_Equip2,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    6152.9943,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Cooking;                 !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Soc.1.s2.umkleide Equipment 1,  !- Name
+    O1:Soc.1.s2.umkleide,    !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Sto.1.s1.lager Equipment 1,  !- Name
+    O1:Sto.1.s1.lager,       !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Off.1.s1.immo1 Miscellaneous gain 1,  !- Name
+    O1:Off.1.s1.immo1,       !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Office,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    2080.3688,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Off.1.s1.vertrieb Miscellaneous gain 1,  !- Name
+    O1:Off.1.s1.vertrieb,    !- Zone or ZoneList Name
+    ASHRAE 90.1 Occupancy - Office,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    2068.7618,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Soc.1.s1.teekuche Miscellaneous gain 1,  !- Name
+    O1:Soc.1.s1.teekuche,    !- Zone or ZoneList Name
+    Office_EatDrink_Equip2,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    8225.2475,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Cooking;                 !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:San.1.s1.WC Equipment 1,  !- Name
+    O1:San.1.s1.WC,          !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Con.1.s1.konferenzz2 Miscellaneous gain 1,  !- Name
+    O1:Con.1.s1.konferenzz2, !- Zone or ZoneList Name
+    Test Conference/Meeting/Multipurpose Occ,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    1004.9948,               !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:San.1.s1.WCZ1 Equipment 1,  !- Name
+    O1:San.1.s1.WCZ1,        !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    0,                       !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Con.1.s1.konferenzz1 Miscellaneous gain 1,  !- Name
+    O1:Con.1.s1.konferenzz1, !- Zone or ZoneList Name
+    Test Conference/Meeting/Multipurpose Occ,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    330.0653,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
+ElectricEquipment,
+    O1:Con.1.s1.konferenz Miscellaneous gain 1,  !- Name
+    O1:Con.1.s1.konferenz,   !- Zone or ZoneList Name
+    Test Conference/Meeting/Multipurpose Occ,  !- Schedule Name
+    EquipmentLevel,          !- Design Level Calculation Method
+    969.9464,                !- Design Level {W}
+    ,                        !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Fraction Latent
+    0.2,                     !- Fraction Radiant
+    0,                       !- Fraction Lost
+    Receptacle Equipment;    !- End-Use Subcategory
+
