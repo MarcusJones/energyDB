@@ -757,7 +757,7 @@ People,
     O1:Soc.1.s1.teekuche,    !- Zone or ZoneList Name
     Office_EatDrink_Occ,     !- Number of People Schedule Name
     People,                  !- Number of People Calculation Method
-    24.50178,                !- Number of People
+    10,                      !- Number of People
     ,                        !- People per Zone Floor Area {person/m2}
     ,                        !- Zone Floor Area per Person {m2/person}
     0.3,                     !- Fraction Radiant
@@ -770,7 +770,7 @@ People,
     O1:San.1.s1.WC,          !- Zone or ZoneList Name
     Occupancy - Office,      !- Number of People Schedule Name
     People,                  !- Number of People Calculation Method
-    10,                      !- Number of People
+    0,                       !- Number of People
     ,                        !- People per Zone Floor Area {person/m2}
     ,                        !- Zone Floor Area per Person {m2/person}
     0.3,                     !- Fraction Radiant
