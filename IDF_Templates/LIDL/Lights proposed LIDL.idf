@@ -11,1164 +11,657 @@ Lights,
     Sa:Sto.0.s8.hazardous General lighting,  !- Name
     Sa:Sto.0.s8.hazardous,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    947.4029,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    3956.8002,               !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sa:Sto.0.s5.hochregal General lighting,  !- Name
     Sa:Sto.0.s5.hochregal,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    7878.4795,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    32904.2379,              !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sa:Sto.0.s5.nonfood General lighting,  !- Name
     Sa:Sto.0.s5.nonfood,     !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    3539.8097,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    14783.9111,              !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sa:Sto.0.s5.block General lighting,  !- Name
     Sa:Sto.0.s5.block,       !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    3522.1571,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    14710.1854,              !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sa:Sto.0.s5.WEWAschoko General lighting,  !- Name
     Sa:Sto.0.s5.WEWAschoko,  !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    1517.0661,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    6335.9818,               !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sa:Sto.0.s5.WEWA General lighting,  !- Name
     Sa:Sto.0.s5.WEWA,        !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    5153.4789,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    21523.3532,              !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sa:Sto.0.s5.KTschoko18C General lighting,  !- Name
     Sa:Sto.0.s5.KTschoko18C, !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    3450.7219,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    14411.8384,              !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sf:Sto.0.s5.kuhlung1C General lighting,  !- Name
     Sf:Sto.0.s5.kuhlung1C,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    12921.3819,              !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    20709.2126,              !- Lighting Level {W}
+    2.83,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sf:St.0.s5.tkmns24C General lighting,  !- Name
     Sf:St.0.s5.tkmns24C,     !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    9271.741,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    14859.901,               !- Lighting Level {W}
+    2.85,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sb:Sto.0.s4.obst14C General lighting,  !- Name
     Sb:Sto.0.s4.obst14C,     !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    7272.9121,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    18246.5286,              !- Lighting Level {W}
+    2.83,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sb:Sto.0.s4.WEWA1C General lighting,  !- Name
     Sb:Sto.0.s4.WEWA1C,      !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    8941.6589,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    22433.1373,              !- Lighting Level {W}
+    2.83,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sb:Sto.0.s4.obst4C General lighting,  !- Name
     Sb:Sto.0.s4.obst4C,      !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    2223.4744,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    5578.328,                !- Lighting Level {W}
+    2.83,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sc:Sto.0.s5.block General lighting,  !- Name
     Sc:Sto.0.s5.block,       !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    14646.0865,              !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    61168.9495,              !- Lighting Level {W}
+    1.7,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Se:Sto.0.s5.kettenf2C General lighting,  !- Name
     Se:Sto.0.s5.kettenf2C,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    1838.1558,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    2946.0286,               !- Lighting Level {W}
+    2.83,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Sd:Sto.0.s5.kalthalle General lighting,  !- Name
     Sd:Sto.0.s5.kalthalle,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    10796.8173,              !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    27087.4216,              !- Lighting Level {W}
+    2.83,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     W0:Lad.0.s8.3.ladezone General lighting,  !- Name
     W0:Lad.0.s8.3.ladezone,  !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    1671.4468,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    7280.5353,               !- Lighting Level {W}
+    1.63,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     W0:Wor.0.s6.werkstatt General lighting,  !- Name
     W0:Wor.0.s6.werkstatt,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    2484.7526,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    4031.8628,               !- Lighting Level {W}
+    2.82,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Staircase:Staircase General lighting,  !- Name
     Staircase:Staircase,     !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    81.0136,                 !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    177.3888,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O0:San.0.s3.WCFahrer General lighting,  !- Name
     O0:San.0.s3.WCFahrer,    !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    87.0101,                 !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    222.1048,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O0:Rc.0.s3.fnhltfhrr General lighting,  !- Name
     O0:Rc.0.s3.fnhltfhrr,    !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    275.5812,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    336.2437,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O0:San.0.s3.WC General lighting,  !- Name
     O0:San.0.s3.WC,          !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    151.1359,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    385.7942,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O0:Off.0.s3.manager General lighting,  !- Name
     O0:Off.0.s3.manager,     !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    315.7621,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    385.2695,                !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O0:Off.0.s3.theke General lighting,  !- Name
     O0:Off.0.s3.theke,       !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    742.0721,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    905.4213,                !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Om:Soc.m.s3.teekuche General lighting,  !- Name
     Om:Soc.m.s3.teekuche,    !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    65.8551,                 !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    168.1039,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Om:Off.m.s3.buro General lighting,  !- Name
     Om:Off.m.s3.buro,        !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    1191.1604,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    1453.3656,               !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Om:Cn.m.s3.bschprchng General lighting,  !- Name
     Om:Cn.m.s3.bschprchng,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    324.9157,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    396.438,                 !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Om:San.m.s3.WC General lighting,  !- Name
     Om:San.m.s3.WC,          !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    84.9817,                 !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    216.9269,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     S1b:St.1.s4.nnfdrtr General lighting,  !- Name
     S1b:St.1.s4.nnfdrtr,     !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    3470.0564,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    38495.9387,              !- Lighting Level {W}
+    0.64,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Tec.1:Tec.1.s8.45technical General lighting,  !- Name
     Tec.1:Tec.1.s8.45technical,  !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    1433.0601,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    5036.9935,               !- Lighting Level {W}
+    2.02,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Tec.1:St.nct.1.s3.rchv General lighting,  !- Name
     Tec.1:St.nct.1.s3.rchv,  !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    2095.2301,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    3541.9365,               !- Lighting Level {W}
+    4.2,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     S1a:St.1.s4.tgmtrl General lighting,  !- Name
     S1a:St.1.s4.tgmtrl,      !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Warehouse,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    3734.3181,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    41427.5912,              !- Lighting Level {W}
+    0.64,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Tec.1.s1.general General lighting,  !- Name
     O1:Tec.1.s1.general,     !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    504.9934,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    1289.0621,               !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Off.1.s1.immo2 General lighting,  !- Name
     O1:Off.1.s1.immo2,       !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    2321.8333,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    2832.9287,               !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Soc.1.s2.sozialraum General lighting,  !- Name
     O1:Soc.1.s2.sozialraum,  !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    870.8148,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    2222.8695,               !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Soc.1.s2.umkleide General lighting,  !- Name
     O1:Soc.1.s2.umkleide,    !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    1142.462,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    2916.2846,               !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Sto.1.s1.lager General lighting,  !- Name
     O1:Sto.1.s1.lager,       !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    300.151,                 !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    560.8084,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Off.1.s1.immo1 General lighting,  !- Name
     O1:Off.1.s1.immo1,       !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    2205.1909,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    2690.6103,               !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Off.1.s1.vertrieb General lighting,  !- Name
     O1:Off.1.s1.vertrieb,    !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    2192.8875,               !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    2675.5985,               !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Soc.1.s1.teekuche General lighting,  !- Name
     O1:Soc.1.s1.teekuche,    !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    465.5338,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    1188.3363,               !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:San.1.s1.WC General lighting,  !- Name
     O1:San.1.s1.WC,          !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    106.9377,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    272.9726,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
-
-Lights,
-    O1:Con.1.s1.konferenzz2 General lighting,  !- Name
-    O1:Con.1.s1.konferenzz2, !- Zone or ZoneList Name
-    ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    851.7813,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
-    ,                        !- Watts per Person {W/person}
-    0,                       !- Return Air Fraction
-    0.72,                    !- Fraction Radiant
-    0.18,                    !- Fraction Visible
-    1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
-
-Lights,
-    O1:San.1.s1.WCZ1 General lighting,  !- Name
-    O1:San.1.s1.WCZ1,        !- Zone or ZoneList Name
-    ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    122.952,                 !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
-    ,                        !- Watts per Person {W/person}
-    0,                       !- Return Air Fraction
-    0.72,                    !- Fraction Radiant
-    0.18,                    !- Fraction Visible
-    1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
-
-Lights,
-    O1:Con.1.s1.konferenzz1 General lighting,  !- Name
-    O1:Con.1.s1.konferenzz1, !- Zone or ZoneList Name
-    ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    279.7462,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
-    ,                        !- Watts per Person {W/person}
-    0,                       !- Return Air Fraction
-    0.72,                    !- Fraction Radiant
-    0.18,                    !- Fraction Visible
-    1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     O1:Con.1.s1.konferenz General lighting,  !- Name
     O1:Con.1.s1.konferenz,   !- Zone or ZoneList Name
     ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    822.0761,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    1039.2803,               !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
+
+Lights,
+    O1:San.1.s1.WCZ1 General lighting,  !- Name
+    O1:San.1.s1.WCZ1,        !- Zone or ZoneList Name
+    ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    313.8513,                !- Lighting Level {W}
+    3.8,                     !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Return Air Fraction
+    0.72,                    !- Fraction Radiant
+    0.18,                    !- Fraction Visible
+    1,                       !- Fraction Replaceable
+    Interior Lighting;       !- End-Use Subcategory
+
+Lights,
+    O1:Con.1.s1.konferenzZ1 General lighting,  !- Name
+    O1:Con.1.s1.konferenzZ1, !- Zone or ZoneList Name
+    ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    341.3255,                !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Return Air Fraction
+    0.72,                    !- Fraction Radiant
+    0.18,                    !- Fraction Visible
+    1,                       !- Fraction Replaceable
+    Interior Lighting;       !- End-Use Subcategory
+
+Lights,
+    O1:Con.1.s1.konferenzZ2 General lighting,  !- Name
+    O1:Con.1.s1.konferenzZ2, !- Zone or ZoneList Name
+    ASHRAE 90.1 Lighting Receptacle - Office,  !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    1003.0363,               !- Lighting Level {W}
+    7.95,                    !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Return Air Fraction
+    0.72,                    !- Fraction Radiant
+    0.18,                    !- Fraction Visible
+    1,                       !- Fraction Replaceable
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     P0:Plen.obst General lighting,  !- Name
     P0:Plen.obst,            !- Zone or ZoneList Name
     Off,                     !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    822.0761,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    1003.0363,               !- Lighting Level {W}
+    7.1,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
-
-Lights,
-    Pr:Plen.refrigeration General lighting,  !- Name
-    Pr:Plen.refrigeration,   !- Zone or ZoneList Name
-    Off,                     !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    822.0761,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
-    ,                        !- Watts per Person {W/person}
-    0,                       !- Return Air Fraction
-    0.72,                    !- Fraction Radiant
-    0.18,                    !- Fraction Visible
-    1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
 Lights,
     Pk:Plen.kettenforderer General lighting,  !- Name
     Pk:Plen.kettenforderer,  !- Zone or ZoneList Name
     Off,                     !- Schedule Name
-    LightingLevel,           !- Design Level Calculation Method
-    822.0761,                !- Lighting Level {W}
-    ,                        !- Watts per Zone Floor Area {W/m2}
+    Watts/Area,              !- Design Level Calculation Method
+    1003.0363,               !- Lighting Level {W}
+    7.1,                     !- Watts per Zone Floor Area {W/m2}
     ,                        !- Watts per Person {W/person}
     0,                       !- Return Air Fraction
     0.72,                    !- Fraction Radiant
     0.18,                    !- Fraction Visible
     1,                       !- Fraction Replaceable
-    Indoor lighting;         !- End-Use Subcategory
+    Interior Lighting;       !- End-Use Subcategory
 
-
-!-   ===========  ALL OBJECTS IN CLASS: DAYLIGHTING:CONTROLS ===========
-
-Daylighting:Controls,
-    Sa:Sto.0.s8.hazardous,   !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    -106.941,                !- X-Coordinate of First Reference Point {m}
-    -23.825,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Sa:Sto.0.s5.hochregal,   !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    -74.674,                 !- X-Coordinate of First Reference Point {m}
-    -23.825,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Sa:Sto.0.s5.nonfood,     !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    -32.93,                  !- X-Coordinate of First Reference Point {m}
-    -23.825,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Sa:Sto.0.s5.block,       !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    -7.112,                  !- X-Coordinate of First Reference Point {m}
-    -23.825,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Sa:Sto.0.s5.WEWAschoko,  !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    -119.557,                !- X-Coordinate of First Reference Point {m}
-    -77.925,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Sa:Sto.0.s5.WEWA,        !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    -48.857,                 !- X-Coordinate of First Reference Point {m}
-    -77.925,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Sa:Sto.0.s5.KTschoko18C, !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    -123.02,                 !- X-Coordinate of First Reference Point {m}
-    -23.825,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Sc:Sto.0.s5.block,       !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    48.764,                  !- X-Coordinate of First Reference Point {m}
-    -44.725,                 !- Y-Coordinate of First Reference Point {m}
-    0.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Staircase:Staircase,     !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    95.089,                  !- X-Coordinate of First Reference Point {m}
-    -29.567,                 !- Y-Coordinate of First Reference Point {m}
-    0.8,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    3,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O0:Rc.0.s3.fnhltfhrr,    !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    114.571,                 !- X-Coordinate of First Reference Point {m}
-    9.35,                    !- Y-Coordinate of First Reference Point {m}
-    0.8,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    3,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O0:Off.0.s3.manager,     !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    104.352,                 !- X-Coordinate of First Reference Point {m}
-    11.781,                  !- Y-Coordinate of First Reference Point {m}
-    0.8,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    3,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O0:Off.0.s3.theke,       !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    101.363,                 !- X-Coordinate of First Reference Point {m}
-    6.981,                   !- Y-Coordinate of First Reference Point {m}
-    0.8,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    3,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Om:Off.m.s3.buro,        !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    107.96,                  !- X-Coordinate of First Reference Point {m}
-    9.35,                    !- Y-Coordinate of First Reference Point {m}
-    4.35,                    !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    3,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    Om:Cn.m.s3.bschprchng,   !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    95.96,                   !- X-Coordinate of First Reference Point {m}
-    6.985,                   !- Y-Coordinate of First Reference Point {m}
-    4.35,                    !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    3,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    S1b:St.1.s4.nnfdrtr,     !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    57.009,                  !- X-Coordinate of First Reference Point {m}
-    40.216,                  !- Y-Coordinate of First Reference Point {m}
-    8.6,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    S1a:St.1.s4.tgmtrl,      !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    36.751,                  !- X-Coordinate of First Reference Point {m}
-    -44.725,                 !- Y-Coordinate of First Reference Point {m}
-    8.6,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Off.1.s1.immo2,       !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    85.558,                  !- X-Coordinate of First Reference Point {m}
-    -36.991,                 !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Soc.1.s2.sozialraum,  !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    85.558,                  !- X-Coordinate of First Reference Point {m}
-    -22.507,                 !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Off.1.s1.immo1,       !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    79.751,                  !- X-Coordinate of First Reference Point {m}
-    -87.323,                 !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Off.1.s1.vertrieb,    !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    88.196,                  !- X-Coordinate of First Reference Point {m}
-    -69.001,                 !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Soc.1.s1.teekuche,    !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    74.264,                  !- X-Coordinate of First Reference Point {m}
-    -66.924,                 !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    200,                     !- Illuminance Setpoint at First Reference Point {lux}
-    200,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Con.1.s1.konferenzz2, !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    78.374,                  !- X-Coordinate of First Reference Point {m}
-    -59.44,                  !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Con.1.s1.konferenzz1, !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    81.846,                  !- X-Coordinate of First Reference Point {m}
-    -46.18,                  !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
-
-Daylighting:Controls,
-    O1:Con.1.s1.konferenz,   !- Zone Name
-    1,                       !- Total Daylighting Reference Points
-    73.401,                  !- X-Coordinate of First Reference Point {m}
-    -51.585,                 !- Y-Coordinate of First Reference Point {m}
-    9.2,                     !- Z-Coordinate of First Reference Point {m}
-    ,                        !- X-Coordinate of Second Reference Point {m}
-    ,                        !- Y-Coordinate of Second Reference Point {m}
-    ,                        !- Z-Coordinate of Second Reference Point {m}
-    1,                       !- Fraction of Zone Controlled by First Reference Point
-    0,                       !- Fraction of Zone Controlled by Second Reference Point
-    500,                     !- Illuminance Setpoint at First Reference Point {lux}
-    500,                     !- Illuminance Setpoint at Second Reference Point {lux}
-    1,                       !- Lighting Control Type
-    0,                       !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
-    22,                      !- Maximum Allowable Discomfort Glare Index
-    0.1,                     !- Minimum Input Power Fraction for Continuous Dimming Control
-    0.1,                     !- Minimum Light Output Fraction for Continuous Dimming Control
-    0,                       !- Number of Stepped Control Steps
-    1;                       !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+Lights,
+    Pr:Plen.refrigeration General lighting,  !- Name
+    Pr:Plen.refrigeration,   !- Zone or ZoneList Name
+    Off,                     !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    1003.0363,               !- Lighting Level {W}
+    7.1,                     !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0,                       !- Return Air Fraction
+    0.72,                    !- Fraction Radiant
+    0.18,                    !- Fraction Visible
+    1,                       !- Fraction Replaceable
+    Interior Lighting;       !- End-Use Subcategory
 
